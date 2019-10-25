@@ -1,1 +1,1 @@
-Website form soketrees.dev
+Website for smoketrees.dev
