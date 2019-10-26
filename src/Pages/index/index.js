@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./index.scss"
 
 class IndexPage extends React.Component {
 
