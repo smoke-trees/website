@@ -1,4 +1,5 @@
 .App {
+  color:white;
 }
 
 .App-logo {
@@ -6,9 +7,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #333533;
   text-align: center;
-  color: white;
+  color: #79F592;
 }
 
 .App-link {

@@ -1,4 +1,4 @@
-#Website for smoketrees.dev
+# Website for smoketrees.dev
 
 ### Guidelines
 
@@ -7,3 +7,10 @@
   * Each page should be in their own directory in the pages directory.
   * Make sure no one commits to the master branch
   * Don't merge locally. Always create PRs.
+  
+
+### Colors
+
+  * Background Color: #333533
+  * Text-color : #ffffff
+  * Accent color : #79f592
