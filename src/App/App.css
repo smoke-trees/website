@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 .App {
-  color:white;
+  background-color: #1C1A30 ;
+  color: white;
 }
 
 .App-logo {
@@ -7,9 +10,10 @@
 }
 
 .App-header {
-  background-color: #333533;
+  font-family: 'Roboto mono';
+  background-color: #1C1A30;
   text-align: center;
-  color: #79F592;
+  color: #6B4FBB;
 }
 
 .App-link {

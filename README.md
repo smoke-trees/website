@@ -17,5 +17,5 @@
   * Background Color: #1C1A30
   * Text-color :  #00FF22
                   #FFFFFF 50%
-                  #7B6297
+                  #6B4FBB
   * Accent color : #FFFFFF 10%

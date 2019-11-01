@@ -5,7 +5,7 @@ import Switch from "react-router-dom/Switch"
 import Route from "react-router-dom/Route"
 import IndexPage from "../Pages/index";
 import ProjectPage from "../Pages/projects/project";
-import TeamPage from "../Pages/team/team";
+import TeamPage from "../Pages/trees/trees";
 import Header from "../Components/Header/Header";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
                         <IndexPage/>
                     </Route>
 
-                    <Route exact path={"/team"}>
+                    <Route exact path={"/trees"}>
                         <TeamPage/>
                     </Route>
 
