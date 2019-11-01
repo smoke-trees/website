@@ -8,9 +8,14 @@
   * Make sure no one commits to the master branch
   * Don't merge locally. Always create PRs.
   
+### Fonts
+  * Roboto
+  * Roboto Mono
 
 ### Colors
 
-  * Background Color: #333533
-  * Text-color : #ffffff
-  * Accent color : #79f592
+  * Background Color: #1C1A30
+  * Text-color :  #00FF22
+                  #FFFFFF 50%
+                  #7B6297
+  * Accent color : #FFFFFF 10%
