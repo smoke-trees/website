@@ -1,0 +1,52 @@
+.index-page{
+    left: 0;
+    position: absolute;
+    top: 64px;
+    width: 100%;
+    height: intrinsic;          
+    height: -moz-max-content;    
+    height: -webkit-max-content;
+}
+
+.container{
+    width: 75%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.landing{
+    width: 100%;
+    display: flex;
+}
+
+.head p{
+    position: relative;
+    top: 30%;
+    margin: 0;
+    font-size: 52px;
+}
+
+.head{
+    position: relative;
+}
+
+.btn{
+    position: relative;
+    top: 35%;
+    color: white;
+    background: #21409A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: intrinsic;          
+    width: -moz-max-content;    
+    width: -webkit-max-content;
+    padding: 2% 4%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-svg{
+    width: 50%;
+}
