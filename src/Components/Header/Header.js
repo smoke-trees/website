@@ -1,15 +1,35 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Container } from 'react-bootstrap'
+import './style.css'
 
 class Header extends React.Component {
     render() {
         return (
-            <header className="App-header">
-                <Container>
-                <Navbar>This is Navbar</Navbar>
-                </Container>
-            </header>
+            <div className='navbar-container'>
+                <div className='navbar'>
+                    <div className='logo-container'>
+                        <div className='logo'>
+                            SmokeTrees
+                        </div>
+                    </div>
+                    <div style={{flex: '1'}} />
+                    <div className='navigation'>
+                        <ul className='ul-list'>
+                            <li>
+                                About
+                            </li>
+                            <li>
+                                Projects
+                            </li>
+                            <li>
+                                Team
+                            </li>
+                            <li>
+                                Contact
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         )
     }
 }
