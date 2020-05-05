@@ -3,9 +3,10 @@
     position: absolute;
     top: 64px;
     width: 100%;
-    height: intrinsic;          
+    /* height: intrinsic;          
     height: -moz-max-content;    
-    height: -webkit-max-content;
+    height: -webkit-max-content; */
+    height: 2000px;
 }
 
 .container{
@@ -19,6 +20,11 @@
 .landing{
     width: 100%;
     display: flex;
+    margin-bottom: 60px;
+}
+
+.head{
+    width: 50%;
 }
 
 .head p{
@@ -26,15 +32,20 @@
     top: 30%;
     margin: 0;
     font-size: 52px;
+    letter-spacing: 2px;
+    text-align: right;
 }
 
-.head{
-    position: relative;
+.digital{
+    font-weight: bold;
 }
 
+.technology{
+    font-weight: bold;
+    color: #21409A;
+}
 .btn{
     position: relative;
-    top: 35%;
     color: white;
     background: #21409A;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -42,11 +53,75 @@
     width: intrinsic;          
     width: -moz-max-content;    
     width: -webkit-max-content;
-    padding: 2% 4%;
+    padding: 2.2% 4.2%;
     font-size: 24px;
     font-weight: bold;
 }
 
 .logo-svg{
     width: 50%;
+}
+
+.logo-svg img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.tag{
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+    width: 75%;
+    margin-top: 150px;
+}
+
+.reinventing{
+    color: #21409A;
+}
+
+.container-basic{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 100px;
+}
+
+.elements{
+    display: flex;
+    font-weight: bold;
+}
+
+.git{
+    margin-left: 10px;
+}
+
+.description{
+    width: 50%;
+    margin: auto 0;
+}
+
+.description h1{
+    font-size: 40px;
+    color: #21409A;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.description p{
+    margin: 0;
+    font-size: 24px;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.alter{
+    text-align: right;
+}
+
+.alter p{
+    float: right;
+    width: 80%;
+}
+
+.alter .btn{
+    float: right;
 }
