@@ -1,34 +1,40 @@
 import React from 'react';
 import './style.css'
+import { Route,Link } from 'react-router-dom';
 
 class Header extends React.Component {
     render() {
         return (
+            <div>
             <div className='navbar-container'>
                 <div className='navbar'>
                     <div className='logo-container'>
                         <div className='logo'>
-                            SmokeTrees
+                            <Link to="/">Home</Link>
                         </div>
                     </div>
                     <div style={{flex: '1'}} />
                     <div className='navigation'>
                         <ul className='ul-list'>
                             <li>
-                                About
+                                <Link to='/about'>About</Link> 
                             </li>
                             <li>
-                                Projects
+                                <Link to='/projects'>Projects</Link>
                             </li>
                             <li>
-                                Team
+                                <Link to='/team'>Team</Link>
                             </li>
                             <li>
-                                Contact
+                                <Link to='/contact'>Contact</Link>
                             </li>
                         </ul>
                     </div>
                 </div>
+            </div>
+            <Route exact path="/" component={this.props.index} />
+                        <Route path="/about" component={this.props.team} />
+                        <Route path="/proejcts" component={this.props.projects} />
             </div>
         )
     }
