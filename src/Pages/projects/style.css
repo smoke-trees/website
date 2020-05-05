@@ -1,0 +1,14 @@
+.project-page{
+	left: 0;
+    position: absolute;
+    top: 64px;
+    width: 100%;
+}
+
+.container{
+    width: 75%;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+

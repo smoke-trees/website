@@ -1,0 +1,28 @@
+.landing-banner{
+	width: 100%;
+	display: flex;
+    margin-bottom: 60px;
+    font: Roboto;
+}
+.image{
+	width: 50%;
+}
+
+.image img{
+	max-width: 100%;
+    height: 100%;
+}
+.text-content{
+    width: 50%;
+    display: flex;
+}
+.content{
+    align-self: center;
+}
+.content p{
+    width: 75%;
+}
+.content h1{
+    color: #21409A;
+    font-size: 64px;
+}
