@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css'
-import { Route,Link } from 'react-router-dom';
+import { Route,Link, Router } from 'react-router-dom';
 
 class Header extends React.Component {
     render() {
@@ -10,7 +10,7 @@ class Header extends React.Component {
                 <div className='navbar'>
                     <div className='logo-container'>
                         <div className='logo'>
-                            <Link to="/">Home</Link>
+                            <Link to="/">Smoketrees</Link>
                         </div>
                     </div>
                     <div style={{flex: '1'}} />
@@ -32,9 +32,11 @@ class Header extends React.Component {
                     </div>
                 </div>
             </div>
-            <Route exact path="/" component={this.props.index} />
+                <Route exact path="/" component={this.props.index} />
                         <Route path="/about" component={this.props.team} />
-                        <Route path="/proejcts" component={this.props.projects} />
+                        <Route path="/projcts" component={this.props.projects} />
+                        <Route path='/team' component={this.props.team} />
+                        <Route path='/contact' component={this.props.contact} />
             </div>
         )
     }
