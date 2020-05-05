@@ -33,7 +33,7 @@ class Header extends React.Component {
                 </div>
             </div>
                 <Route exact path="/" component={this.props.index} />
-                        <Route path="/about" component={this.props.team} />
+                        <Route path="/about" component={this.props.about} />
                         <Route path="/projcts" component={this.props.projects} />
                         <Route path='/team' component={this.props.team} />
                         <Route path='/contact' component={this.props.contact} />

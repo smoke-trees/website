@@ -1,11 +1,14 @@
 import React from "react";
+import Footer from "../../Components/Footer/Footer";
 
 class About extends React.Component{
     render() {
         return(
-            <div>THis is about page</div>
+            <div>
+                <Footer />
+            </div>
         )
     }
 }
 
-export default About
+export default About;
