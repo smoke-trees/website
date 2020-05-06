@@ -1,0 +1,21 @@
+.profile {
+	width: 33.33333%;
+}
+
+.profile p {
+	width: 65%;
+}
+
+.profile h3 {
+	color: #21409a;
+}
+
+.profile h4 {
+	color: #21409a;
+}
+
+.logo {
+	height: 28px;
+	padding: 5px;
+	margin-top: 10px;
+}

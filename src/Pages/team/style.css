@@ -1,14 +1,19 @@
-.team-page{
+.team-page {
 	left: 0;
-    position: absolute;
-    top: 64px;
-    width: 100%;
+	position: absolute;
+	top: 64px;
+	width: 100%;
 }
 
-.container{
-    width: 75%;
-    height: auto;
-    position: relative;
-    margin: auto;
+.container {
+	width: 75%;
+	height: auto;
+	position: relative;
+	margin: auto;
 }
 
+.team-content {
+	width: 100%;
+	display: flex;
+	padding: 20px;
+}

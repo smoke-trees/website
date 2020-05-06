@@ -22,19 +22,3 @@
     width: 100%;
     display: flex;
 }
-
-.coloumn{
-    width: 33.33333%;
-}
-
-.coloumn p{
-    width: 65%;
-}
-
-.coloumn h3{
-    color: #21409A;
-}
-
-.coloumn-two{
-    margin-top: 10%;
-}

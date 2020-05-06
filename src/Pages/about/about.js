@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css"
 import Footer from "../../Components/Footer/Footer";
 import LandingBanner from "../../Components/LandingBanner/LandingBanner";
+import ColumnContent from "../../Components/ColumnContent/ColumnContent";
 import team from "../../vectors/undraw_team_spirit_hrr4.svg"
 
 class About extends React.Component{
@@ -12,24 +13,9 @@ class About extends React.Component{
                     <LandingBanner image = {team} heading = {'About'} />
                     <h1>What we do ?</h1>
                     <div className="about-content">
-                        <div className="coloumn">
-                            <h3>01</h3>
-                            <h3>Lorem, ipsum.</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur voluptates tempore, iusto quam aperiam, minus ducimus rem sed laudantium distinctio quibusdam, fugiat quia? Laudantium, vero. Sint, non ipsum! Nemo!</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur voluptates tempore, iusto quam aperiam, minus ducimus rem sed laudantium distinctio quibusdam, fugiat quia? Laudantium, vero. Sint, non ipsum! Nemo!</p>
-                        </div>
-                        <div className="coloumn coloumn-two">
-                            <h3>01</h3>
-                            <h3>Lorem, ipsum.</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur voluptates tempore, iusto quam aperiam, minus ducimus rem sed laudantium distinctio quibusdam, fugiat quia? Laudantium, vero. Sint, non ipsum! Nemo!</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur voluptates tempore, iusto quam aperiam, minus ducimus rem sed laudantium distinctio quibusdam, fugiat quia? Laudantium, vero. Sint, non ipsum! Nemo!</p>
-                        </div>
-                        <div className="coloumn">
-                            <h3>01</h3>
-                            <h3>Lorem, ipsum.</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur voluptates tempore, iusto quam aperiam, minus ducimus rem sed laudantium distinctio quibusdam, fugiat quia? Laudantium, vero. Sint, non ipsum! Nemo!</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis tenetur voluptates tempore, iusto quam aperiam, minus ducimus rem sed laudantium distinctio quibusdam, fugiat quia? Laudantium, vero. Sint, non ipsum! Nemo!</p>
-                        </div>
+                        <ColumnContent number = {'01'} heading = {'Lorem, Ipsum.'} > Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam minus, quasi omnis laborum dolore ab officia nihil! Maxime debitis, architecto officiis dolores sapiente veniam possimus repudiandae ex nisi earum cumque.Laborum repudiandae voluptatem, labore nemo quis voluptate aliquid eveniet consequatur delectus nostrum impedit similique magnam deserunt iste incidunt sint sed non tempore. Dolor praesentium aliquid aut et provident? Pariatur, alias. </ColumnContent>
+                        <ColumnContent number = {'01'} heading = {'Lorem, Ipsum.'} > Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam minus, quasi omnis laborum dolore ab officia nihil! Maxime debitis, architecto officiis dolores sapiente veniam possimus repudiandae ex nisi earum cumque.Laborum repudiandae voluptatem, labore nemo quis voluptate aliquid eveniet consequatur delectus nostrum impedit similique magnam deserunt iste incidunt sint sed non tempore. Dolor praesentium aliquid aut et provident? Pariatur, alias. </ColumnContent>
+                        <ColumnContent number = {'01'} heading = {'Lorem, Ipsum.'} > Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam minus, quasi omnis laborum dolore ab officia nihil! Maxime debitis, architecto officiis dolores sapiente veniam possimus repudiandae ex nisi earum cumque.Laborum repudiandae voluptatem, labore nemo quis voluptate aliquid eveniet consequatur delectus nostrum impedit similique magnam deserunt iste incidunt sint sed non tempore. Dolor praesentium aliquid aut et provident? Pariatur, alias. </ColumnContent>
                     </div>
                 </div>
                 <Footer />

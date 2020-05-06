@@ -1,0 +1,11 @@
+.column {
+	width: 33.33333%;
+}
+
+.column p {
+	width: 65%;
+}
+
+.column h3 {
+	color: #21409a;
+}

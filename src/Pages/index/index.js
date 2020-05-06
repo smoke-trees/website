@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import logo from '../../vectors/Rectangle.png'
+import logo from '../../vectors/logo.svg'
 import github from '../../vectors/github.svg'
 import versionControl from '../../vectors/version-control.svg'
 import designFeedback from '../../vectors/design_feedback.svg'

@@ -12,3 +12,8 @@
     margin: auto;
 }
 
+.project-content{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
