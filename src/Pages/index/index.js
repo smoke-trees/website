@@ -14,7 +14,7 @@ class IndexPage extends React.Component {
             <div className={'index-page'}>
                 <div className='container'>
                     <div className='landing'>
-                        <div className='logo-svg'>
+                        <div className='smoketrees'>
                             <img alt='' src={logo} />
                         </div>
                         <div className='head'>

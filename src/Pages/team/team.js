@@ -11,7 +11,13 @@ class TeamPage extends React.Component {
 		return (
 			<div className='team-page'>
 				<div className='container'>
-					<LandingBanner image={team} heading={'Teams'} />
+					<LandingBanner image={team} heading={'Teams'}>
+						{' '}
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+						cumque soluta commodi enim culpa cupiditate nemo sequi laboriosam,
+						consequuntur quae nisi porro. Mollitia, eius blanditiis delectus
+						possimus perspiciatis sit reiciendis!{' '}
+					</LandingBanner>
 					<Carousel
 						renderCenterLeftControls={false}
 						renderCenterRightControls={false}

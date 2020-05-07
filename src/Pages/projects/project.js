@@ -10,7 +10,13 @@ class ProjectPage extends React.Component {
 		return (
 			<div className='project-page'>
 				<div className='container'>
-					<LandingBanner image={board} heading={'Projects'} />
+					<LandingBanner image={board} heading={'Projects'}>
+						{' '}
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+						asperiores quo culpa velit ipsam excepturi dicta? Vel quibusdam
+						exercitationem, tenetur adipisci quae illum nobis tempora ipsam
+						maiores consectetur eligendi necessitatibus.{' '}
+					</LandingBanner>
 					<div className='project-content'>
 						<ColumnContent number={'01'} heading={'Lorem, Ipsum.'}>
 							{' '}

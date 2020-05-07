@@ -9,3 +9,12 @@
 .column h3 {
 	color: #21409a;
 }
+@media (max-width: 800px) {
+	/*breakpoint*/
+	.column {
+		width: 100%;
+	}
+	.column p {
+		width: 95%;
+	}
+}

@@ -14,7 +14,7 @@
 }
 
 .landing {
-    width: 100%;
+	width: 100%;
 	display: flex;
 	margin-bottom: 75px;
 	justify-content: center;
@@ -53,18 +53,59 @@
 	width: 50%;
 	display: flex;
 }
-.content {
-    align-self: center;
-    width: 50%;
+.contact-content {
+	align-self: center;
+	width: 50%;
 }
-.content p {
+.contact-content p {
 	width: 75%;
 }
 
-.office{
-    color: #21409a;
+.office {
+	color: #21409a;
 }
 
-.branch{
-    color: #BEBCBC;
+.branch {
+	color: #bebcbc;
+}
+
+@media (max-width: 800px) {
+	/*breakpoint*/
+	.container {
+		flex-direction: column;
+		width: 95%;
+	}
+	.landing-content {
+		width: 75%;
+		display: flex;
+		flex-direction: column;
+	}
+	.landing-content h1 {
+		padding: 0;
+		margin-bottom: 0;
+		align-self: center;
+		justify-self: center;
+	}
+	.landing-content p {
+		text-align: center;
+	}
+	.text-content {
+		width: 100%;
+		display: flex;
+		align-content: center;
+		justify-content: center;
+	}
+	.contact-content {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+	}
+	.contact-content p {
+		width: 45%;
+		text-align: left;
+	}
+	.image {
+		display: none;
+	}
 }

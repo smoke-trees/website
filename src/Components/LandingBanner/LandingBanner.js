@@ -9,10 +9,7 @@ class LandingBanner extends React.Component {
 					<div className='content'>
 						<h1>{this.props.heading}</h1>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-							quod debitis vitae blanditiis et numquam saepe quidem, libero
-							deleniti consectetur consequuntur error harum, temporibus, quaerat
-							fugit? Saepe, rem recusandae. Provident.
+							{this.props.children}
 						</p>
 					</div>
 				</div>

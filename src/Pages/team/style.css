@@ -17,3 +17,15 @@
 	display: flex;
 	padding: 20px;
 }
+
+@media (max-width: 800px) {
+	/*breakpoint*/
+	.container {
+        flex-direction: column;
+        width: 95%;
+	}
+	.team-content {
+        width: 100%;
+		flex-direction: column;
+	}
+}

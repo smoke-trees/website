@@ -1,39 +1,58 @@
-.footer{
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    font-family: Roboto;
+.footer {
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	font-family: Roboto;
 }
 
-.first-card{
-	background-color: #21409A;
-	color: #FFFFFF;
-    width: 75%;
-    z-index: 1;
-    height: 100px;
-    position: absolute;
-    align-self: center;
-    display: flex;
-    justify-content: start;
+.first-card {
+	background-color: #21409a;
+	color: #ffffff;
+	width: 75%;
+	z-index: 1;
+	height: 100px;
+	position: absolute;
+	align-self: center;
+	display: flex;
+	justify-content: start;
 }
 
-.first-card h1{
-    padding-left: 20px;
-    align-self: center;
+.first-card h1 {
+	padding-left: 20px;
+	align-self: center;
 }
 
-.second-card{
-    background-color: #F2F2F2;
-    height: 200px;
-    margin-top: 8%;
-    z-index: 0;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
+.second-card {
+	background-color: #f2f2f2;
+	height: 200px;
+	margin-top: 8%;
+	z-index: 0;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
 }
 
-.second-card p{
-    padding-top: 100px;
-    margin: 0;
+.second-card p {
+	padding-top: 100px;
+	margin: 0;
+}
+@media (max-width: 800px) {
+	/*breakpoint*/
+    .footer{
+        width: auto;
+        bottom: 0;
+        flex-direction: column;
+    }
+    .first-card{
+        width: 100%;
+        text-align: center;
+    }
+    .second-card{
+        width: 100%;
+    }
+    .second-card p{
+        width: 95%;
+        text-align: center;
+    }
 }

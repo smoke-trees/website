@@ -19,3 +19,14 @@
 	padding: 5px;
 	margin-top: 10px;
 }
+
+@media (max-width: 800px) {
+	/*breakpoint*/
+	.profile {
+        flex-direction: column;
+        width: 95%;
+    }
+    .profile p{
+        width: 100%;
+    }
+}

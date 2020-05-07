@@ -24,7 +24,7 @@ class Contact extends React.Component {
                         <img src={contact} alt=""/>
                     </div>
                     <div className="text-content">
-                        <div className="content">
+                        <div className="contact-content">
                             <h3 className='office' >Office <span className='branch' >Branch</span></h3>
                             <hr/>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quasi.</p>
