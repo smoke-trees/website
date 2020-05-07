@@ -29,7 +29,7 @@ class ProjectPage extends React.Component {
 							non tempore. Dolor praesentium aliquid aut et provident? Pariatur,
 							alias.{' '}
 						</ColumnContent>
-						<ColumnContent number={'01'} heading={'Lorem, Ipsum.'}>
+						<ColumnContent className='column2' number={'01'} heading={'Lorem, Ipsum.'}>
 							{' '}
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
 							minus, quasi omnis laborum dolore ab officia nihil! Maxime
@@ -53,7 +53,7 @@ class ProjectPage extends React.Component {
 						</ColumnContent>
 					</div>
 					<div className='project-content'>
-						<ColumnContent number={'01'} heading={'Lorem, Ipsum.'}>
+						<ColumnContent className='column3' number={'01'} heading={'Lorem, Ipsum.'}>
 							{' '}
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
 							minus, quasi omnis laborum dolore ab officia nihil! Maxime
@@ -75,7 +75,7 @@ class ProjectPage extends React.Component {
 							non tempore. Dolor praesentium aliquid aut et provident? Pariatur,
 							alias.{' '}
 						</ColumnContent>
-						<ColumnContent number={'01'} heading={'Lorem, Ipsum.'}>
+						<ColumnContent className='column3' number={'01'} heading={'Lorem, Ipsum.'}>
 							{' '}
 							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam
 							minus, quasi omnis laborum dolore ab officia nihil! Maxime

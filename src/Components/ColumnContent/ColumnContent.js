@@ -4,7 +4,7 @@ import './style.css';
 class ColumnContent extends React.Component {
 	render() {
 		return (
-			<div className='column'>
+			<div className={`column ${this.props.className}`}>
 				<h3>{this.props.number}</h3>
 				<h3>{this.props.heading}</h3>
 				<p>{this.props.children}</p>

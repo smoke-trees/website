@@ -6,7 +6,7 @@ import linkedin from '../../vectors/linkedin_32.png';
 class Profile extends React.Component {
 	render() {
 		return (
-			<div className='profile'>
+			<div className={`profile ${this.props.className}`}>
 				<h3>{this.props.name}</h3>
 				<h4>{this.props.devs}</h4>
 				<p>{this.props.children}</p>

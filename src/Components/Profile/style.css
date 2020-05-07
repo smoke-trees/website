@@ -4,6 +4,7 @@
 
 .profile p {
 	width: 65%;
+	color: rgba(0, 0, 0, 0.6);
 }
 
 .profile h3 {
@@ -20,6 +21,15 @@
 	margin-top: 10px;
 }
 
+.profile2{
+	margin-top: 200px;
+	margin-bottom: 100px;
+}
+
+.profile3{
+	margin-top: -150px;
+}
+
 @media (max-width: 800px) {
 	/*breakpoint*/
 	.profile {
@@ -28,5 +38,13 @@
     }
     .profile p{
         width: 100%;
-    }
+	}
+	.profile2{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	.profile3{
+		margin-top: 0;
+	}
 }

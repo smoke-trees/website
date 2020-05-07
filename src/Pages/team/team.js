@@ -41,6 +41,7 @@ class TeamPage extends React.Component {
 									Tempore sit maiores obcaecati blanditiis.
 								</Profile>
 								<Profile
+									className='profile2'
 									name={'ADARSH SINGH'}
 									devs={'WEB'}
 									github={'https://github.com/adarshsingh87'}
@@ -65,6 +66,7 @@ class TeamPage extends React.Component {
 							</div>
 							<div className='team-content'>
 								<Profile
+									className='profile3'
 									name={'ADARSH SINGH'}
 									devs={'WEB'}
 									github={'https://github.com/adarshsingh87'}
@@ -87,78 +89,7 @@ class TeamPage extends React.Component {
 									Tempore sit maiores obcaecati blanditiis.
 								</Profile>
 								<Profile
-									name={'ADARSH SINGH'}
-									devs={'WEB'}
-									github={'https://github.com/adarshsingh87'}
-									linkedin={'https://linkedin.com/in/adarshsingh87'}
-								>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Optio quae aliquam et ullam repudiandae placeat rem laborum.
-									Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
-									Tempore sit maiores obcaecati blanditiis.
-								</Profile>
-							</div>
-						</div>
-						<div>
-							<div className='team-content'>
-								<Profile
-									name={'ADARSH SINGH'}
-									devs={'WEB'}
-									github={'https://github.com/adarshsingh87'}
-									linkedin={'https://linkedin.com/in/adarshsingh87'}
-								>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Optio quae aliquam et ullam repudiandae placeat rem laborum.
-									Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
-									Tempore sit maiores obcaecati blanditiis.
-								</Profile>
-								<Profile
-									name={'ADARSH SINGH'}
-									devs={'WEB'}
-									github={'https://github.com/adarshsingh87'}
-									linkedin={'https://linkedin.com/in/adarshsingh87'}
-								>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Optio quae aliquam et ullam repudiandae placeat rem laborum.
-									Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
-									Tempore sit maiores obcaecati blanditiis.
-								</Profile>
-								<Profile
-									name={'ADARSH SINGH'}
-									devs={'WEB'}
-									github={'https://github.com/adarshsingh87'}
-									linkedin={'https://linkedin.com/in/adarshsingh87'}
-								>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Optio quae aliquam et ullam repudiandae placeat rem laborum.
-									Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
-									Tempore sit maiores obcaecati blanditiis.
-								</Profile>
-							</div>
-							<div className='team-content'>
-								<Profile
-									name={'ADARSH SINGH'}
-									devs={'WEB'}
-									github={'https://github.com/adarshsingh87'}
-									linkedin={'https://linkedin.com/in/adarshsingh87'}
-								>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Optio quae aliquam et ullam repudiandae placeat rem laborum.
-									Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
-									Tempore sit maiores obcaecati blanditiis.
-								</Profile>
-								<Profile
-									name={'ADARSH SINGH'}
-									devs={'WEB'}
-									github={'https://github.com/adarshsingh87'}
-									linkedin={'https://linkedin.com/in/adarshsingh87'}
-								>
-									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Optio quae aliquam et ullam repudiandae placeat rem laborum.
-									Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
-									Tempore sit maiores obcaecati blanditiis.
-								</Profile>
-								<Profile
+									className='profile3'
 									name={'ADARSH SINGH'}
 									devs={'WEB'}
 									github={'https://github.com/adarshsingh87'}
@@ -185,6 +116,7 @@ class TeamPage extends React.Component {
 									Tempore sit maiores obcaecati blanditiis.
 								</Profile>
 								<Profile
+									className='profile2'
 									name={'ADARSH SINGH'}
 									devs={'WEB'}
 									github={'https://github.com/adarshsingh87'}
@@ -209,6 +141,7 @@ class TeamPage extends React.Component {
 							</div>
 							<div className='team-content'>
 								<Profile
+									className='profile3'
 									name={'ADARSH SINGH'}
 									devs={'WEB'}
 									github={'https://github.com/adarshsingh87'}
@@ -231,6 +164,82 @@ class TeamPage extends React.Component {
 									Tempore sit maiores obcaecati blanditiis.
 								</Profile>
 								<Profile
+									className='profile3'
+									name={'ADARSH SINGH'}
+									devs={'WEB'}
+									github={'https://github.com/adarshsingh87'}
+									linkedin={'https://linkedin.com/in/adarshsingh87'}
+								>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Optio quae aliquam et ullam repudiandae placeat rem laborum.
+									Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
+									Tempore sit maiores obcaecati blanditiis.
+								</Profile>
+							</div>
+						</div>
+						<div>
+							<div className='team-content'>
+								<Profile
+									name={'ADARSH SINGH'}
+									devs={'WEB'}
+									github={'https://github.com/adarshsingh87'}
+									linkedin={'https://linkedin.com/in/adarshsingh87'}
+								>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Optio quae aliquam et ullam repudiandae placeat rem laborum.
+									Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
+									Tempore sit maiores obcaecati blanditiis.
+								</Profile>
+								<Profile
+									className='profile2'
+									name={'ADARSH SINGH'}
+									devs={'WEB'}
+									github={'https://github.com/adarshsingh87'}
+									linkedin={'https://linkedin.com/in/adarshsingh87'}
+								>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Optio quae aliquam et ullam repudiandae placeat rem laborum.
+									Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
+									Tempore sit maiores obcaecati blanditiis.
+								</Profile>
+								<Profile
+									name={'ADARSH SINGH'}
+									devs={'WEB'}
+									github={'https://github.com/adarshsingh87'}
+									linkedin={'https://linkedin.com/in/adarshsingh87'}
+								>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Optio quae aliquam et ullam repudiandae placeat rem laborum.
+									Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
+									Tempore sit maiores obcaecati blanditiis.
+								</Profile>
+							</div>
+							<div className='team-content'>
+								<Profile
+									className='profile3'
+									name={'ADARSH SINGH'}
+									devs={'WEB'}
+									github={'https://github.com/adarshsingh87'}
+									linkedin={'https://linkedin.com/in/adarshsingh87'}
+								>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Optio quae aliquam et ullam repudiandae placeat rem laborum.
+									Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
+									Tempore sit maiores obcaecati blanditiis.
+								</Profile>
+								<Profile
+									name={'ADARSH SINGH'}
+									devs={'WEB'}
+									github={'https://github.com/adarshsingh87'}
+									linkedin={'https://linkedin.com/in/adarshsingh87'}
+								>
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Optio quae aliquam et ullam repudiandae placeat rem laborum.
+									Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
+									Tempore sit maiores obcaecati blanditiis.
+								</Profile>
+								<Profile
+									className='profile3'
 									name={'ADARSH SINGH'}
 									devs={'WEB'}
 									github={'https://github.com/adarshsingh87'}
