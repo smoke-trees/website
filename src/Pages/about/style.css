@@ -15,12 +15,23 @@
 
 .container h1 {
 	color: #21409a;
-	font-size: 64px;
+	font-size: 40px;
+	font-weight: normal;
+}
+
+.content p{
+	font-size: 24px;
+	font-weight: 300;
 }
 
 .about-content {
 	width: 100%;
 	display: flex;
+}
+
+.column p{
+	font-size: 20px;
+	font-weight: 300;
 }
 
 @media (max-width: 800px) {

@@ -34,14 +34,15 @@
     font-size: 52px;
     letter-spacing: 2px;
     text-align: right;
+    font-weight: 300;
 }
 
 .digital{
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .technology{
-    font-weight: bold;
+    font-weight: normal;
     color: #21409A;
 }
 .btn{
@@ -80,6 +81,7 @@
     text-align: center;
     width: 75%;
     margin-top: 150px;
+    font-weight: 300;
 }
 
 .reinventing{
@@ -94,7 +96,7 @@
 
 .elements{
     display: flex;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .git{
@@ -111,6 +113,7 @@
     color: #21409A;
     margin: 0;
     margin-bottom: 40px;
+    font-weight: normal;
 }
 
 .description p{
@@ -118,6 +121,7 @@
     font-size: 24px;
     width: 80%;
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .alter{

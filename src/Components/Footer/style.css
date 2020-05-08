@@ -2,7 +2,6 @@
 	height: 300px;
 	display: flex;
 	justify-content: center;
-	font-family: Roboto;
 }
 
 .first-card {
@@ -19,13 +18,15 @@
 
 .first-card h1 {
 	font-size: 64px;
-	padding-left: 20px;
+	padding-left: 50px;
 	align-self: center;
+	font-weight: 300;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .second-card {
 	background-color: #f2f2f2;
-	height: 200px;
+	height: 300px;
 	margin-top: 8%;
 	z-index: 0;
 	width: 100%;
@@ -35,8 +36,12 @@
 }
 
 .second-card p {
-	padding-top: 100px;
+	padding-top: 160px;
 	margin: 0;
+	width: 75%;
+	font-weight: 300;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
 }
 @media (max-width: 800px) {
 	/*breakpoint*/
@@ -55,6 +60,7 @@
     }
     .second-card p{
         width: 95%;
-        text-align: center;
+		text-align: center;
+		font-size: 16px;
     }
 }

@@ -3,7 +3,6 @@
 	position: absolute;
 	top: 64px;
 	width: 100%;
-	font: Roboto;
 }
 
 .container {
@@ -24,21 +23,19 @@
 }
 
 .landing-content {
-	justify-items: start;
 	align-items: center;
 	width: 40%;
 }
 
 .landing-content h1 {
 	color: #21409a;
-	padding-left: 10%;
+	justify-content: center;
 }
 
 .content-page {
 	width: 100%;
 	display: flex;
 	margin-bottom: 75px;
-	font: Roboto;
 }
 
 .image {

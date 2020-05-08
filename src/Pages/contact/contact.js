@@ -8,17 +8,6 @@ class Contact extends React.Component {
 		return (
 			<div className='contact-page'>
 				<div className='container'>
-					<div className='landing'>
-						<div className='landing-content'>
-							<h1>Contact Us</h1>
-							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
-								possimus tempore ex cumque doloribus blanditiis facilis esse
-								provident accusantium qui atque nostrum quos, cum corporis est
-								cupiditate omnis repellat! Nihil!
-							</p>
-						</div>
-                    </div>
                 <div className="content-page">
                     <div className="image">
                         <img src={contact} alt=""/>
