@@ -162,3 +162,22 @@
 		font-size:25px;
 	}
 }
+
+.dark .first-card{
+	background-color: var(--dark-secondary);
+	color: black;
+}
+
+.dark .first-card .circle-button{
+	border-color: black;
+}
+
+.dark .half-white{
+	background: black;
+}
+
+.dark .second-card,
+.dark .half-gray{
+	background: #1f1f1f;
+	color:white;
+}

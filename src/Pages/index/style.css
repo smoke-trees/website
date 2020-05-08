@@ -1,15 +1,21 @@
-.index-page{
-    left: 0;
-    position: absolute;
-    top: 64px;
-    width: 100%;
-    /* height: intrinsic;          
-    height: -moz-max-content;    
-    height: -webkit-max-content; */
-    height: 2000px;
+:root {
+    --bg-color: white;
+    --dark-bg-color: black;
+    --dark-primary: #2ab67b;
+    --dark-secondary: #2ab34b;
+    --dark-accent-primary: #07a7bc;
 }
 
-.container{
+.index-page {
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: intrinsic;          
+    height: -moz-max-content;    
+    height: -webkit-max-content; 
+}
+
+.container {
     width: 75%;
     height: auto;
     position: relative;
@@ -17,17 +23,17 @@
     margin-top: 100px;
 }
 
-.landing{
+.landing {
     width: 100%;
     display: flex;
     margin-bottom: 60px;
 }
 
-.head{
+.head {
     width: 50%;
 }
 
-.head p{
+.head p {
     position: relative;
     top: 30%;
     margin: 0;
@@ -37,45 +43,47 @@
     font-weight: 300;
 }
 
-.digital{
+.digital {
     font-weight: normal;
 }
 
-.technology{
+.technology {
     font-weight: normal;
     color: #21409A;
 }
-.btn{
+
+.btn {
     position: relative;
     color: white;
     background: #21409A;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    width: intrinsic;          
-    width: -moz-max-content;    
+    width: intrinsic;
+    width: -moz-max-content;
     width: -webkit-max-content;
     padding: 2.2% 4.2%;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
 }
 
-.logo-svg{
-    width: 50%;
-}
-.smoketrees{
+.logo-svg {
     width: 50%;
 }
 
-.logo-svg img{
-    max-width: 100%;
-    height: 100%;
+.smoketrees {
+    width: 50%;
 }
-.smoketrees img{
+
+.logo-svg img {
     max-width: 100%;
     height: 100%;
 }
 
-.tag{
+.smoketrees img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.tag {
     margin: auto;
     font-size: 40px;
     text-align: center;
@@ -84,31 +92,36 @@
     font-weight: 300;
 }
 
-.reinventing{
+.reinventing {
     color: #21409A;
 }
 
-.container-basic{
+.container-basic {
     margin: 0 auto;
     display: flex;
     margin-top: 100px;
 }
 
-.elements{
+.elements {
     display: flex;
     font-weight: normal;
 }
 
-.git{
+.git {
     margin-left: 10px;
 }
 
-.description{
+.index-github-logo{
+    width: 20px;
+    height: 20px;
+}
+
+.description {
     width: 50%;
     margin: auto 0;
 }
 
-.description h1{
+.description h1 {
     font-size: 40px;
     color: #21409A;
     margin: 0;
@@ -116,7 +129,7 @@
     font-weight: normal;
 }
 
-.description p{
+.description p {
     margin: 0;
     font-size: 24px;
     width: 80%;
@@ -124,54 +137,79 @@
     font-weight: 300;
 }
 
-.alter{
+.alter {
     text-align: right;
 }
 
-.alter p{
+.alter p {
     float: right;
     width: 80%;
 }
 
-.alter .btn{
+.alter .btn {
     float: right;
 }
 
 @media (max-width: 800px) {
-	/*breakpoint*/
-	.landing {
+    /*breakpoint*/
+    .landing {
         flex-direction: column;
         width: 95%;
         align-content: center;
         justify-content: center;
     }
-    .smoketrees{
+    .smoketrees {
         width: 100%;
         display: flex;
         align-content: center;
         justify-content: center;
     }
-    .head{
+    .head {
         width: 100%;
     }
-    .head p{
+    .head p {
         text-align: center;
     }
-    .logo-svg{
+    .logo-svg {
         display: none;
     }
-    .description{
+    .description {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-items: center;
     }
-    .description p{
+    .description p {
         width: 95%;
         text-align: justify;
     }
-    .alter{
+    .alter {
         text-align: center;
     }
+}
+
+.dark.index-page {
+    background: black;
+    color: white;
+}
+
+.dark.index-page .digital {
+    color: var(--dark-accent-primary)
+}
+
+.dark.index-page .technology {
+    color: var(--dark-primary)
+}
+
+.dark.index-page .reinventing {
+    color: var(--dark-primary)
+}
+
+.dark.index-page .description h1 {
+    color: var(--dark-primary);
+}
+
+.dark.index-page .btn{
+    background: var(--dark-secondary);
 }

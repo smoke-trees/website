@@ -11,7 +11,7 @@ class About extends React.Component {
     return (
       <ThemeContext.Consumer>
         {({ theme }) => (
-          <div className={theme === 'dark' ? 'about-page-dark' : 'about-page'}>
+          <div className={theme === 'dark' ? 'about-page dark' : 'about-page'}>
             <div className='container'>
               <LandingBanner image={team} heading='About'>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio totam
@@ -19,7 +19,7 @@ class About extends React.Component {
       assumenda sunt repellat ipsum magni corrupti impedit quam eaque
       veritatis numquam doloremque.
               </LandingBanner>
-              <h1>What we do ?</h1>
+              <h1 className='what-we-do'>What we do ?</h1>
               <div className='about-content'>
                 <ColumnContent number='01' heading='Lorem, Ipsum.'>
                   {' '}

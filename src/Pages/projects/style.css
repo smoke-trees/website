@@ -1,31 +1,43 @@
-.project-page{
-	left: 0;
+.project-page {
+    left: 0;
     position: absolute;
     top: 64px;
     width: 100%;
 }
 
-.container{
+.container {
     width: 75%;
     height: auto;
     position: relative;
     margin: auto;
 }
 
-.project-content{
+.project-content {
     width: 100%;
     display: flex;
     padding: 10px;
 }
 
 @media (max-width: 800px) {
-	/*breakpoint*/
-	.container {
+    /*breakpoint*/
+    .container {
         flex-direction: column;
         width: 95%;
-	}
-	.project-content {
+    }
+    .project-content {
         width: 100%;
-		flex-direction: column;
-	}
+        flex-direction: column;
+    }
+}
+
+.dark.project-page {
+    background: black;
+}
+
+.dark.project-page .content h1 {
+    color: var(--dark-secondary)
+}
+
+.dark.project-page .content{
+    color:white;
 }

@@ -166,3 +166,37 @@ nav a {
 		right: 0;
 	}
 }
+
+.navbar-container.dark{
+	color:white;
+	background-color: black;
+}
+
+.navbar-container.dark .logo{
+	color:white;
+}
+
+.navbar-container.dark nav{
+	background: black;
+}
+
+.navbar-container.dark ul{
+	background: black;
+	color:white;
+}
+
+.navbar-container.dark ul a {
+	color:white;
+}
+.navbar-container.dark ul a:hover {
+	color:white;
+}
+.navbar-container.dark ul a:visited {
+	color:white;
+}
+.navbar-container.dark .nav-toggle-label span,
+.navbar-container.dark .nav-toggle-label span::before,
+.navbar-container.dark .nav-toggle-label span::after {
+	background: white;
+}
+	

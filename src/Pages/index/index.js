@@ -12,7 +12,7 @@ class IndexPage extends React.Component {
     return (
       <ThemeContext.Consumer>
         {({ theme, toggleTheme }) => (
-          <div className={theme === 'light' ? 'index-container' : 'index-container dark'}>
+          <div className={theme === 'light' ? 'index-page' : 'index-page dark'}>
             <div className='container'>
               <div className='landing'>
                 <div className='smoketrees'>
@@ -32,7 +32,7 @@ class IndexPage extends React.Component {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vitae malesuada bibendum quam aliquam. At dolor, sit eget commodo neque, accumsan nec volutpat. Sit posuere non mi duis id. </p>
                   <div className='btn'>
                     <div className='elements'>
-                      <img src={github} alt='' />
+                      <img className='index-github-logo' src={github} alt='' />
                       <div className='git'>
                                         GitHub
                       </div>
@@ -89,7 +89,7 @@ class IndexPage extends React.Component {
                     <h1>Main Projects</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vitae malesuada bibendum quam aliquam. At dolor, sit eget commodo neque, accumsan nec volutpat. Sit posuere non mi duis id. </p>
                   </div>
-                  <div className='btn'>
+                  <div className='btn '>
                     <div className='elements'>
                       <div className='git'>
                                         Know More

@@ -106,3 +106,13 @@
 		display: none;
 	}
 }
+
+
+.dark.contact-page{
+	background-color: black;
+	color:white;
+}
+
+.dark.contact-page .office{
+	color:var(--dark-secondary)
+}
