@@ -7,12 +7,24 @@ class Header extends React.Component {
   constructor (props) {
     super(props)
 
-    this.toggleTheme = () => {
-      this.setState(state => ({
-        theme: state.theme === 'dark' ? 'light' : 'dark'
-      }))
+    let storeTheme = 'light'
+    if (window.localStorage) {
+      storeTheme = window.localStorage.getItem('smoke-color') || 'light'
+    } else {
+      storeTheme = 'light'
     }
-    this.state = { theme: 'dark', toggleTheme: this.toggleTheme }
+
+    this.toggleTheme = () => {
+      this.setState(state => {
+        if (window.localStorage) {
+          window.localStorage.setItem('smoke-color', state.theme === 'dark' ? 'light' : 'dark')
+        }
+        return {
+          theme: state.theme === 'dark' ? 'light' : 'dark'
+        }
+      })
+    }
+    this.state = { theme: storeTheme, toggleTheme: this.toggleTheme }
   }
 
   render () {
@@ -41,7 +53,7 @@ class Header extends React.Component {
               </li>
             </ul>
           </nav>
-          <label for='nav-toggle' className='nav-toggle-label'>
+          <label htmlFor='nav-toggle' className='nav-toggle-label'>
             <span />
           </label>
         </header>
