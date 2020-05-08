@@ -7,8 +7,7 @@ class Header extends React.Component {
     return (
       <div>
         <header>
-          <a href='/' className='logo'>Smoketrees</a>
-
+          <a href='/' className='logo'><p>Smoketrees</p></a>
           <input type='checkbox' id='nav-toggle' className='nav-toggle' />
           <nav>
             <ul>
