@@ -62,7 +62,16 @@ class IndexPage extends React.Component {
             <div className='description'>
               <h1>Clients</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vitae malesuada bibendum quam aliquam. At dolor, sit eget commodo neque, accumsan nec volutpat. Sit posuere non mi duis id. </p>
-              <p style={{ fontSize: '12px', fontWeight: 'bold' }}>-Name</p>
+              <p
+                style={{
+                  fontSize: '1.1em',
+                  fontWeight: 'bold',
+                  textAlign: 'right',
+                  paddingRight: '20%',
+                  boxSizing: 'border-box'
+                }}
+              >-Name
+              </p>
             </div>
             <div className='logo-svg'>
               <img alt='' src={realTime} />
