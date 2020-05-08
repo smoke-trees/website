@@ -14,5 +14,4 @@ const routing = (
     <Header index={Index} team={Team} projects={Projects} about={About} contact={Contact} />
   </Router>
 )
-
 ReactDOM.render(routing, document.getElementById('root'))
