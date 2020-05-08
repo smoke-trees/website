@@ -18,6 +18,12 @@
 	padding: 20px;
 }
 
+.profile p{
+	font-size: 20px;
+	font-weight: 300;
+	color: black;
+}
+
 @media (max-width: 800px) {
 	/*breakpoint*/
 	.container {

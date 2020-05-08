@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.css';
 import contact from '../../vectors/undraw_terms_lso0.svg';
-import Footer from '../../Components/Footer/Footer';
 
 class Contact extends React.Component {
 	render() {
@@ -14,7 +13,9 @@ class Contact extends React.Component {
                     </div>
                     <div className="text-content">
                         <div className="contact-content">
-                            <h3 className='office' >Office <span className='branch' >Branch</span></h3>
+                            <h3 className='office' >Office 
+                            {/* <span className='branch' >Branch</span> */}
+                            </h3>
                             <hr/>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quasi.</p>
                             <hr/>
