@@ -1,0 +1,50 @@
+.profile {
+	width: 33.33333%;
+}
+
+.profile p {
+	width: 65%;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.profile h3 {
+	color: #21409a;
+}
+
+.profile h4 {
+	color: #21409a;
+}
+
+.logo {
+	height: 28px;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.profile2{
+	margin-top: 200px;
+	margin-bottom: 100px;
+}
+
+.profile3{
+	margin-top: -150px;
+}
+
+@media (max-width: 800px) {
+	/*breakpoint*/
+	.profile {
+        flex-direction: column;
+        width: 95%;
+    }
+    .profile p{
+        width: 100%;
+	}
+	.profile2{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	
+	.profile3{
+		margin-top: 0;
+	}
+}

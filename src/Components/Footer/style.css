@@ -1,0 +1,60 @@
+.footer {
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	font-family: Roboto;
+}
+
+.first-card {
+	background-color: #21409a;
+	color: #ffffff;
+	width: 75%;
+	z-index: 1;
+	height: 150px;
+	position: absolute;
+	align-self: center;
+	display: flex;
+	justify-content: start;
+}
+
+.first-card h1 {
+	font-size: 64px;
+	padding-left: 20px;
+	align-self: center;
+}
+
+.second-card {
+	background-color: #f2f2f2;
+	height: 200px;
+	margin-top: 8%;
+	z-index: 0;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+}
+
+.second-card p {
+	padding-top: 100px;
+	margin: 0;
+}
+@media (max-width: 800px) {
+	/*breakpoint*/
+    .footer{
+        width: auto;
+        bottom: 0;
+        flex-direction: column;
+    }
+    .first-card{
+		width: 100%;
+		height: 100px;
+        text-align: center;
+    }
+    .second-card{
+        width: 100%;
+    }
+    .second-card p{
+        width: 95%;
+        text-align: center;
+    }
+}

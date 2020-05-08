@@ -1,0 +1,38 @@
+.column {
+	width: 33.33333%;
+}
+
+.column p {
+	width: 65%;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.column h3 {
+	color: #21409a;
+}
+
+.column2 {
+	margin-top: 200px;
+	margin-bottom: 100px;
+}
+
+.column3 {
+	margin-top: -150px;
+}
+
+@media (max-width: 800px) {
+	/*breakpoint*/
+	.column {
+		width: 100%;
+	}
+	.column2 {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.column3 {
+		margin-top: 0;
+	}
+	.column p {
+		width: 95%;
+	}
+}

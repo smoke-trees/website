@@ -1,0 +1,31 @@
+.project-page{
+	left: 0;
+    position: absolute;
+    top: 64px;
+    width: 100%;
+}
+
+.container{
+    width: 75%;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+
+.project-content{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+	/*breakpoint*/
+	.container {
+        flex-direction: column;
+        width: 95%;
+	}
+	.project-content {
+        width: 100%;
+		flex-direction: column;
+	}
+}

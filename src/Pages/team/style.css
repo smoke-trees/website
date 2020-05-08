@@ -1,0 +1,31 @@
+.team-page {
+	left: 0;
+	position: absolute;
+	top: 64px;
+	width: 100%;
+}
+
+.container {
+	width: 75%;
+	height: auto;
+	position: relative;
+	margin: auto;
+}
+
+.team-content {
+	width: 100%;
+	display: flex;
+	padding: 20px;
+}
+
+@media (max-width: 800px) {
+	/*breakpoint*/
+	.container {
+        flex-direction: column;
+        width: 95%;
+	}
+	.team-content {
+        width: 100%;
+		flex-direction: column;
+	}
+}

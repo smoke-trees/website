@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import logo from '../../vectors/Rectangle.png'
+import logo from '../../vectors/logo.svg'
 import github from '../../vectors/github.svg'
 import versionControl from '../../vectors/version-control.svg'
 import designFeedback from '../../vectors/design_feedback.svg'
@@ -14,7 +14,7 @@ class IndexPage extends React.Component {
             <div className={'index-page'}>
                 <div className='container'>
                     <div className='landing'>
-                        <div className='logo-svg'>
+                        <div className='smoketrees'>
                             <img alt='' src={logo} />
                         </div>
                         <div className='head'>

@@ -1,0 +1,36 @@
+.about-page {
+	left: 0;
+	position: absolute;
+	top: 64px;
+	width: 100%;
+	font: Roboto;
+}
+
+.container {
+	width: 75%;
+	height: auto;
+	position: relative;
+	margin: auto;
+}
+
+.container h1 {
+	color: #21409a;
+	font-size: 64px;
+}
+
+.about-content {
+	width: 100%;
+	display: flex;
+}
+
+@media (max-width: 800px) {
+	/*breakpoint*/
+	.container {
+        flex-direction: column;
+        width: 95%;
+	}
+	.about-content {
+        width: 100%;
+		flex-direction: column;
+	}
+}
