@@ -11,10 +11,10 @@ class Profile extends React.Component {
         <h4>{this.props.devs}</h4>
         <p>{this.props.children}</p>
         <a href={this.props.github} target='blank'>
-          <img src={github} alt='github logo' className='logo' />
+          <img src={github} alt='github logo' className='github-logo' />
         </a>
         <a href={this.props.linkedin} target='blank'>
-          <img src={linkedin} alt='linkedin logo' className='logo' />
+          <img src={linkedin} alt='linkedin logo' className='linkedin-logo' />
         </a>
       </div>
     )

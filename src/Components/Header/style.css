@@ -24,6 +24,7 @@ header {
 .logo p{
 	position: relative;
 	margin: 24px;
+	font-size: 1.2rem;
 }
 
 .nav-toggle {
