@@ -24,7 +24,6 @@ class Contact extends React.Component {
                     </div>
                 </div>
 				</div>
-				<Footer />
 			</div>
 		);
 	}
