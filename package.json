@@ -62,7 +62,13 @@
     "webpack-manifest-plugin": "2.1.1",
     "workbox-webpack-plugin": "4.3.1"
   },
+  "standard":{
+    "ignore":[
+      "config/"
+    ]
+  },
   "scripts": {
+    "lint": "standard --fix",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
@@ -83,7 +89,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.5.5"
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "standard": "^14.3.3"
   },
   "jest": {
     "roots": [
