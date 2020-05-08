@@ -8,21 +8,25 @@ import team from '../../vectors/undraw_forming_ideas_0pav.svg'
 import ThemeContext from '../../theme'
 import members from './team-content'
 
-function leftArrow ({ previousSlide }) {
-  return (
-    <div onClick={previousSlide} className='corousel-left-arrow'>
-        Previous
-    </div>
-  )
-}
-function rightArrow ({ nextSlide }) {
-  return (
-    <div onClick={nextSlide} className='corousel-right-arrow'>
-        Next
-    </div>
-  )
-}
 const TeamPage = () => {
+  const [slideState, setSlideState] = useState(0)
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth
+  })
+  useEffect((e) => {
+    function handleResize (e) {
+      if ((dimensions.width < 768 && e.target.innerWidth >= 768) ||
+      (dimensions.width >= 768 && e.target.innerWidth < 768)) {
+        setDimensions({
+          height: window.innerHeight,
+          width: window.innerWidth
+        })
+      }
+    }
+    window.addEventListener('resize', handleResize)
+  })
+
   const createDevCards = () => {
     const renderedCards = []
     for (let i = 0; i < members.length;) {
@@ -136,24 +140,34 @@ const TeamPage = () => {
     }
     return renderedCards
   }
-
-  const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth
-  })
-  useEffect((e) => {
-    function handleResize (e) {
-      if ((dimensions.width < 768 && e.target.innerWidth >= 768) ||
-      (dimensions.width >= 768 && e.target.innerWidth < 768)) {
-        setDimensions({
-          height: window.innerHeight,
-          width: window.innerWidth
-        })
-      }
-    }
-    window.addEventListener('resize', handleResize)
-  })
   const teamMembers = createDevCards()
+
+  const leftArrow = ({ previousSlide }) => {
+    const leftArrowClass = slideState === 0 ? 'carousel-left-arrow gg-chevron-left invalid' : 'carousel-left-arrow gg-chevron-left'
+    return (
+      <ThemeContext.Consumer>
+        {({ theme }) => (
+          <div
+            onClick={previousSlide}
+            className={leftArrowClass}
+          />
+        )}
+      </ThemeContext.Consumer>
+    )
+  }
+  const rightArrow = ({ nextSlide, slideCount }) => {
+    const rightArrowClass = slideState === slideCount - 1 ? 'carousel-right-arrow gg-chevron-right invalid' : 'carousel-right-arrow gg-chevron-right'
+    return (
+      <ThemeContext.Consumer>
+        {({ theme }) => (
+          <div
+            onClick={nextSlide}
+            className={rightArrowClass}
+          />
+        )}
+      </ThemeContext.Consumer>
+    )
+  }
   return (
     <ThemeContext.Consumer>
       {({ theme, toggleTheme }) => (
@@ -167,11 +181,15 @@ const TeamPage = () => {
       possimus perspiciatis sit reiciendis!{' '}
             </LandingBanner>
             <Carousel
+              slideIndex={slideState}
+              afterSlide={slideIndex => setSlideState(slideIndex)}
+              className='team-carousel'
+              style={{ outline: 'none' }}
               renderCenterLeftControls={leftArrow}
               renderCenterRightControls={rightArrow}
               defaultControlsConfig={{
                 pagingDotsStyle: {
-                  fill: '#21409A'
+                  fill: theme === 'dark' ? '#2ab34b' : '#21409a'
                 }
               }}
             >

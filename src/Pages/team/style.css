@@ -18,20 +18,111 @@
 	padding: 20px;
 }
 
-.profile p{
+.profile p {
 	font-size: 20px;
 	font-weight: 300;
 	color: black;
 }
 
+.team-carousel li, .team-carousel button {
+	outline: none;
+}
+
+.gg-chevron-right {
+	top: -20px;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	transform: scale(var(--ggs, 1));
+	width: 22px;
+	height: 22px;
+	border: 2px solid transparent;
+	border-radius: 100px;
+	cursor: pointer;
+	outline: none;
+}
+
+.gg-chevron-right::after {
+	content: "";
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-bottom: 2px solid;
+	border-right: 2px solid;
+	transform: rotate(-45deg);
+	right: 6px;
+	top: 4px
+}
+
+.gg-chevron-left {
+	top: -20px;
+	box-sizing: border-box;
+	position: relative;
+	display: block;
+	transform: scale(var(--ggs, 1));
+	width: 22px;
+	height: 22px;
+	border: 2px solid transparent;
+	border-radius: 100px;
+	cursor: pointer;
+	outline: none;
+}
+
+.gg-chevron-left::after {
+	content: "";
+	display: block;
+	box-sizing: border-box;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-bottom: 2px solid;
+	border-left: 2px solid;
+	transform: rotate(45deg);
+	left: 6px;
+	top: 4px
+}
+
+.gg-chevron-right.invalid,
+.gg-chevron-left.invalid{
+	display: none;
+}
+
 @media (max-width: 800px) {
 	/*breakpoint*/
 	.container {
-        flex-direction: column;
-        width: 95%;
+		flex-direction: column;
+		width: 95%;
 	}
 	.team-content {
-        width: 100%;
+		width: 100%;
 		flex-direction: column;
 	}
+	.gg-chevron-right, .gg-chevron-left {
+		top: 0;
+	}
+}
+
+.dark.team-page {
+	background: black;
+	color: white;
+}
+
+.dark.team-page .content h1 {
+	color: var(--dark-secondary)
+}
+
+.dark.team-page .profile h3, .dark.team-page .profile h4 {
+	color: var(--dark-secondary)
+}
+
+.dark.team-page .profile p {
+	color: white;
+}
+
+.team-page .profile img {
+	display: inline-block;
+	margin-right: 4px;
+	margin-left: 4px;
 }
