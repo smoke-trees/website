@@ -13,26 +13,6 @@
 	margin: auto;
 }
 
-.landing {
-	width: 100%;
-	display: flex;
-	margin-bottom: 75px;
-	justify-content: center;
-	align-content: center;
-	margin-top: 10%;
-	margin-bottom: 10%;
-}
-
-.landing-content {
-	align-items: center;
-	width: 40%;
-}
-
-.landing-content h1 {
-	color: #21409a;
-	justify-content: center;
-}
-
 .content-page {
 	width: 100%;
 	display: flex;
@@ -114,7 +94,7 @@
 .content-page {}
 
 .dark.contact-page {
-	background-color: black;
+	background-color: var(--dark-bg-color);
 	color: white;
 }
 

@@ -47,7 +47,7 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
 	display: block;
-	background: black;
+	background: var(--dark-bg-color);
 	height: 2px;
 	width: 2em;
 	border-radius: 2px;
@@ -169,7 +169,7 @@ nav a {
 
 .navbar-container.dark{
 	color:white;
-	background-color: black;
+	background-color: var(--dark-bg-color);
 }
 
 .navbar-container.dark .logo{
@@ -177,11 +177,11 @@ nav a {
 }
 
 .navbar-container.dark nav{
-	background: black;
+	background: var(--dark-bg-color);
 }
 
 .navbar-container.dark ul{
-	background: black;
+	background: var(--dark-bg-color);
 	color:white;
 }
 

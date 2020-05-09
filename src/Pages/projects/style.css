@@ -31,7 +31,7 @@
 }
 
 .dark.project-page {
-    background: black;
+    background: var(--dark-bg-color);
 }
 
 .dark.project-page .content h1 {

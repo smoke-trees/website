@@ -1,6 +1,6 @@
 :root {
     --bg-color: white;
-    --dark-bg-color: black;
+    --dark-bg-color:#121212;
     --dark-primary: #2ab67b;
     --dark-secondary: #2ab34b;
     --dark-accent-primary: #07a7bc;
@@ -43,8 +43,18 @@
     font-weight: 300;
 }
 
+#typed {
+    font-size: 52px;
+    top: 30%;
+    position: relative;
+    padding-top: 10%;
+}
+.typed-cursor{
+    display: none;
+}
+
 .digital {
-    font-weight: normal;
+    font-weight: 350px;
 }
 
 .technology {
@@ -145,7 +155,23 @@
     float: right;
     width: 80%;
 }
+.landing {
+	width: 100%;
+	display: flex;
+	margin-bottom: 75px;
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
 
+.landing-content {
+	align-items: center;
+	width: 40%;
+}
+
+.landing-content h1 {
+	color: #21409a;
+	justify-content: center;
+}
 .alter .btn {
     float: right;
 }
@@ -190,7 +216,7 @@
 }
 
 .dark.index-page {
-    background: black;
+    background: var(--dark-bg-color);
     color: white;
 }
 

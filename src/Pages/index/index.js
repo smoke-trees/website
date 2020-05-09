@@ -8,6 +8,16 @@ import realTime from '../../vectors/real-time.svg'
 import ThemeContext from '../../theme'
 
 class IndexPage extends React.Component {
+  componentDidMount () {
+    import('typed.js').then((TypedModule) => {
+      const Typed = TypedModule.default
+      const typed = new Typed('#typed', {
+        stringsElement: '#head-description',
+        typeSpeed: 30
+      })
+    })
+  }
+
   render () {
     return (
       <ThemeContext.Consumer>
@@ -18,12 +28,13 @@ class IndexPage extends React.Component {
                 <div className='smoketrees'>
                   <img alt='' src={logo} style={{ cursor: 'pointer' }} onClick={toggleTheme} />
                 </div>
-                <div className='head'>
+                <div className='head ' id='head-description'>
                   <p>We are a <span className='digital'>digital agency</span> <br />based on <span className='technology'>technology</span></p>
                   {/* <div className='btn'>
                                 Explore
                             </div> */}
                 </div>
+                <span id='typed' />
               </div>
               <div className='tag'>We’re <span className='reinventing'>reinventing</span> offshore energy through sustainable, cutting-edge technology.</div>
               <div className='container-basic'>

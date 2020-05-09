@@ -169,11 +169,11 @@
 }
 
 .dark .first-card .circle-button{
-	border-color: black;
+	border-color: var(--dark-bg-color);
 }
 
 .dark .half-white{
-	background: black;
+	background: var(--dark-bg-color);
 }
 
 .dark .second-card,
