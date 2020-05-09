@@ -47,7 +47,7 @@ header {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
 	display: block;
-	background: black;
+	background: var(--dark-bg-color);
 	height: 2px;
 	width: 2em;
 	border-radius: 2px;
@@ -166,3 +166,37 @@ nav a {
 		right: 0;
 	}
 }
+
+.navbar-container.dark{
+	color:white;
+	background-color: var(--dark-bg-color);
+}
+
+.navbar-container.dark .logo{
+	color:white;
+}
+
+.navbar-container.dark nav{
+	background: var(--dark-bg-color);
+}
+
+.navbar-container.dark ul{
+	background: var(--dark-bg-color);
+	color:white;
+}
+
+.navbar-container.dark ul a {
+	color:white;
+}
+.navbar-container.dark ul a:hover {
+	color:white;
+}
+.navbar-container.dark ul a:visited {
+	color:white;
+}
+.navbar-container.dark .nav-toggle-label span,
+.navbar-container.dark .nav-toggle-label span::before,
+.navbar-container.dark .nav-toggle-label span::after {
+	background: white;
+}
+	

@@ -36,3 +36,10 @@
 		width: 95%;
 	}
 }
+
+.dark .column p{
+	color: white;
+}
+.dark .column h3{
+	color: var(--dark-secondary)
+}

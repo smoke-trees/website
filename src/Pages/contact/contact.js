@@ -8,7 +8,7 @@ class Contact extends React.Component {
     return (
       <ThemeContext.Consumer>
         {({ theme }) => (
-          <div className={theme === 'dark' ? 'contact-page-dark' : 'contact-page'}>
+          <div className={theme === 'dark' ? 'contact-page dark' : 'contact-page'}>
             <div className='container'>
               <div className='content-page'>
                 <div className='image'>

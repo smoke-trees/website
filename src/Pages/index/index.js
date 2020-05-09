@@ -8,22 +8,33 @@ import realTime from '../../vectors/real-time.svg'
 import ThemeContext from '../../theme'
 
 class IndexPage extends React.Component {
+  componentDidMount () {
+    import('typed.js').then((TypedModule) => {
+      const Typed = TypedModule.default
+      const typed = new Typed('#typed', {
+        stringsElement: '#head-description',
+        typeSpeed: 30
+      })
+    })
+  }
+
   render () {
     return (
       <ThemeContext.Consumer>
         {({ theme, toggleTheme }) => (
-          <div className={theme === 'light' ? 'index-container' : 'index-container dark'}>
+          <div className={theme === 'light' ? 'index-page' : 'index-page dark'}>
             <div className='container'>
               <div className='landing'>
                 <div className='smoketrees'>
                   <img alt='' src={logo} style={{ cursor: 'pointer' }} onClick={toggleTheme} />
                 </div>
-                <div className='head'>
+                <div className='head ' id='head-description'>
                   <p>We are a <span className='digital'>digital agency</span> <br />based on <span className='technology'>technology</span></p>
                   {/* <div className='btn'>
                                 Explore
                             </div> */}
                 </div>
+                <span id='typed' />
               </div>
               <div className='tag'>We’re <span className='reinventing'>reinventing</span> offshore energy through sustainable, cutting-edge technology.</div>
               <div className='container-basic'>
@@ -32,7 +43,7 @@ class IndexPage extends React.Component {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vitae malesuada bibendum quam aliquam. At dolor, sit eget commodo neque, accumsan nec volutpat. Sit posuere non mi duis id. </p>
                   <div className='btn'>
                     <div className='elements'>
-                      <img src={github} alt='' />
+                      <img className='index-github-logo' src={github} alt='' />
                       <div className='git'>
                                         GitHub
                       </div>
@@ -89,7 +100,7 @@ class IndexPage extends React.Component {
                     <h1>Main Projects</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vitae malesuada bibendum quam aliquam. At dolor, sit eget commodo neque, accumsan nec volutpat. Sit posuere non mi duis id. </p>
                   </div>
-                  <div className='btn'>
+                  <div className='btn '>
                     <div className='elements'>
                       <div className='git'>
                                         Know More
