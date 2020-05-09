@@ -7,13 +7,16 @@ import Profile from '../../Components/Profile/Profile'
 import team from '../../vectors/undraw_forming_ideas_0pav.svg'
 import ThemeContext from '../../theme'
 import members from './team-content'
+import 'aos/dist/aos.css'
 
-const TeamPage = () => {
+const TeamPage = function () {
+  const [animated, updateStateAnimated] = useState(false)
   const [slideState, setSlideState] = useState(0)
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth
   })
+
   useEffect((e) => {
     function handleResize (e) {
       if ((dimensions.width < 768 && e.target.innerWidth >= 768) ||
@@ -26,6 +29,15 @@ const TeamPage = () => {
     }
     window.addEventListener('resize', handleResize)
   })
+  useEffect((e) => {
+    if (!animated) {
+      import('aos').then(AosModule => {
+        AosModule.init()
+      })
+      updateStateAnimated(true)
+      console.log(animated)
+    }
+  }, [animated])
 
   const createDevCards = () => {
     const renderedCards = []

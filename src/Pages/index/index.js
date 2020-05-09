@@ -6,6 +6,7 @@ import versionControl from '../../vectors/version-control.svg'
 import designFeedback from '../../vectors/design_feedback.svg'
 import realTime from '../../vectors/real-time.svg'
 import ThemeContext from '../../theme'
+import 'aos/dist/aos.css'
 
 class IndexPage extends React.Component {
   componentDidMount () {
@@ -15,6 +16,10 @@ class IndexPage extends React.Component {
         stringsElement: '#head-description',
         typeSpeed: 30
       })
+      return typed
+    })
+    import('aos').then((AosModule) => {
+      AosModule.init()
     })
   }
 
@@ -36,7 +41,7 @@ class IndexPage extends React.Component {
                 </div>
                 <span id='typed' />
               </div>
-              <div className='tag'>We’re <span className='reinventing'>reinventing</span> offshore energy through sustainable, cutting-edge technology.</div>
+              <div className='tag' data-aos='fade-up'>We’re <span className='reinventing'>reinventing</span> offshore energy through sustainable, cutting-edge technology.</div>
               <div className='container-basic'>
                 <div className='description'>
                   <h1>GitHub</h1>

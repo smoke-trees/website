@@ -5,8 +5,15 @@ import LandingBanner from '../../Components/LandingBanner/LandingBanner'
 import ColumnContent from '../../Components/ColumnContent/ColumnContent'
 import team from '../../vectors/undraw_team_spirit_hrr4.svg'
 import ThemeContext from '../../theme'
+import 'aos/dist/aos.css'
 
 class About extends React.Component {
+  componentDidMount () {
+    import('aos').then(AosModule => {
+      AosModule.init()
+    })
+  }
+
   render () {
     return (
       <ThemeContext.Consumer>

@@ -2,8 +2,15 @@ import React from 'react'
 import './style.css'
 import contact from '../../vectors/undraw_terms_lso0.svg'
 import ThemeContext from '../../theme'
+import 'aos/dist/aos.css'
 
 class Contact extends React.Component {
+  componentDidMount () {
+    import('aos').then(AosModule => {
+      AosModule.init()
+    })
+  }
+
   render () {
     return (
       <ThemeContext.Consumer>
