@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import { Route } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
 import ThemeContext from '../../theme'
 
 class Header extends React.Component {
@@ -17,10 +17,10 @@ class Header extends React.Component {
     this.toggleTheme = () => {
       this.setState(state => {
         if (window.localStorage) {
-          window.localStorage.setItem('smoke-color', state.theme === 'dark' ? 'light' : 'light')
+          window.localStorage.setItem('smoke-color', state.theme === 'light' ? 'dark' : 'light')
         }
         return {
-          theme: state.theme === 'dark' ? 'light' : 'light'
+          theme: state.theme === 'dark' ? 'light' : 'dark'
         }
       })
     }
@@ -35,21 +35,21 @@ class Header extends React.Component {
     return (
       <div>
         <header className={navbarClassName}>
-          <a href='/' className='logo'><p>Smoketrees</p></a>
+          <Link to='/' className='logo'><p>SmokeTrees</p></Link>
           <input type='checkbox' id='nav-toggle' className='nav-toggle' />
           <nav>
             <ul>
               <li>
-                <a href='/about'>About</a>
+                <Link to='/about'>About</Link>
               </li>
               <li>
-                <a href='/projects'>Projects</a>
+                <Link to='/projects'>Projects</Link>
               </li>
               <li>
-                <a href='/team'>Team</a>
+                <Link to='/team'>Team</Link>
               </li>
               <li>
-                <a href='/contact'>Contact</a>
+                <Link to='/contact'>Contact</Link>
               </li>
             </ul>
           </nav>

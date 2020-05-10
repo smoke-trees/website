@@ -17,10 +17,10 @@ const TeamPage = function () {
     width: window.innerWidth
   })
 
-  useEffect((e) => {
+  useEffect(() => {
     function handleResize (e) {
-      if ((dimensions.width < 768 && e.target.innerWidth >= 768) ||
-      (dimensions.width >= 768 && e.target.innerWidth < 768)) {
+      if ((dimensions.width <= 800 && e.target.innerWidth > 800) ||
+      (dimensions.width > 800 && e.target.innerWidth <= 800)) {
         setDimensions({
           height: window.innerHeight,
           width: window.innerWidth
@@ -32,17 +32,16 @@ const TeamPage = function () {
   useEffect((e) => {
     if (!animated) {
       import('aos').then(AosModule => {
-        AosModule.init()
+        AosModule.init({ once: true })
       })
       updateStateAnimated(true)
-      console.log(animated)
     }
   }, [animated])
 
   const createDevCards = () => {
     const renderedCards = []
     for (let i = 0; i < members.length;) {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth > 800) {
         const member1 = members[i]
         const member2 = members[i + 1]
         const member3 = members[i + 2]
@@ -51,7 +50,7 @@ const TeamPage = function () {
         const member6 = members[i + 5]
         renderedCards.push(
           <div key={i}>
-            <div className='team-content' data-aos='fade-up' data-aos-duration='2000'>
+            <div className='team-content'>
               {member1 ? (
                 <Profile
                   className='profile1'
@@ -83,7 +82,7 @@ const TeamPage = function () {
                 />
               ) : (<div />)}
             </div>
-            <div className='team-content' data-aos='fade-up' data-aos-duration='2000'>
+            <div className='team-content'>
               {member4 ? (
                 <Profile
                   className='profile1'
@@ -123,7 +122,7 @@ const TeamPage = function () {
         const member2 = members[i + 1]
         renderedCards.push(
           <div key={i}>
-            <div className='team-content' data-aos='fade-up' data-aos-duration='2000'>
+            <div className='team-content'>
               {member1 ? (
                 <Profile
                   className='profile-single'
@@ -184,19 +183,20 @@ const TeamPage = function () {
     <ThemeContext.Consumer>
       {({ theme, toggleTheme }) => (
         <div className={theme === 'dark' ? 'team-page dark' : 'team-page'}>
-          <div className='container' data-aos='zoom-out-up' data-aos-duration='2000'>
-            <LandingBanner image={team} heading='Teams'>
-              {' '}
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-      cumque soluta commodi enim culpa cupiditate nemo sequi laboriosam,
-      consequuntur quae nisi porro. Mollitia, eius blanditiis delectus
-      possimus perspiciatis sit reiciendis!{' '}
+          <div className='container' data-aos='zoom-out-up' data-aos-duration='1000'>
+            <LandingBanner image={team} heading='Team'>
+The driving force behind SmokeTrees is the hard work and talent of its
+founding members dedicated to bringing the developers' community together.
+Each of them is extremely skilled in their own fortes and ensure top notch results.
             </LandingBanner>
             <Carousel
+              dragging={false}
+              data-aos='fade-up' data-aos-duration='1000'
+              enableKeyboardControls
               slideIndex={slideState}
               afterSlide={slideIndex => setSlideState(slideIndex)}
               className='team-carousel'
-              style={{ outline: 'none' }}
+              style={{ outline: 'none', cursor: 'normal' }}
               renderCenterLeftControls={leftArrow}
               renderCenterRightControls={rightArrow}
               defaultControlsConfig={{
