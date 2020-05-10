@@ -7,13 +7,16 @@ import Profile from '../../Components/Profile/Profile'
 import team from '../../vectors/undraw_forming_ideas_0pav.svg'
 import ThemeContext from '../../theme'
 import members from './team-content'
+import 'aos/dist/aos.css'
 
-const TeamPage = () => {
+const TeamPage = function () {
+  const [animated, updateStateAnimated] = useState(false)
   const [slideState, setSlideState] = useState(0)
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth
   })
+
   useEffect((e) => {
     function handleResize (e) {
       if ((dimensions.width < 768 && e.target.innerWidth >= 768) ||
@@ -26,6 +29,15 @@ const TeamPage = () => {
     }
     window.addEventListener('resize', handleResize)
   })
+  useEffect((e) => {
+    if (!animated) {
+      import('aos').then(AosModule => {
+        AosModule.init()
+      })
+      updateStateAnimated(true)
+      console.log(animated)
+    }
+  }, [animated])
 
   const createDevCards = () => {
     const renderedCards = []
@@ -39,7 +51,7 @@ const TeamPage = () => {
         const member6 = members[i + 5]
         renderedCards.push(
           <div key={i}>
-            <div className='team-content'>
+            <div className='team-content' data-aos='fade-up' data-aos-duration='2000'>
               {member1 ? (
                 <Profile
                   className='profile1'
@@ -71,7 +83,7 @@ const TeamPage = () => {
                 />
               ) : (<div />)}
             </div>
-            <div className='team-content'>
+            <div className='team-content' data-aos='fade-up' data-aos-duration='2000'>
               {member4 ? (
                 <Profile
                   className='profile1'
@@ -111,7 +123,7 @@ const TeamPage = () => {
         const member2 = members[i + 1]
         renderedCards.push(
           <div key={i}>
-            <div className='team-content'>
+            <div className='team-content' data-aos='fade-up' data-aos-duration='2000'>
               {member1 ? (
                 <Profile
                   className='profile-single'
@@ -172,7 +184,7 @@ const TeamPage = () => {
     <ThemeContext.Consumer>
       {({ theme, toggleTheme }) => (
         <div className={theme === 'dark' ? 'team-page dark' : 'team-page'}>
-          <div className='container'>
+          <div className='container' data-aos='zoom-out-up' data-aos-duration='2000'>
             <LandingBanner image={team} heading='Teams'>
               {' '}
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur

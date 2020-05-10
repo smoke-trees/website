@@ -2,8 +2,15 @@ import React from 'react'
 import './style.css'
 import contact from '../../vectors/undraw_terms_lso0.svg'
 import ThemeContext from '../../theme'
+import 'aos/dist/aos.css'
 
 class Contact extends React.Component {
+  componentDidMount () {
+    import('aos').then(AosModule => {
+      AosModule.init()
+    })
+  }
+
   render () {
     return (
       <ThemeContext.Consumer>
@@ -11,10 +18,10 @@ class Contact extends React.Component {
           <div className={theme === 'dark' ? 'contact-page dark' : 'contact-page'}>
             <div className='container'>
               <div className='content-page'>
-                <div className='image'>
+                <div className='image' data-aos='fade-up' data-aos-duration='2000'>
                   <img src={contact} alt='' />
                 </div>
-                <div className='text-content'>
+                <div className='text-content' data-aos='fade-left' data-aos-duration='2000'>
                   <div className='contact-content'>
                     <h3 className='office'>Office
                       {/* <span className='branch' >Branch</span> */}
