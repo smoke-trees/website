@@ -51,7 +51,7 @@ const TeamPage = function () {
         const member6 = members[i + 5]
         renderedCards.push(
           <div key={i}>
-            <div className='team-content'>
+            <div className='team-content' data-aos='fade-up' data-aos-duration='2000'>
               {member1 ? (
                 <Profile
                   className='profile1'
@@ -83,7 +83,7 @@ const TeamPage = function () {
                 />
               ) : (<div />)}
             </div>
-            <div className='team-content'>
+            <div className='team-content' data-aos='fade-up' data-aos-duration='2000'>
               {member4 ? (
                 <Profile
                   className='profile1'
@@ -123,7 +123,7 @@ const TeamPage = function () {
         const member2 = members[i + 1]
         renderedCards.push(
           <div key={i}>
-            <div className='team-content'>
+            <div className='team-content' data-aos='fade-up' data-aos-duration='2000'>
               {member1 ? (
                 <Profile
                   className='profile-single'
@@ -184,7 +184,7 @@ const TeamPage = function () {
     <ThemeContext.Consumer>
       {({ theme, toggleTheme }) => (
         <div className={theme === 'dark' ? 'team-page dark' : 'team-page'}>
-          <div className='container'>
+          <div className='container' data-aos='zoom-out-up' data-aos-duration='2000'>
             <LandingBanner image={team} heading='Teams'>
               {' '}
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur

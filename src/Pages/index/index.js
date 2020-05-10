@@ -14,7 +14,9 @@ class IndexPage extends React.Component {
       const Typed = TypedModule.default
       const typed = new Typed('#typed', {
         stringsElement: '#head-description',
-        typeSpeed: 30
+        typeSpeed: 40,
+        loop: true,
+        backSpeed: 30
       })
       return typed
     })
@@ -30,7 +32,7 @@ class IndexPage extends React.Component {
           <div className={theme === 'light' ? 'index-page' : 'index-page dark'}>
             <div className='container'>
               <div className='landing'>
-                <div className='smoketrees'>
+                <div className='smoketrees' data-aos='flip-right' data-aos-duration='2500'>
                   <img alt='' src={logo} style={{ cursor: 'pointer' }} onClick={toggleTheme} />
                 </div>
                 <div className='head ' id='head-description'>
@@ -41,9 +43,9 @@ class IndexPage extends React.Component {
                 </div>
                 <span id='typed' />
               </div>
-              <div className='tag' data-aos='fade-up'>We’re <span className='reinventing'>reinventing</span> offshore energy through sustainable, cutting-edge technology.</div>
+              <div className='tag' data-aos='fade-up' data-aos-duration='1500'>We’re <span className='reinventing'>reinventing</span> offshore energy through sustainable, cutting-edge technology.</div>
               <div className='container-basic'>
-                <div className='description'>
+                <div className='description' data-aos='fade-right' data-aos-duration='1500'>
                   <h1>GitHub</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vitae malesuada bibendum quam aliquam. At dolor, sit eget commodo neque, accumsan nec volutpat. Sit posuere non mi duis id. </p>
                   <div className='btn'>
@@ -55,15 +57,15 @@ class IndexPage extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className='logo-svg'>
+                <div className='logo-svg' data-aos='fade-up' data-aos-duration='1500'>
                   <img alt='' src={versionControl} />
                 </div>
               </div>
               <div className='container-basic'>
-                <div className='logo-svg'>
+                <div className='logo-svg' data-aos='fade-up' data-aos-duration='1500'>
                   <img alt='' src={designFeedback} />
                 </div>
-                <div className='description alter'>
+                <div className='description alter' data-aos='fade-left' data-aos-duration='1500'>
                   <div>
                     <h1>Main Projects</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vitae malesuada bibendum quam aliquam. At dolor, sit eget commodo neque, accumsan nec volutpat. Sit posuere non mi duis id. </p>
@@ -78,7 +80,7 @@ class IndexPage extends React.Component {
                 </div>
               </div>
               <div className='container-basic'>
-                <div className='description'>
+                <div className='description' data-aos='fade-right' data-aos-duration='1500'>
                   <h1>Clients</h1>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vitae malesuada bibendum quam aliquam. At dolor, sit eget commodo neque, accumsan nec volutpat. Sit posuere non mi duis id. </p>
                   <p
@@ -92,15 +94,15 @@ class IndexPage extends React.Component {
                   >-Name
                   </p>
                 </div>
-                <div className='logo-svg'>
+                <div className='logo-svg' data-aos='fade-up' data-aos-duration='1500'>
                   <img alt='' src={realTime} />
                 </div>
               </div>
               <div className='container-basic'>
-                <div className='logo-svg'>
+                <div className='logo-svg' data-aos='fade-up' data-aos-duration='1500'>
                   <img alt='' src={designFeedback} />
                 </div>
-                <div className='description alter'>
+                <div className='description alter' data-aos='fade-left' data-aos-duration='1500'>
                   <div>
                     <h1>Main Projects</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vitae malesuada bibendum quam aliquam. At dolor, sit eget commodo neque, accumsan nec volutpat. Sit posuere non mi duis id. </p>
