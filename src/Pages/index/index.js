@@ -106,7 +106,7 @@ PS: This website you're viewing? You can check out it's code on our github too!
               <div className='description' data-aos='fade-right' data-aos-duration='1500'>
                 <h1>Clients</h1>
                 <p>KiVi Infotech is really pleased with the work delivered by SmokeTrees.
-Regular updates on GitHub for code development using Flutter platform made my work lot easier
+Regular updates on GitHub for code development using Flutter platform made my work lot easier.
                 </p>
                 <p
                   style={{

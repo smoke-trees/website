@@ -119,13 +119,43 @@ Having worked with website design for the better part of 3 years,
 }, {
   name: 'Yash Kumar Verma',
   devs: 'WEB',
-  description: `
-  Yash is a GCI Finalist, 
-  open-source enthusiast, 
-  and a fluent backend developer, with expertise in Typescript, NodeJS, and PHP. 
-  He's passionate about cloud, automation, CI, and pipelines. MongoDB and MySQL are his choices 
-  for databases, and on odd days, he does ReactJS and cli scripting.
-  `,
+  description: 'Yash is a GCI Finalist, open-source enthusiast, and a fluent backend developer, with expertise in Typescript, NodeJS, and PHP. He\'s passionate about cloud, automation, CI, and pipelines. MongoDB and MySQL are his choices for databases, and on odd days, he does ReactJS and cli scripting.',
   github: 'https://github.com/yashkumarverma/',
   linkedin: 'https://www.linkedin.com/in/yash-kumar-verma/'
+}, {
+  name: 'Pushkal Dwivedi',
+  devs: 'ML/AI',
+  description: 'Yash is a GCI Finalist, open-source enthusiast, and a fluent backend developer, with expertise in Typescript, NodeJS, and PHP. He\'s passionate about cloud, automation, CI, and pipelines. MongoDB and MySQL are his choices for databases, and on odd days, he does ReactJS and cli scripting.',
+  github: 'https://github.com/CaptainRogers7',
+  linkedin: 'https://www.linkedin.com/in/pushkal-dwivedi-cr7/'
+}, {
+  name: 'Prakhar Mehta',
+  devs: 'WEB',
+  description: 'A determined, commited, disciplined guy. Aiming to be a Full - stack web developer. Have been an astrophile since childhood. Passionate about sketching and space.',
+  github: 'http://github.com/prakharmehta',
+  linkedin: 'http://linkedin.com/in/prakhar-mehta-983494180'
+}, {
+  name: 'Ritik Gupta',
+  devs: 'WEB',
+  description: 'Ritik Gupta is a passionate developer with decent experience in backend web development,he has worked with several cutting edge technologies in various projects and has also led the teams in various hackathons and has emerged victorious.He is also a competitive coder and prefers practicing the same on platforms such as codeforces and codechef.He believes in the thought that limitation is only one\'s imagination and one can achieve anything with constant hardwork.',
+  github: 'https://github.com/ritikgupt',
+  linkedin: 'https://www.linkedin.com/in/ritik-gupta-494738178/'
+}, {
+  name: 'Adarsh Singh',
+  devs: 'WEB',
+  description: 'Adarsh is one of the most dedicated people we\'ve worked with. He is really passionate about web-development. He is a wanderer and loves to explore and gain knowledge.',
+  linkedin: 'https://www.linkedin.com/in/adarshsingh87/',
+  github: 'https://github.com/adarshsingh87'
+}, {
+  name: 'Rohan Arora',
+  devs: 'DESIGN',
+  description: 'Rohan has excellent eye for design and having a technical base makes him a suitable for tech-based product designer. He is a valuable addition to SmokeTrees team. He is here to give your idea a beautiful image',
+  linkedin: 'https://www.linkedin.com/rohanxdesign',
+  drible: 'https://www.dribbble.com/rohanxdesign'
+}, {
+  name: 'Hemanth Krishna',
+  devs: 'APP DEV',
+  description: 'Hemanth is an experienced Android ROM and App Developer. Having developed many Android Apps on Java and Kotlin with latest features and clean codebase, his apps aim to solve day-to-day problems to make one’s life easier. He thrives to implement latest architecture and components and is focused on delivering quality work in stipulated time. ',
+  linkedin: 'https://www.linkedin.com/in/darthbenro008/',
+  github: ' https://github.com/DarthBenro008'
 }]

@@ -24,7 +24,32 @@ class Header extends React.Component {
         }
       })
     }
-    this.state = { theme: storeTheme, toggleTheme: this.toggleTheme }
+    this.state = { theme: storeTheme, toggleTheme: this.toggleTheme, navbar: false }
+    this.handleNavClick = (e) => {
+      this.setState({ navbar: !this.state.navbar })
+    }
+  }
+
+  componentDidMount () {
+    if (document.querySelector('.dark')) {
+      console.log(1)
+      document.body.style.background = '#121212'
+    } else {
+      console.log(2)
+      document.body.style.background = '#ffffff'
+    }
+    const toggle = document.querySelector('#nav-toggle')
+    toggle.addEventListener('focusout', (e) => { this.setState({ navbar: false }) })
+  }
+
+  componentDidUpdate () {
+    if (document.querySelector('.dark')) {
+      console.log(1)
+      document.body.style.background = '#121212'
+    } else {
+      console.log(2)
+      document.body.style.background = '#ffffff'
+    }
   }
 
   render () {
@@ -36,7 +61,7 @@ class Header extends React.Component {
       <div>
         <header className={navbarClassName}>
           <Link to='/' className='logo'><p>SmokeTrees</p></Link>
-          <input type='checkbox' id='nav-toggle' className='nav-toggle' />
+          <input type='checkbox' id='nav-toggle' onChange={this.handleNavClick} checked={this.state.navbar} className='nav-toggle' />
           <nav>
             <ul>
               <li>

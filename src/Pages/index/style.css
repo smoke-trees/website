@@ -10,7 +10,7 @@
     left: 0;
     position: absolute;
     width: 100%;
-    height: intrinsic;
+    height: 120%;
     height: -moz-max-content;
     height: -webkit-max-content;
 }

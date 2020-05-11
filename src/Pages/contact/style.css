@@ -78,20 +78,21 @@
 	}
 	.contact-content {
 		display: flex;
+		width: 80%;
+		text-align: center;
 		flex-direction: column;
 		align-content: center;
 		justify-content: center;
 	}
 	.contact-content p {
-		width: 45%;
-		text-align: left;
+		width: 100%;
+		text-align: center;
 	}
 	.image {
 		display: none;
 	}
 }
 
-.content-page {}
 
 .dark.contact-page {
 	background-color: var(--dark-bg-color);

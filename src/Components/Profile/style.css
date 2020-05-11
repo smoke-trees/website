@@ -30,6 +30,11 @@
 	margin-top: -150px;
 }
 
+.drible-logo{
+	width:32px;
+	height: 32px;
+}
+
 @media (max-width: 800px) {
 	/*breakpoint*/
 	.profile {

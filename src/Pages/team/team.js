@@ -59,6 +59,7 @@ const TeamPage = function () {
                   children={member1.description}
                   github={member1.github}
                   linkedin={member1.linkedin}
+                  drible={member1.drible}
                 />
               ) : (<div />)}
               {member2 ? (
@@ -69,6 +70,7 @@ const TeamPage = function () {
                   children={member2.description}
                   github={member2.github}
                   linkedin={member2.linkedin}
+                  drible={member2.drible}
                 />
               ) : (<div />)}
               {member3 ? (
@@ -79,6 +81,7 @@ const TeamPage = function () {
                   children={member3.description}
                   github={member3.github}
                   linkedin={member3.linkedin}
+                  drible={member3.drible}
                 />
               ) : (<div />)}
             </div>
@@ -91,6 +94,7 @@ const TeamPage = function () {
                   children={member4.description}
                   github={member4.github}
                   linkedin={member4.linkedin}
+                  drible={member4.drible}
                 />
               ) : (<div />)}
               {member5 ? (
@@ -101,6 +105,7 @@ const TeamPage = function () {
                   children={member5.description}
                   github={member5.github}
                   linkedin={member5.linkedin}
+                  drible={member5.drible}
                 />
               ) : (<div />)}
               {member6 ? (
@@ -111,6 +116,7 @@ const TeamPage = function () {
                   children={member6.description}
                   github={member6.github}
                   linkedin={member6.linkedin}
+                  drible={member6.drible}
                 />
               ) : (<div />)}
             </div>
@@ -131,6 +137,7 @@ const TeamPage = function () {
                   children={member1.description}
                   github={member1.github}
                   linkedin={member1.linkedin}
+                  drible={member1.drible}
                 />
               ) : (<div />)}
               {member2 ? (
@@ -141,6 +148,7 @@ const TeamPage = function () {
                   children={member2.description}
                   github={member2.github}
                   linkedin={member2.linkedin}
+                  drible={member2.drible}
                 />
               ) : (<div />)}
             </div>

@@ -42,7 +42,10 @@ class About extends React.Component {
                   With mobile solutions becoming increasingly vital to business success, we help you realise your dreams and bring it to the palm of your hand.
                   Our team consists of top mobile app developers who are well known to craft the most innovative & eye catchy pocket sized softwares. Our products are engineered to bring growth to your business and we believe in delivering the services without compromising on time and quality.
                 </ColumnContent>
-                <ColumnContent heading='Web Development' />
+                <ColumnContent heading='Web Development'>
+                  Implementation beats oration. We are a team of dedicated Devs and DevOps who believe in these words. We deliver on every front, and don't hesitate to deliver the very best.
+We make sure that your new website has the most beautiful front-end and a tried and tested backend, with a code that is ready for deployment.
+                </ColumnContent>
               </div>
             </div>
             <Footer />

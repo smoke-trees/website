@@ -21,7 +21,7 @@ class Footer extends React.Component {
               </div>
             </div>
             <div className='second-card'>
-              <p>Lorem ipsumidolor sit amet consectetur adipisicing elit. Molestias, laborum est. Nesciunt eligendi dignissimos veritatis at asperiores magnam ipsa! Quos impedit consequatur temporibus recusandae consequuntur iure illo expedita architecto voluptatum.</p>
+              <p>Made with <span role='img'>❤️</span> by SmokeTrees Devs</p>
             </div>
           </div>
         )}

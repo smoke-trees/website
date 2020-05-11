@@ -23,14 +23,12 @@ class Contact extends React.Component {
                 </div>
                 <div className='text-content' data-aos='fade-left' data-aos-duration='1000'>
                   <div className='contact-content'>
-                    <h3 className='office'>Office
+                    <h3 className='office'>
                       {/* <span className='branch' >Branch</span> */}
                     </h3>
-                    <hr />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quasi.</p>
-                    <hr />
-                    <h3>+91XXXXXXXXXX</h3>
-                    <h3>email@gmail.com</h3>
+                    {/* <hr /> */}
+                    <p>For more inforamtion or queries please contact us at:</p>
+                    <h3>smoketreesofficial@gmail.com</h3>
                   </div>
                 </div>
               </div>
