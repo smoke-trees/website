@@ -62,7 +62,7 @@ SV2TTS is a three-stage deep learning framework that allows to create a numerica
                 </ColumnContent>
               </div>
             </div>
-            <Footer />
+            <Footer style={{ marginTop: '200px' }} />
           </div>
         )}
       </ThemeContext.Consumer>

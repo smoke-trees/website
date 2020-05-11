@@ -274,3 +274,7 @@
 .dark.index-page .btn {
     background: var(--dark-secondary);
 }
+
+.dark.index-page .client-name{
+    color: var(--dark-primary);
+}
