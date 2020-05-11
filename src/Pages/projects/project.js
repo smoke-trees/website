@@ -10,6 +10,7 @@ import aos from 'aos'
 
 class ProjectPage extends React.Component {
   componentDidMount () {
+    window.scrollTo(0, 0)
     aos.init({ once: true })
   }
 

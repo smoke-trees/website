@@ -16,8 +16,13 @@ const TeamPage = function () {
     height: window.innerHeight,
     width: window.innerWidth
   })
+  const [didMount, setDidMount] = useState(false)
 
   useEffect(() => {
+    if (!didMount) {
+      window.scroll(0, 0)
+      setDidMount(true)
+    }
     function handleResize (e) {
       if ((dimensions.width <= 800 && e.target.innerWidth > 800) ||
       (dimensions.width > 800 && e.target.innerWidth <= 800)) {

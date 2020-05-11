@@ -20,7 +20,7 @@
 }
 
 .content p{
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 300;
 }
 
@@ -43,6 +43,10 @@
 	.about-content {
         width: 100%;
 		flex-direction: column;
+	}
+
+	.what-we-do{
+		text-align: center;
 	}
 }
 

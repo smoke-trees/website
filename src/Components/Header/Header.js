@@ -49,6 +49,14 @@ class Header extends React.Component {
     }
   }
 
+  // handleOnClick () {
+  //   $(document).ready( function () {
+  //     $('.uncheck').click(function(){
+  //         $('#myCheck').prop('checked', false);
+  //     })
+  // });
+  // }
+
   render () {
     let navbarClassName = 'navbar-container'
     if (this.state.theme === 'dark') {
@@ -66,7 +74,7 @@ class Header extends React.Component {
           <nav>
             <ul>
               <li>
-                <Link to='/about'>About</Link>
+                <Link to='/about' onClick={this.handleOnClick}>About</Link>
               </li>
               <li>
                 <Link to='/projects'>Projects</Link>

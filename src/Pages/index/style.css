@@ -148,7 +148,7 @@
 
 .description p {
     margin: 0;
-    font-size: 24px;
+    font-size: 20px;
     width: 80%;
     margin-bottom: 20px;
     font-weight: 300;
@@ -244,6 +244,10 @@
         box-sizing: border-box;
         height: 205px;
         top:0;
+    }
+
+    .client{
+        margin-bottom: 50px;
     }
 }
 

@@ -6,6 +6,7 @@ import 'aos/dist/aos.css'
 
 class Contact extends React.Component {
   componentDidMount () {
+    window.scrollTo(0, 0)
     import('aos').then(AosModule => {
       AosModule.init({ once: true })
     })

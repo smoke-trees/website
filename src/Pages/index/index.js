@@ -10,6 +10,7 @@ import 'aos/dist/aos.css'
 import { Link } from 'react-router-dom'
 
 const IndexPage = () => {
+  window.scrollTo(0, 0)
   const [dimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth
@@ -61,11 +62,11 @@ const IndexPage = () => {
             </div>
             <div className='tag' data-aos='fade-up' data-aos-duration='1500'>We <span className='build'>build</span> what you <span className='build'>ideate</span>.</div>
             <div className='container-basic'>
-              <div className='description' data-aos='fade-right' data-aos-duration='1500'>
+              <div className='description' data-aos='fade-up' data-aos-duration='1500'>
                 <h1>GitHub</h1>
-                <p>Check out our project implementations here, we believe that our projects are robust and should be scrutinized by everyone so that they can see for themselves our raw work.
+                <p>Check out our project implementations here, that we believe are robust, and should be scrutinized by everyone so that they can see for themselves our raw work.
                   <br />
-PS: This website you're viewing? You can check out it's code on our github too!
+                  PS: This website you're viewing? You can check out it's code on our github too!
                 </p>
                 <a href='https://github.com/smoke-trees' target='_blank' rel='noopener noreferrer'>
                   <div className='btn'>
@@ -86,7 +87,7 @@ PS: This website you're viewing? You can check out it's code on our github too!
               <div className='logo-svg' data-aos='fade-up' data-aos-duration='1500'>
                 <img alt='' src={designFeedback} />
               </div>
-              <div className='description alter' data-aos='fade-left' data-aos-duration='1500'>
+              <div className='description alter' data-aos='fade-up' data-aos-duration='1500'>
                 <div className='alter-extra-div'>
                   <h1>Our Projects</h1>
                   <p>CESS: Comprehensive Electoral Solutions Suite - an elections suite software which merges RFID and fingerprint recognition with extra layers of security which checks emotion when you vote while securing your transaction via a smart ethereum contract.</p>
@@ -102,8 +103,8 @@ PS: This website you're viewing? You can check out it's code on our github too!
                 </Link>
               </div>
             </div>
-            <div className='container-basic'>
-              <div className='description' data-aos='fade-right' data-aos-duration='1500'>
+            <div className='container-basic client'>
+              <div className='description' data-aos='fade-up' data-aos-duration='1500'>
                 <h1>Clients</h1>
                 <p>KiVi Infotech is really pleased with the work delivered by SmokeTrees.
 Regular updates on GitHub for code development using Flutter platform made my work lot easier.

@@ -9,6 +9,7 @@ import 'aos/dist/aos.css'
 
 class About extends React.Component {
   componentDidMount () {
+    window.scrollTo(0, 0)
     import('aos').then(AosModule => {
       AosModule.init({ once: true })
     })
@@ -25,8 +26,8 @@ class About extends React.Component {
                  platform to create the ultimate community of coders, who are dedicated to serving the world.
                   We provide top-class services, in the friendliest manner, keen on delivering what you ideate.
               </LandingBanner>
-              <h1 className='what-we-do' data-aos='fade-down' data-aos-duration='1000'>What we do ?</h1>
-              <div className='about-content' data-aos='zoom-out-up' data-aos-duration='1000'>
+              <h1 className='what-we-do' data-aos='fade-up' data-aos-duration='1000'>What we do ?</h1>
+              <div className='about-content' data-aos='fade-up' data-aos-duration='1000'>
                 <ColumnContent heading='Artificial Intelligence'>
                AI or Artificial Intelligence
                is being used in modern society
