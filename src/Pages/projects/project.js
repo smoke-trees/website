@@ -51,14 +51,17 @@ A novel way to predict the optimal paths between two points and forsee future GP
                   and also supported by an energy credit system. All running as microservices supporting each other.
                 </ColumnContent>
                 <ColumnContent heading='Voice Synthesis' link='https://github.com/smoke-trees/Voice-synthesis'>
-                  An autonomous vehicle solution for people who are physically challenged,
-                  calibrates limb angle to drive steering wheel and operate pedals.
-                </ColumnContent>
-                <ColumnContent className='column3' heading='Gesture Drive' link='https://github.com/smoke-trees/gesture-drive'>
 An implementation of Transfer Learning from Speaker Verification to Multispeaker
 Text-To-Speech Synthesis (SV2TTS) with a vocoder that works in real-time.
 SV2TTS is a three-stage deep learning framework that allows to create a numerical
  representation of a voice from a few seconds of audio, and to use it to condition text-to speech synthesis.
+
+                </ColumnContent>
+                <ColumnContent className='column3' heading='Gesture Drive' link='https://github.com/smoke-trees/gesture-drive'>
+
+                  An autonomous vehicle solution for people who are physically challenged,
+                  calibrates limb angle to drive steering wheel and operate pedals.
+
                 </ColumnContent>
               </div>
             </div>

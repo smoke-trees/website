@@ -27,7 +27,7 @@ class Contact extends React.Component {
                       {/* <span className='branch' >Branch</span> */}
                     </h3>
                     {/* <hr /> */}
-                    <p>For more inforamtion or queries please contact us at:</p>
+                    <p>For more information or queries please contact us at:</p>
                     <h3>smoketreesofficial@gmail.com</h3>
                   </div>
                 </div>
