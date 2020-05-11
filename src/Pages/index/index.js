@@ -54,7 +54,7 @@ class IndexPage extends React.Component {
                 We <span className='reinventing'>build</span> what you{' '}
                 <span className='reinventing'>ideate</span>
               </div>
-              <div className='container-basic'>
+              <div className='container-basic' data-aos='fade-up'>
                 <div className='description'>
                   <h1>GitHub</h1>
                   <p>
@@ -64,18 +64,23 @@ class IndexPage extends React.Component {
                     PS: This website you're viewing? You can check out it's code
                     on our github too!
                   </p>
-                  <div className='btn'>
+                  <a
+                    href='https://github.com/smoke-trees'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='btn'
+                  >
                     <div className='elements'>
                       <img className='index-github-logo' src={github} alt='' />
                       <div className='git'>GitHub</div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div className='logo-svg'>
                   <img alt='' src={versionControl} />
                 </div>
               </div>
-              <div className='container-basic'>
+              <div className='container-basic' data-aos='fade-up'>
                 <div className='logo-svg'>
                   <img alt='' src={designFeedback} />
                 </div>
@@ -90,14 +95,14 @@ class IndexPage extends React.Component {
                       a smart ethereum contract.
                     </p>
                   </div>
-                  <div className='btn'>
+                  <a href='/projects' className='btn'>
                     <div className='elements'>
-                      <div className='git'>Know More</div>
+                      <div>Know More</div>
                     </div>
-                  </div>
+                  </a>
                 </div>
               </div>
-              <div className='container-basic'>
+              <div className='container-basic' data-aos='fade-up'>
                 <div className='description'>
                   <h1>Clients</h1>
                   <p>
@@ -122,11 +127,7 @@ class IndexPage extends React.Component {
                   <img alt='' src={realTime} />
                 </div>
               </div>
-              <div className='container-basic'>
-                <div className='logo-svg'>
-                  <img alt='' src={designFeedback} />
-                </div>
-              </div>
+              <div className='spacer'></div>
             </div>
           </div>
         )}
