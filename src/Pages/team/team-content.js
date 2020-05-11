@@ -125,7 +125,7 @@ Having worked with website design for the better part of 3 years,
 }, {
   name: 'Pushkal Dwivedi',
   devs: 'ML/AI',
-  description: 'Yash is a GCI Finalist, open-source enthusiast, and a fluent backend developer, with expertise in Typescript, NodeJS, and PHP. He\'s passionate about cloud, automation, CI, and pipelines. MongoDB and MySQL are his choices for databases, and on odd days, he does ReactJS and cli scripting.',
+  description: 'Pushkal is currently working in the field of Deep Learning  . Most of his works are based on Computer Vision. One of the major projects that he has been a part of , is analysis and classification of time series data collected from sensors, while working  as a research intern at TCS Innovation Labs. Apart from this , he also works on optimizing ML models and deploying them in web applications.',
   github: 'https://github.com/CaptainRogers7',
   linkedin: 'https://www.linkedin.com/in/pushkal-dwivedi-cr7/'
 }, {
