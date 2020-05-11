@@ -1,6 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,400,500,600,700&display=swap');
-body, html {
-  font-family: 'Josefin Sans', sans-serif;
+@font-face {
+  font-family: circularSpotify;
+  src: url('./Fonts/CircularSpotifyBook.ttf');
+}
+
+body,
+html {
+  font-family: circularSpotify, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
@@ -9,8 +14,10 @@ body, html {
   overflow-x: hidden;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+  font-weight: 100;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }

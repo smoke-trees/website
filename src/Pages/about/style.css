@@ -1,57 +1,56 @@
 .about-page {
-	left: 0;
-	position: absolute;
-	top: 64px;
-	width: 100%;
-	font: Roboto;
+  left: 0;
+  position: absolute;
+  top: 64px;
+  width: 100%;
+  font: Roboto;
 }
 
 .container {
-	width: 75%;
-	height: auto;
-	position: relative;
-	margin: auto;
+  width: 75%;
+  height: auto;
+  position: relative;
+  margin: auto;
 }
 
 .container h1 {
-	color: #21409a;
-	font-size: 40px;
-	font-weight: bolder;
+  color: #21409a;
+  font-size: 40px;
 }
 
-.content p{
-	font-size: 24px;
-	font-weight: 300;
+.content p {
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .about-content {
-	width: 100%;
-	display: flex;
+  width: 100%;
+  display: flex;
 }
 
-.column p{
-	font-size: 20px;
-	font-weight: 300;
+.column p {
+  font-size: 20px;
+  font-weight: 300;
 }
 
 @media (max-width: 800px) {
-	/*breakpoint*/
-	.container {
-        flex-direction: column;
-        width: 95%;
-	}
-	.about-content {
-        width: 100%;
-		flex-direction: column;
-	}
+  /*breakpoint*/
+  .container {
+    flex-direction: column;
+    width: 95%;
+  }
+  .about-content {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 
-.dark.about-page{
-	background: var(--dark-bg-color);
-	color:white;
+.dark.about-page {
+  background: var(--dark-bg-color);
+  color: white;
 }
 
 .dark.about-page .content h1,
-.dark.about-page .what-we-do{
-	color:var(--dark-secondary)
+.dark.about-page .what-we-do {
+  color: var(--dark-secondary);
 }

@@ -90,7 +90,6 @@
 
 .smoketrees img {
   max-width: 100%;
-  height: 100%;
 }
 
 .tag {
@@ -136,7 +135,7 @@
   color: #21409a;
   margin: 0;
   margin-bottom: 40px;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .description p {
@@ -182,22 +181,27 @@
     flex-direction: column;
     width: 95%;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0 auto;
+    min-height: 100vh;
   }
   #typed {
     text-align: center;
     padding-top: 0rem;
-    height: 13rem;
+    font-size: 2.5rem;
+    margin: auto auto;
   }
   .tag {
     margin-top: 6rem;
   }
   .smoketrees {
+    padding-top: 5rem;
     width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
+  }
+  .smoketrees img {
   }
   .head {
     width: 100%;
@@ -214,10 +218,14 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    margin: 0 1rem;
+  }
+  .description h1 {
+    margin-bottom: 1rem;
   }
   .description p {
     width: 95%;
-    text-align: justify;
+    text-align: center;
   }
   .alter {
     text-align: center;
