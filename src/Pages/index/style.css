@@ -189,7 +189,6 @@
   /*breakpoint*/
   .landing {
     flex-direction: column;
-    width: 95%;
     align-content: center;
     justify-content: flex-start;
     margin: 0 auto;
@@ -198,11 +197,12 @@
   #typed {
     text-align: center;
     padding-top: 0rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: auto auto;
   }
   .tag {
     margin-top: 6rem;
+    font-size: 2rem;
   }
   .smoketrees {
     padding-top: 5rem;
@@ -228,17 +228,27 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    margin: 0 1rem;
   }
   .description h1 {
     margin-bottom: 1rem;
+    font-size: 2.5rem !important;
   }
   .description p {
     width: 95%;
     text-align: center;
+    font-size: 1.2rem;
   }
   .alter {
     text-align: center;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+  .git {
+    margin-top: 5px;
+  }
+  .more {
+    margin-top: 5px;
   }
 }
 .client {
@@ -250,6 +260,7 @@
   text-decoration: none;
   color: black;
   margin-left: auto;
+  font-weight: bold;
 }
 
 .dark.index-page {

@@ -97,7 +97,7 @@ class IndexPage extends React.Component {
                   </div>
                   <a href='/projects' className='btn'>
                     <div className='elements'>
-                      <div>Know More</div>
+                      <div className='more'>Know More</div>
                     </div>
                   </a>
                 </div>
@@ -116,7 +116,7 @@ class IndexPage extends React.Component {
                     rel='noopener noreferrer'
                     className='client'
                   >
-                    -Vishal Dhagat, KiVi Infotech
+                    Vishal Dhagat, KiVi Infotech
                   </a>
                 </div>
                 <div className='logo-svg'>
