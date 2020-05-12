@@ -57,7 +57,7 @@ const IndexPage = () => {
                 data-aos-duration={window.innerWidth < 800 ? { animationSpeed } : ''}
                 id='head-description'
               >
-                <p><span>We are a <span className='digital'>digital agency</span> <br />based on <span className='technology'>technology</span></span></p>
+                <p><span>We are a <span className='digital'>digital agency</span> <br />backed by <span className='technology'>technology</span></span></p>
                 {/* <div className='btn'>
                                 Explore
                             </div> */}
@@ -73,7 +73,7 @@ const IndexPage = () => {
                 <h1>GitHub</h1>
                 <p>Check out our project implementations here, that we believe are robust, and should be scrutinized by everyone so that they can see for themselves our raw work.
                   <br />
-                  PS: This website you're viewing? You can check out it's code on our github too!
+                  PS: This website you're viewing? You can check out it's code on our GitHub too!
                 </p>
                 <a href='https://github.com/smoke-trees' target='_blank' rel='noopener noreferrer'>
                   <div className='btn'>
@@ -126,7 +126,7 @@ const IndexPage = () => {
               >
                 <h1>Clients</h1>
                 <p>KiVi Infotech is really pleased with the work delivered by SmokeTrees.
-Regular updates on GitHub for code development using Flutter platform made my work lot easier.
+Regular milestone updates on GitHub and development using the Flutter framework have made my work lot easier.
                 </p>
                 <p
                   style={{

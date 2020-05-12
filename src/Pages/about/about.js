@@ -24,7 +24,7 @@ class About extends React.Component {
               <LandingBanner image={team} heading='About Us' animationSpeed={animationSpeed}>
                  SmokeTrees was born from an idea to bring the best developers out there onto a single
                  platform to create the ultimate community of coders, who are dedicated to serving the world.
-                  We provide top-class services, in the friendliest manner, keen on delivering what you ideate.
+                  We provide top-class services, in the friendliest manner, maintaining the highest programming standards.
               </LandingBanner>
               <h1 className='what-we-do' data-aos='fade-up' data-aos-duration={animationSpeed}>What we do ?</h1>
               <div className='about-content' data-aos='fade-up' data-aos-duration={animationSpeed}>

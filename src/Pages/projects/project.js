@@ -34,7 +34,7 @@ class ProjectPage extends React.Component {
                   number='' heading='PATH PREDICTION'
                   animationSpeed={animationSpeed} link='https://github.com/smoke-trees/path-prediction'
                 >
-A novel way to predict the optimal paths between two points and forsee future GPS data by studying old data using AI.
+A novel way to predict the optimal paths between two points and foresee future GPS data by studying old data using AI.
                 </ColumnContent>
                 <ColumnContent animationSpeed={animationSpeed} className='column2' heading='UPROAR' link='https://github.com/smoke-trees/uproar'>
                   An application for accumulating all disaster updates in one forum,
