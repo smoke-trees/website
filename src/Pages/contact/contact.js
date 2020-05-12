@@ -28,7 +28,7 @@ class Contact extends React.Component {
                     <hr />
                     <p>For more information or queries please contact us at</p>
                     <a
-                      href='mailto:nowhere@mozilla.org'
+                      href='mailto:smoketreesofficial@gmail.com'
                       target='_blank'
                       rel='noopener noreferrer'
                     >
