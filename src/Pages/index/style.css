@@ -204,12 +204,19 @@
 }
 
 @media (max-width: 800px) {
-  /*breakpoint*/
+  /* breakpoint */
   .landing {
     flex-direction: column;
+    height: 100vh;
     width: 95%;
+    margin: 0 auto;
+    padding-top: 4rem;
     align-content: center;
     justify-content: center;
+  }
+  .tag {
+    margin-top: 0;
+    font-size: 2rem;
   }
   .smoketrees {
     width: 100%;
@@ -234,8 +241,12 @@
     justify-items: center;
   }
   .description p {
-    width: 95%;
+    width: 90%;
     text-align: justify;
+    font-size: 1.2rem;
+  }
+  .description h1 {
+    margin-bottom: 1rem;
   }
   .alter {
     text-align: center;
@@ -255,9 +266,17 @@
     height: 205px;
     top: 0;
   }
-
+  .head p {
+    font-size: 2rem;
+  }
   .client {
     margin-bottom: 50px;
+  }
+  a.client-name {
+    font-size: 1.2rem;
+  }
+  .btn {
+    font-size: 1.2rem;
   }
 }
 
