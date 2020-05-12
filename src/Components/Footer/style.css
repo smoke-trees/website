@@ -101,13 +101,14 @@
   .footer {
     width: auto;
     bottom: 0;
+    font-size: 1.2rem;
   }
   .footer h1 {
     vertical-align: middle;
   }
   .first-card {
-    width: 100%;
     text-align: center;
+    width: 100%;
   }
   .second-card {
     width: 100%;

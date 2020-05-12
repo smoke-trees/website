@@ -38,7 +38,7 @@
   /*breakpoint*/
   .container {
     flex-direction: column;
-    width: 95%;
+    width: 85% !important;
   }
   .about-content {
     width: 100%;
@@ -51,6 +51,15 @@
 
   .about-content {
     margin-bottom: 35px;
+    font-size: 1.2rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1.2rem;
   }
 }
 
