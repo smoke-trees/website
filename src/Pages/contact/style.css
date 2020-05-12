@@ -54,6 +54,13 @@
   padding-left: 40px;
 }
 
+.contact-content a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 @media (max-width: 800px) {
   /*breakpoint*/
   .contact-content-container {
@@ -104,9 +111,12 @@
     justify-items: center;
     justify-content: center;
   }
-
   .contact-content {
     width: 100%;
+  }
+  .contact-content p {
+    margin-bottom: 0;
+    font-size: 1.2rem;
   }
 }
 

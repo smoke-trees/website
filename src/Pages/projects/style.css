@@ -33,6 +33,9 @@
   h3 {
     font-size: 1.2rem;
   }
+  .column p {
+    font-size: 1.2rem !important;
+  }
 }
 
 .dark.project-page {
