@@ -125,7 +125,7 @@ Having worked with website design for the better part of 3 years,
 }, {
   name: 'Pushkal Dwivedi',
   devs: 'ML/AI',
-  description: 'Pushkal is currently working in the field of Deep Learning  . Most of his works are based on Computer Vision. One of the major projects that he has been a part of , is analysis and classification of time series data collected from sensors, while working  as a research intern at TCS Innovation Labs. Apart from this , he also works on optimizing ML models and deploying them in web applications.',
+  description: 'Pushkal is currently working in the field of Deep Learning. One of the major projects that he has been a part of , is analysis and classification of time series data collected from sensors, while working  as a research intern at TCS Innovation Labs. Apart from this, he also works on optimizing ML models and deploying them in web applications.',
   github: 'https://github.com/CaptainRogers7',
   linkedin: 'https://www.linkedin.com/in/pushkal-dwivedi-cr7/'
 }, {
@@ -137,7 +137,7 @@ Having worked with website design for the better part of 3 years,
 }, {
   name: 'Ritik Gupta',
   devs: 'WEB',
-  description: 'Ritik Gupta is a passionate developer with decent experience in backend web development,he has worked with several cutting edge technologies in various projects and has also led the teams in various hackathons and has emerged victorious.He is also a competitive coder and prefers practicing the same on platforms such as codeforces and codechef.He believes in the thought that limitation is only one\'s imagination and one can achieve anything with constant hardwork.',
+  description: 'Ritik Gupta is a passionate developer with decent experience in backend web development,he has worked with several cutting edge technologies in various projects and has also led the teams in various hackathons and has emerged victorious.',
   github: 'https://github.com/ritikgupt',
   linkedin: 'https://www.linkedin.com/in/ritik-gupta-494738178/'
 }, {
@@ -150,12 +150,12 @@ Having worked with website design for the better part of 3 years,
   name: 'Rohan Arora',
   devs: 'DESIGN',
   description: 'Rohan has excellent eye for design and having a technical base makes him a suitable for tech-based product designer. He is a valuable addition to SmokeTrees team. He is here to give your idea a beautiful image',
-  linkedin: 'https://www.linkedin.com/rohanxdesign',
+  linkedin: 'https://www.linkedin.com/in/rohanxdesign',
   drible: 'https://www.dribbble.com/rohanxdesign'
 }, {
   name: 'Hemanth Krishna',
   devs: 'APP DEV',
-  description: 'Hemanth is an experienced Android ROM and App Developer. Having developed many Android Apps on Java and Kotlin with latest features and clean codebase, his apps aim to solve day-to-day problems to make one’s life easier. He thrives to implement latest architecture and components and is focused on delivering quality work in stipulated time. ',
+  description: 'Hemanth is an experienced Android ROM and App Developer. Having developed many Android Apps on Java and Kotlin with latest features and clean codebase, his apps aim to solve day-to-day problems to make one’s life easier.',
   linkedin: 'https://www.linkedin.com/in/darthbenro008/',
   github: ' https://github.com/DarthBenro008'
 }]
