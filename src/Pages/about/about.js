@@ -29,30 +29,38 @@ class About extends React.Component {
               </LandingBanner>
               <h1 className='what-we-do'>What we do ?</h1>
               <div className='about-content'>
-                <ColumnContent heading='Aartificial Intelligence'>
-                  AI or Artificial Intelligence is being used in modern society
-                  for automating every single task that a human can perform, we
-                  at SmokeTrees believe in staying ahead of the curve and have
-                  several developers working on making headway into exactly
-                  these applications.
-                </ColumnContent>
-                <ColumnContent className='column2' heading='App Devlopment'>
-                  With mobile solutions becoming increasingly vital to business
-                  success, we help you realise your dreams and bring it to the
-                  palm of your hand. Our team consists of top mobile app
-                  developers who are well known to craft the most innovative &
-                  eye catchy pocket sized softwares. Our products are engineered
-                  to bring growth to your business and we believe in delivering
-                  the services without compromising on time and quality.
-                </ColumnContent>
-                <ColumnContent heading='Web Development'>
-                  Implementation beats oration. We are a team of dedicated Devs
-                  and DevOps who believe in these words. We deliver on every
-                  front, and don't hesitate to deliver the very best. We make
-                  sure that your new website has the most beautiful front-end
-                  and a tried and tested backend, with a code that is ready for
-                  deployment.
-                </ColumnContent>
+                <div data-aos='fade-up'>
+                  <ColumnContent heading='Artificial Intelligence'>
+                    AI or Artificial Intelligence is being used in modern
+                    society for automating every single task that a human can
+                    perform, we at SmokeTrees believe in staying ahead of the
+                    curve and have several developers working on making headway
+                    into exactly these applications.
+                  </ColumnContent>
+                </div>
+                <div data-aos='fade-up'>
+                  <ColumnContent className='column2' heading='App Devlopment'>
+                    With mobile solutions becoming increasingly vital to
+                    business success, we help you realise your dreams and bring
+                    it to the palm of your hand. Our team consists of top mobile
+                    app developers who are well known to craft the most
+                    innovative & eye catchy pocket sized softwares. Our products
+                    are engineered to bring growth to your business and we
+                    believe in delivering the services without compromising on
+                    time and quality.
+                  </ColumnContent>
+                </div>
+
+                <div data-aos='fade-up'>
+                  <ColumnContent heading='Web Development'>
+                    Implementation beats oration. We are a team of dedicated
+                    Devs and DevOps who believe in these words. We deliver on
+                    every front, and don't hesitate to deliver the very best. We
+                    make sure that your new website has the most beautiful
+                    front-end and a tried and tested backend, with a code that
+                    is ready for deployment.
+                  </ColumnContent>
+                </div>
               </div>
             </div>
             <div className='spacer-sm'></div>
