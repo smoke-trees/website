@@ -14,18 +14,6 @@ export default [
     linkedin: 'https://www.linkedin.com/in/amogh-lele-830131a4',
   },
   {
-    name: 'Adarsh Singh',
-    devs: 'WEB',
-    description: `
-         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-         Optio quae aliquam et ullam repudiandae placeat rem laborum.
-         Excepturi cupiditate soluta ut? Quasi, rem. Porro, ratione.
-         Tempore sit maiores obcaecati blanditiis.
-                    `,
-    github: 'https://github.com/adarshsingh87',
-    linkedin: 'https://linkedin.com/in/adarshsingh87',
-  },
-  {
     name: 'Anshuman Chhapolia',
     devs: 'WEB',
     description: `The operational leader of this organization, if you want anything fully integrated with many moving parts working together seamlessly, you contact Anshuman. Truly a web-master, Anshuman has worked with many Series A startups as a consultant, helping them build their applications.`,

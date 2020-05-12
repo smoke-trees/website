@@ -1,50 +1,69 @@
 .profile {
-	width: 33.33333%;
+  width: 33.33333%;
 }
 
 .profile p {
-	width: 65%;
-	color: rgba(0, 0, 0, 0.6);
+  width: 65%;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .profile h3 {
-	color: #21409a;
+  color: #21409a;
 }
 
 .profile h4 {
-	color: #21409a;
+  color: #21409a;
 }
 
-.linkein-logo,.github-logo {
-	height: 28px;
-	padding: 5px;
-	margin-top: 10px;
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.profile2{
-	margin-top: 200px;
-	margin-bottom: 100px;
+.socials a {
+  margin-right: 0.8rem;
 }
 
-.profile3{
-	margin-top: -150px;
+.linkein-logo,
+.github-logo {
+  height: 28px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.profile2 {
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+
+.profile3 {
+  margin-top: -150px;
 }
 
 @media (max-width: 800px) {
-	/*breakpoint*/
-	.profile {
-        flex-direction: column;
-        width: 95%;
-    }
-    .profile p{
-        width: 100%;
-	}
-	.profile2{
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-	
-	.profile3{
-		margin-top: 0;
-	}
+  /*breakpoint*/
+  .profile {
+    flex-direction: column;
+    width: 95%;
+    font-size: 1.2rem;
+  }
+  .profile h3 {
+    margin-bottom: 0.5rem;
+  }
+  .profile h4 {
+    margin: 0;
+  }
+  .profile p {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  .profile2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .profile3 {
+    margin-top: 0;
+  }
 }

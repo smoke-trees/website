@@ -1,9 +1,7 @@
 import React from 'react';
 import './style.css';
-import github from '../../vectors/GitHub_32.png';
-import githubDark from '../../vectors/g26.png';
-import linkedin from '../../vectors/linkedin_32.png';
-import ThemeContext from '../../theme';
+import { ReactComponent as Github } from '../../vectors/git-icon.svg';
+import { ReactComponent as Linkedin } from '../../vectors/linkedin.svg';
 
 class Profile extends React.Component {
   render() {
@@ -12,20 +10,18 @@ class Profile extends React.Component {
         <h3>{this.props.name}</h3>
         <h4>{this.props.devs}</h4>
         <p>{this.props.children}</p>
-        <a href={this.props.github} target='blank'>
-          <ThemeContext.Consumer>
-            {({ theme }) => (
-              <img
-                src={theme === 'dark' ? githubDark : github}
-                alt='github logo'
-                className='github-logo'
-              />
-            )}
-          </ThemeContext.Consumer>
-        </a>
-        <a href={this.props.linkedin} target='blank'>
-          <img src={linkedin} alt='linkedin logo' className='linkedin-logo' />
-        </a>
+        <div className='socials'>
+          <a href={this.props.github} target='_blank' rel='noopener noreferrer'>
+            <Github></Github>
+          </a>
+          <a
+            href={this.props.linkedin}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Linkedin></Linkedin>
+          </a>
+        </div>
         <div className='spacer-sm'></div>
       </div>
     );
