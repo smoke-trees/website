@@ -34,8 +34,75 @@ class Header extends React.Component {
         this.setState({ navbar: !this.state.navbar })
       }
     }
-    this.handleNavbarToggleClick = (e) => {
+
+    this.handleAboutNavbarClick = (e) => {
       this.setState({ navbar: !this.state.navbar })
+      const about = document.getElementById('about');
+      const projects = document.getElementById('projects');
+      const team = document.getElementById('team');
+      const contact = document.getElementById('contact');
+
+      about.style.backgroundColor = "#21409a";
+      about.style.color = "#FFFFFF";
+      projects.style.backgroundColor = "#FFFFFF"
+      projects.style.color = "#000000"
+      team.style.backgroundColor = "#FFFFFF"
+      team.style.color = "#000000"
+      contact.style.backgroundColor = "#FFFFFF"
+      contact.style.color = "#000000"
+    }
+
+    this.handleProjectsNavbarClick = (e) => {
+      this.setState({ navbar: !this.state.navbar })
+      const about = document.getElementById('about');
+      const projects = document.getElementById('projects');
+      const team = document.getElementById('team');
+      const contact = document.getElementById('contact');
+
+      about.style.backgroundColor = "#FFFFFF";
+      about.style.color = "#000000";
+      projects.style.backgroundColor = "#21409a"
+      projects.style.color = "#FFFFFF"
+      team.style.backgroundColor = "#FFFFFF"
+      team.style.color = "#000000"
+      contact.style.backgroundColor = "#FFFFFF"
+      contact.style.color = "#000000"
+    }
+
+    this.handleTeamNavbarClick = (e) => {
+      this.setState({ navbar: !this.state.navbar })
+      this.setState({ navbar: !this.state.navbar })
+      const about = document.getElementById('about');
+      const projects = document.getElementById('projects');
+      const team = document.getElementById('team');
+      const contact = document.getElementById('contact');
+
+      about.style.backgroundColor = "#FFFFFF";
+      about.style.color = "#000000";
+      projects.style.backgroundColor = "#FFFFFF"
+      projects.style.color = "#000000"
+      team.style.backgroundColor = "#21409a"
+      team.style.color = "#FFFFFF"
+      contact.style.backgroundColor = "#FFFFFF"
+      contact.style.color = "#000000"
+    }
+
+    this.handleContactNavbarClick = (e) => {
+      this.setState({ navbar: !this.state.navbar })
+      this.setState({ navbar: !this.state.navbar })
+      const about = document.getElementById('about');
+      const projects = document.getElementById('projects');
+      const team = document.getElementById('team');
+      const contact = document.getElementById('contact');
+
+      about.style.backgroundColor = "#FFFFFF";
+      about.style.color = "#000000";
+      projects.style.backgroundColor = "#FFFFFF"
+      projects.style.color = "#000000"
+      team.style.backgroundColor = "#FFFFFF"
+      team.style.color = "#000000"
+      contact.style.backgroundColor = "#21409a"
+      contact.style.color = "#FFFFFF"
     }
 
     this.handleBlur = (e) => {
@@ -58,7 +125,8 @@ class Header extends React.Component {
       navbar: false,
       dimensions: dimensions,
       animationSpeed: animationSpeed,
-      handleToggleNavbar: this.handleToggleNavbar
+      handleToggleNavbar: this.handleToggleNavbar,
+      navItem: 'home'
     }
   }
 
@@ -92,16 +160,16 @@ class Header extends React.Component {
           <nav className={this.state.navbar && this.state.dimensions.width < 800 ? 'mobile-nav' : ''}>
             <ul>
               <li>
-                <Link onClick={this.handleNavbarToggleClick} to='/about'>About</Link>
+                <Link id="about" onClick={this.handleAboutNavbarClick} to='/about'>About</Link>
               </li>
               <li>
-                <Link onClick={this.handleNavbarToggleClick} to='/projects'>Projects</Link>
+                <Link id="projects" onClick={this.handleProjectsNavbarClick} to='/projects'>Projects</Link>
               </li>
               <li>
-                <Link onClick={this.handleNavbarToggleClick} to='/team'>Team</Link>
+                <Link id="team" onClick={this.handleTeamNavbarClick} to='/team'>Team</Link>
               </li>
               <li>
-                <Link onClick={this.handleNavbarToggleClick} to='/contact'>Contact</Link>
+                <Link id="contact" onClick={this.handleContactNavbarClick} to='/contact'>Contact</Link>
               </li>
             </ul>
           </nav>
