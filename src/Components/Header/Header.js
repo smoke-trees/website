@@ -33,6 +33,19 @@ class Header extends React.Component {
       if (this.state.navbar) {
         this.setState({ navbar: !this.state.navbar })
       }
+      const about = document.getElementById('about');
+      const projects = document.getElementById('projects');
+      const team = document.getElementById('team');
+      const contact = document.getElementById('contact');
+
+      about.style.backgroundColor = "#FFFFFF";
+      about.style.color = "#000000";
+      projects.style.backgroundColor = "#FFFFFF"
+      projects.style.color = "#000000"
+      team.style.backgroundColor = "#FFFFFF"
+      team.style.color = "#000000"
+      contact.style.backgroundColor = "#FFFFFF"
+      contact.style.color = "#000000"
     }
 
     this.handleAboutNavbarClick = (e) => {

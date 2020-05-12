@@ -12,10 +12,6 @@ import 'aos/dist/aos.css'
 const TeamPage = function () {
   const [animated, updateStateAnimated] = useState(false)
   const [slideState, setSlideState] = useState(0)
-  const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth
-  })
   const [didMount, setDidMount] = useState(false)
 
   useEffect(() => {
@@ -23,17 +19,7 @@ const TeamPage = function () {
       window.scroll(0, 0)
       setDidMount(true)
     }
-    function handleResize (e) {
-      if ((dimensions.width <= 800 && e.target.innerWidth > 800) ||
-      (dimensions.width > 800 && e.target.innerWidth <= 800)) {
-        setDimensions({
-          height: window.innerHeight,
-          width: window.innerWidth
-        })
-      }
-    }
-    window.addEventListener('resize', handleResize)
-  }, [didMount, dimensions])
+  }, [didMount])
   useEffect((e) => {
     if (!animated) {
       import('aos').then(AosModule => {
