@@ -37,11 +37,20 @@
   /*breakpoint*/
   .container {
     flex-direction: column;
-    width: 95%;
+    width: 85%;
   }
   .about-content {
     width: 100%;
     flex-direction: column;
+  }
+  .what-we-do {
+    text-align: center;
+  }
+  .landing-banner {
+    margin-bottom: 0;
+  }
+  .spacer-sm {
+    height: 2rem;
   }
 }
 

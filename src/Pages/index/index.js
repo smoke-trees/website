@@ -110,18 +110,14 @@ class IndexPage extends React.Component {
                     SmokeTrees. Regular updates on GitHub for code development
                     using Flutter platform made my work lot easier.
                   </p>
-                  <p
-                    style={{
-                      fontSize: '1.1em',
-                      fontWeight: 'bold',
-                      textAlign: 'right',
-                      paddingRight: '20%',
-                      boxSizing: 'border-box',
-                      padding: 0,
-                    }}
+                  <a
+                    href='https://www.linkedin.com/in/vishal-dhagat-5009751b'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='client'
                   >
                     -Vishal Dhagat, KiVi Infotech
-                  </p>
+                  </a>
                 </div>
                 <div className='logo-svg'>
                   <img alt='' src={realTime} />

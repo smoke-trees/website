@@ -1,128 +1,131 @@
 .team-page {
-	left: 0;
-	position: absolute;
-	top: 64px;
-	width: 100%;
+  left: 0;
+  position: absolute;
+  top: 64px;
+  width: 100%;
 }
 
 .container {
-	width: 75%;
-	height: auto;
-	position: relative;
-	margin: auto;
+  width: 75%;
+  height: auto;
+  position: relative;
+  margin: auto;
 }
 
 .team-content {
-	width: 100%;
-	display: flex;
-	padding: 20px;
+  width: 100%;
+  display: flex;
+  padding: 20px;
 }
 
 .profile p {
-	font-size: 20px;
-	font-weight: 300;
-	color: black;
+  font-size: 20px;
+  font-weight: 300;
+  color: black;
 }
 
-.team-carousel li, .team-carousel button {
-	outline: none;
+.team-carousel li,
+.team-carousel button {
+  outline: none;
 }
 
 .gg-chevron-right {
-	top: -20px;
-	box-sizing: border-box;
-	position: relative;
-	display: block;
-	transform: scale(var(--ggs, 1));
-	width: 22px;
-	height: 22px;
-	border: 2px solid transparent;
-	border-radius: 100px;
-	cursor: pointer;
-	outline: none;
+  top: -20px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  cursor: pointer;
+  outline: none;
 }
 
 .gg-chevron-right::after {
-	content: "";
-	display: block;
-	box-sizing: border-box;
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	border-bottom: 2px solid;
-	border-right: 2px solid;
-	transform: rotate(-45deg);
-	right: 6px;
-	top: 4px
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(-45deg);
+  right: 6px;
+  top: 4px;
 }
 
 .gg-chevron-left {
-	top: -20px;
-	box-sizing: border-box;
-	position: relative;
-	display: block;
-	transform: scale(var(--ggs, 1));
-	width: 22px;
-	height: 22px;
-	border: 2px solid transparent;
-	border-radius: 100px;
-	cursor: pointer;
-	outline: none;
+  top: -20px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs, 1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  cursor: pointer;
+  outline: none;
 }
 
 .gg-chevron-left::after {
-	content: "";
-	display: block;
-	box-sizing: border-box;
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	border-bottom: 2px solid;
-	border-left: 2px solid;
-	transform: rotate(45deg);
-	left: 6px;
-	top: 4px
+  content: '';
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(45deg);
+  left: 6px;
+  top: 4px;
 }
 
 .gg-chevron-right.invalid,
-.gg-chevron-left.invalid{
-	display: none;
+.gg-chevron-left.invalid {
+  display: none;
 }
 
 @media (max-width: 800px) {
-	/*breakpoint*/
-	.container {
-		flex-direction: column;
-		width: 95%;
-	}
-	.team-content {
-		width: 100%;
-		flex-direction: column;
-	}
-	.gg-chevron-right, .gg-chevron-left {
-		top: 0;
-	}
+  /*breakpoint*/
+  .container {
+    flex-direction: column;
+    width: 85%;
+  }
+  .team-content {
+    width: 100%;
+    flex-direction: column;
+  }
+  .gg-chevron-right,
+  .gg-chevron-left {
+    top: 0;
+  }
 }
 
 .dark.team-page {
-	background: var(--dark-bg-color);
-	color: white;
+  background: var(--dark-bg-color);
+  color: white;
 }
 
 .dark.team-page .content h1 {
-	color: var(--dark-secondary)
+  color: var(--dark-secondary);
 }
 
-.dark.team-page .profile h3, .dark.team-page .profile h4 {
-	color: var(--dark-secondary)
+.dark.team-page .profile h3,
+.dark.team-page .profile h4 {
+  color: var(--dark-secondary);
 }
 
 .dark.team-page .profile p {
-	color: white;
+  color: white;
 }
 
 .team-page .profile img {
-	display: inline-block;
-	margin-right: 4px;
-	margin-left: 4px;
+  display: inline-block;
+  margin-right: 4px;
+  margin-left: 4px;
 }

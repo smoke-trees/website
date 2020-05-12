@@ -241,6 +241,16 @@
     text-align: center;
   }
 }
+.client {
+  font-size: '1.1em';
+  font-weight: 'bold';
+  text-align: 'right';
+  padding-right: '20%';
+  box-sizing: 'border-box';
+  text-decoration: none;
+  color: black;
+  margin-left: auto;
+}
 
 .dark.index-page {
   background: var(--dark-bg-color);
