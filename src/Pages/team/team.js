@@ -33,7 +33,7 @@ const TeamPage = function () {
       }
     }
     window.addEventListener('resize', handleResize)
-  })
+  }, [didMount, dimensions])
   useEffect((e) => {
     if (!animated) {
       import('aos').then(AosModule => {

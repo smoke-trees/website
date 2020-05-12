@@ -91,6 +91,16 @@
 	.image {
 		display: none;
 	}
+	.contact-page{
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		justify-content: center;
+	}
+
+	.contact-content{
+		width:100%;
+	}
 }
 
 
