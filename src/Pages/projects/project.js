@@ -17,10 +17,10 @@ class ProjectPage extends React.Component {
   render () {
     return (
       <ThemeContext.Consumer>
-        {({ theme }) => (
+        {({ theme, animationSpeed }) => (
           <div className={theme === 'dark' ? 'project-page dark' : 'project-page'}>
             <div className='container'>
-              <LandingBanner image={board} heading='Projects'>
+              <LandingBanner image={board} heading='Projects' animationSpeed={animationSpeed}>
             The Team behind SmokeTrees is focused on the motto of delivering what you ideate.
             We have a team of skilled young minds who are dedicated to serving and building the developers'
             community. Our projects have been carried out with utmost sincerity and diligence
@@ -29,36 +29,40 @@ class ProjectPage extends React.Component {
             You can find some of our projects mentioned below.
               </LandingBanner>
               <div className='project-content'>
-                <ColumnContent number='' heading='ATLAS' link='https://github.com/smoke-trees/atlas'>
+                <ColumnContent number='' heading='ATLAS' link='https://github.com/smoke-trees/atlas' animationSpeed={animationSpeed}>
                   Total Surveillance for Infiltrators,
                 a defense security solutions suite, sort documents on the fly for malcontent,
                 configure drones for maximum area coverage, send
                 communications via commo hubs, protected by swarm and blockchain.
                 TLDR : Automated Solutions for Counter Insurgency.
                 </ColumnContent>
-                <ColumnContent className='column2' number='' heading='PATH PREDICTION' link='https://github.com/smoke-trees/path-prediction'>
+                <ColumnContent
+                  className='column2'
+                  number='' heading='PATH PREDICTION'
+                  animationSpeed={animationSpeed} link='https://github.com/smoke-trees/path-prediction'
+                >
 A novel way to predict the optimal paths between two points and forsee future GPS data by studying old data using AI.
                 </ColumnContent>
-                <ColumnContent heading='UPROAR' link='https://github.com/smoke-trees/uproar'>
+                <ColumnContent animationSpeed={animationSpeed} heading='UPROAR' link='https://github.com/smoke-trees/uproar'>
                   An application for accumulating all disaster updates in one forum,
                    parsing them and manipulating the data so that only accurate information
                    reaches the people. Features include SOS, mapping, video surveillance and many more.
                 </ColumnContent>
               </div>
               <div className='project-content'>
-                <ColumnContent className='column3' heading='SPARC' link='https://github.com/smoke-trees/spark'>
+                <ColumnContent className='column3' animationSpeed={animationSpeed} heading='SPARC' link='https://github.com/smoke-trees/spark'>
                  A Smart Grid solution which compiles home networks and grids in an efficient manner,
                   controlled by recurrent networks which predict distribution and consumption
                   and also supported by an energy credit system. All running as microservices supporting each other.
                 </ColumnContent>
-                <ColumnContent heading='Voice Synthesis' link='https://github.com/smoke-trees/Voice-synthesis'>
+                <ColumnContent heading='Voice Synthesis' animationSpeed={animationSpeed} link='https://github.com/smoke-trees/Voice-synthesis'>
 An implementation of Transfer Learning from Speaker Verification to Multispeaker
 Text-To-Speech Synthesis (SV2TTS) with a vocoder that works in real-time.
 SV2TTS is a three-stage deep learning framework that allows to create a numerical
  representation of a voice from a few seconds of audio, and to use it to condition text-to speech synthesis.
 
                 </ColumnContent>
-                <ColumnContent className='column3' heading='Gesture Drive' link='https://github.com/smoke-trees/gesture-drive'>
+                <ColumnContent className='column3' heading='Gesture Drive' animationSpeed={animationSpeed} link='https://github.com/smoke-trees/gesture-drive'>
 
                   An autonomous vehicle solution for people who are physically challenged,
                   calibrates limb angle to drive steering wheel and operate pedals.

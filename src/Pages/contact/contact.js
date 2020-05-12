@@ -15,14 +15,18 @@ class Contact extends React.Component {
   render () {
     return (
       <ThemeContext.Consumer>
-        {({ theme }) => (
+        {({ theme, animationSpeed, dimensions }) => (
           <div className={theme === 'dark' ? 'contact-page dark' : 'contact-page'}>
             <div className='container'>
               <div className='content-page'>
-                <div className='image' data-aos='fade-up' data-aos-duration='1000'>
+                <div className='image' data-aos='fade-up' data-aos-duration={animationSpeed}>
                   <img src={contact} alt='' />
                 </div>
-                <div className='text-content' data-aos='fade-left' data-aos-duration='1000'>
+                <div
+                  className='text-content'
+                  data-aos={dimensions.width > 800 ? 'fade-left' : 'fade-in'}
+                  data-aos-duration={animationSpeed}
+                >
                   <div className='contact-content'>
                     <h3 className='office'>
                       {/* <span className='branch' >Branch</span> */}

@@ -18,17 +18,17 @@ class About extends React.Component {
   render () {
     return (
       <ThemeContext.Consumer>
-        {({ theme }) => (
+        {({ theme, animationSpeed }) => (
           <div className={theme === 'dark' ? 'about-page dark' : 'about-page'}>
-            <div className='container' data-aos='zoom-out-up' data-aos-duration='1000'>
-              <LandingBanner image={team} heading='About Us'>
+            <div className='container' data-aos='fade-in' data-aos-duration={animationSpeed}>
+              <LandingBanner image={team} heading='About Us' animationSpeed={animationSpeed}>
                  SmokeTrees was born from an idea to bring the best developers out there onto a single
                  platform to create the ultimate community of coders, who are dedicated to serving the world.
                   We provide top-class services, in the friendliest manner, keen on delivering what you ideate.
               </LandingBanner>
-              <h1 className='what-we-do' data-aos='fade-up' data-aos-duration='1000'>What we do ?</h1>
-              <div className='about-content' data-aos='fade-up' data-aos-duration='1000'>
-                <ColumnContent heading='Artificial Intelligence'>
+              <h1 className='what-we-do' data-aos='fade-up' data-aos-duration={animationSpeed}>What we do ?</h1>
+              <div className='about-content' data-aos='fade-up' data-aos-duration={animationSpeed}>
+                <ColumnContent animationSpeed={animationSpeed} heading='Artificial Intelligence'>
                AI or Artificial Intelligence
                is being used in modern society
                for automating every single task
@@ -37,13 +37,17 @@ class About extends React.Component {
                 developers working on making headway into exactly these applications.
                 </ColumnContent>
                 <ColumnContent
+                  animationSpeed={animationSpeed}
                   className='column2'
                   heading='App Devlopment'
                 >
                   With mobile solutions becoming increasingly vital to business success, we help you realise your dreams and bring it to the palm of your hand.
                   Our team consists of top mobile app developers who are well known to craft the most innovative & eye catchy pocket sized softwares. Our products are engineered to bring growth to your business and we believe in delivering the services without compromising on time and quality.
                 </ColumnContent>
-                <ColumnContent heading='Web Development'>
+                <ColumnContent
+                  animationSpeed={animationSpeed}
+                  heading='Web Development'
+                >
                   Implementation beats oration. We are a team of dedicated Devs and DevOps who believe in these words. We deliver on every front, and don't hesitate to deliver the very best.
 We make sure that your new website has the most beautiful front-end and a tried and tested backend, with a code that is ready for deployment.
                 </ColumnContent>

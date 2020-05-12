@@ -6,6 +6,8 @@ import ThemeContext from '../../theme'
 class Header extends React.Component {
   constructor (props) {
     super(props)
+    const mobileSpeed = '800'
+    const desktopSpeed = '1000'
 
     let storeTheme = 'light'
     if (window.localStorage) {
@@ -24,10 +26,27 @@ class Header extends React.Component {
         }
       })
     }
-    this.state = { theme: storeTheme, toggleTheme: this.toggleTheme, navbar: false }
+    const dimensions = { height: window.innerHeight, width: window.innerWidth }
+    const animationSpeed = dimensions.width > 800 ? desktopSpeed : mobileSpeed
+    this.state = {
+      theme: storeTheme,
+      toggleTheme: this.toggleTheme,
+      navbar: false,
+      dimensions: dimensions,
+      animationSpeed: animationSpeed
+    }
 
     this.handleNavClick = (e) => {
       this.setState({ navbar: !this.state.navbar })
+    }
+    this.handleResize = (e) => {
+      if (this.state.dimensions.width <= 800 && e.target.innerWidth > 800) {
+        this.setState({ dimensions: { height: e.target.innerHeight, width: e.target.innerWidth } })
+        this.setState({ animationSpeed: desktopSpeed })
+      } else if (this.state.dimensions.width > 800 && e.target.innerWidth <= 800) {
+        this.setState({ dimensions: { height: e.target.innerHeight, width: e.target.innerWidth } })
+        this.setState({ animationSpeed: mobileSpeed })
+      }
     }
   }
 
@@ -37,8 +56,7 @@ class Header extends React.Component {
     } else {
       document.body.style.background = '#ffffff'
     }
-    const toggle = document.querySelector('#nav-toggle')
-    console.log(toggle)
+    window.addEventListener('resize', this.handleResize)
   }
 
   componentDidUpdate () {
@@ -47,6 +65,7 @@ class Header extends React.Component {
     } else {
       document.body.style.background = '#ffffff'
     }
+    window.addEventListener('resize', this.handleResize)
   }
 
   // handleOnClick () {

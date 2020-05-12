@@ -194,9 +194,9 @@ const TeamPage = function () {
   }
   return (
     <ThemeContext.Consumer>
-      {({ theme, toggleTheme }) => (
+      {({ theme, toggleTheme, animationSpeed }) => (
         <div className={theme === 'dark' ? 'team-page dark' : 'team-page'}>
-          <div className='container' data-aos='zoom-out-up' data-aos-duration='1000'>
+          <div className='container' data-aos='fade-in' data-aos-duration={animationSpeed}>
             <LandingBanner image={team} heading='Team'>
 The driving force behind SmokeTrees is the hard work and talent of its
 founding members dedicated to bringing the developers' community together.
@@ -204,7 +204,7 @@ Each of them is extremely skilled in their own fortes and ensure top notch resul
             </LandingBanner>
             <Carousel
               dragging={false}
-              data-aos='fade-up' data-aos-duration='1000'
+              data-aos='fade-up' data-aos-duration={animationSpeed}
               enableKeyboardControls
               slideIndex={slideState}
               afterSlide={slideIndex => setSlideState(slideIndex)}

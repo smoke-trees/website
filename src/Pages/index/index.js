@@ -40,17 +40,17 @@ const IndexPage = () => {
 
   return (
     <ThemeContext.Consumer>
-      {({ theme, toggleTheme }) => (
+      {({ theme, toggleTheme, animationSpeed, dimensions }) => (
         <div className={theme === 'light' ? 'index-page' : 'index-page dark'}>
           <div className='container'>
             <div className='landing'>
-              <div className='smoketrees' data-aos='fade-in' data-aos-duration='1500'>
+              <div className='smoketrees' data-aos='fade-in' data-aos-duration={animationSpeed}>
                 <img alt='SmokeTrees' title={theme === 'dark' ? 'LightTheme' : 'DarkTheme'} src={logo} style={{ cursor: 'pointer' }} onClick={toggleTheme} />
               </div>
               <div
                 className='head '
                 data-aos={window.innerWidth < 800 ? 'fade-in' : ''}
-                data-aos-duration={window.innerWidth < 800 ? '1500' : ''}
+                data-aos-duration={window.innerWidth < 800 ? { animationSpeed } : ''}
                 id='head-description'
               >
                 <p><span>We are a <span className='digital'>digital agency</span> <br />based on <span className='technology'>technology</span></span></p>
@@ -60,9 +60,12 @@ const IndexPage = () => {
               </div>
               <span id='typed' />
             </div>
-            <div className='tag' data-aos='fade-up' data-aos-duration='1500'>We <span className='build'>build</span> what you <span className='build'>ideate</span>.</div>
+            <div className='tag' data-aos='fade-up' data-aos-duration={animationSpeed}>We <span className='build'>build</span> what you <span className='build'>ideate</span>.</div>
             <div className='container-basic'>
-              <div className='description' data-aos='fade-up' data-aos-duration='1500'>
+              <div
+                className='description' data-aos={dimensions.width > 800 ? 'fade-right' : 'fade-up'}
+                data-aos-duration={animationSpeed}
+              >
                 <h1>GitHub</h1>
                 <p>Check out our project implementations here, that we believe are robust, and should be scrutinized by everyone so that they can see for themselves our raw work.
                   <br />
@@ -79,15 +82,24 @@ const IndexPage = () => {
                   </div>
                 </a>
               </div>
-              <div className='logo-svg' data-aos='fade-up' data-aos-duration='1500'>
+              <div
+                className='logo-svg'
+                data-aos={dimensions.width > 800 ? 'fade-right' : 'fade-up'} data-aos-duration={animationSpeed}
+              >
                 <img alt='' src={versionControl} />
               </div>
             </div>
             <div className='container-basic'>
-              <div className='logo-svg' data-aos='fade-up' data-aos-duration='1500'>
+              <div
+                className='logo-svg'
+                data-aos={dimensions.width > 800 ? 'fade-left' : 'fade-up'} data-aos-duration={animationSpeed}
+              >
                 <img alt='' src={designFeedback} />
               </div>
-              <div className='description alter' data-aos='fade-up' data-aos-duration='1500'>
+              <div
+                className='description alter'
+                data-aos={dimensions.width > 800 ? 'fade-left' : 'fade-up'} data-aos-duration={animationSpeed}
+              >
                 <div className='alter-extra-div'>
                   <h1>Our Projects</h1>
                   <p>CESS: Comprehensive Electoral Solutions Suite - an elections suite software which merges RFID and fingerprint recognition with extra layers of security which checks emotion when you vote while securing your transaction via a smart ethereum contract.</p>
@@ -104,7 +116,10 @@ const IndexPage = () => {
               </div>
             </div>
             <div className='container-basic client'>
-              <div className='description' data-aos='fade-up' data-aos-duration='1500'>
+              <div
+                className='description'
+                data-aos={dimensions.width > 800 ? 'fade-right' : 'fade-up'} data-aos-duration={animationSpeed}
+              >
                 <h1>Clients</h1>
                 <p>KiVi Infotech is really pleased with the work delivered by SmokeTrees.
 Regular updates on GitHub for code development using Flutter platform made my work lot easier.
@@ -127,7 +142,7 @@ Regular updates on GitHub for code development using Flutter platform made my wo
                   </a>
                 </p>
               </div>
-              <div className='logo-svg' data-aos='fade-up' data-aos-duration='1500'>
+              <div className='logo-svg' data-aos={dimensions.width > 800 ? 'fade-right' : 'fade-up'} data-aos-duration={animationSpeed}>
                 <img alt='' src={realTime} />
               </div>
             </div>
