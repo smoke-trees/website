@@ -35,9 +35,10 @@
 
 .first-card {
   display: flex;
+  background-color: #21409a;
   color: #ffffff;
   height: 100%;
-  width: 60%;
+  width: 75%;
   z-index: 1;
   box-sizing: border-box;
   padding: 3.2%;
@@ -46,13 +47,13 @@
   text-align: left;
   justify-self: center;
   align-content: center;
+  border-radius: 4px;
 }
 
 .first-card h1 {
   font-size: 32px;
   line-height: 32px;
   font-weight: 300;
-  font-family: 'Josefin Sans', sans-serif;
   justify-self: start;
   align-self: center;
 }
@@ -73,7 +74,7 @@
   width: 75%;
   font-weight: 300;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .circle-button-wrapper {
@@ -105,9 +106,8 @@
     vertical-align: middle;
   }
   .first-card {
-    width: 85%;
+    width: 100%;
     text-align: center;
-    padding: 0;
   }
   .second-card {
     width: 100%;
@@ -115,7 +115,6 @@
   .second-card p {
     width: 95%;
     text-align: center;
-    font-size: 1.2rem;
   }
 }
 
@@ -124,7 +123,7 @@
     height: 80px;
   }
   .footer h1 {
-    font-size: 1.2rem;
+    font-size: 32px;
   }
 }
 
@@ -133,7 +132,7 @@
     height: 75px;
   }
   .footer h1 {
-    font-size: 1.2rem;
+    font-size: 32px;
   }
 }
 
@@ -142,7 +141,7 @@
     height: 69px;
   }
   .footer h1 {
-    font-size: 1.2rem;
+    font-size: 25px;
   }
 }
 
@@ -151,7 +150,7 @@
     height: 65px;
   }
   .footer h1 {
-    font-size: 1.2rem;
+    font-size: 25px;
   }
 }
 

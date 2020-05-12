@@ -27,12 +27,6 @@ header {
   font-size: 1.2rem;
 }
 
-.nav-toggle {
-  position: absolute !important;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
 .nav-toggle-label {
   position: absolute;
   top: 0;
@@ -96,27 +90,32 @@ nav a {
   color: black;
   text-decoration: none;
   font-size: 1.2rem;
+  text-align: center;
+  padding: 16px 14px;
+  border-radius: 4px;
 }
 
-.nav-toggle:checked ~ nav {
+nav.mobile-nav {
   transform: scale(1, 1);
 }
 
-.nav-toggle:checked {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
+.nav-toggle-label:focus {
+  display: none;
 }
 
-@media screen and (min-width: 800px) {
+.current-page {
+  background-color: #21409a;
+  color: #fff;
+}
+
+@media (min-width: 800px) {
   .nav-toggle-label {
     display: none;
   }
-
   header {
     display: grid;
     height: 64px;
   }
-
   nav {
     position: relative;
     text-align: left;
@@ -129,16 +128,13 @@ nav a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.2rem;
   }
-
   nav ul {
     position: relative;
     display: flex;
     background-color: #fff;
     right: 25%;
   }
-
   .logo p {
     width: 100%;
     margin: 0;
@@ -146,17 +142,14 @@ nav a {
     top: 50%;
     transform: translate(0, -50%);
   }
-
   nav li {
     margin-left: 3em;
     margin-bottom: 0;
   }
-
   nav a {
     opacity: 1;
     position: relative;
   }
-
   nav a::before {
     content: '';
     display: block;
@@ -165,6 +158,17 @@ nav a {
     top: -0.75em;
     left: 0;
     right: 0;
+  }
+  nav a:hover:not(.current-page):not(.logo) {
+    background-color: #21409a;
+    color: white;
+  }
+  .navbar-container.dark .current-page {
+    background: var(--dark-secondary);
+  }
+  .navbar-container.dark a:hover:not(.current-page):not(.logo) {
+    background-color: var(--dark-secondary);
+    color: white;
   }
 }
 
@@ -189,12 +193,15 @@ nav a {
 .navbar-container.dark ul a {
   color: white;
 }
+
 .navbar-container.dark ul a:hover {
   color: white;
 }
+
 .navbar-container.dark ul a:visited {
   color: white;
 }
+
 .navbar-container.dark .nav-toggle-label span,
 .navbar-container.dark .nav-toggle-label span::before,
 .navbar-container.dark .nav-toggle-label span::after {

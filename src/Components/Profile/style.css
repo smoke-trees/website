@@ -15,14 +15,9 @@
   color: #21409a;
 }
 
-.socials {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.socials a {
-  margin-right: 0.8rem;
+.profile2 {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .linkein-logo,
@@ -39,6 +34,13 @@
 
 .profile3 {
   margin-top: -150px;
+}
+
+.drible-logo,
+.linkedin-logo,
+.github-logo {
+  width: 32px;
+  height: 32px;
 }
 
 @media (max-width: 800px) {

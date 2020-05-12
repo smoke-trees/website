@@ -15,7 +15,7 @@
 .project-content {
     width: 100%;
     display: flex;
-    padding: 10px;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 800px) {
@@ -27,6 +27,7 @@
     .project-content {
         width: 100%;
         flex-direction: column;
+        margin-bottom: 35px;
     }
 }
 

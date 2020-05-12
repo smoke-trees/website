@@ -3,10 +3,21 @@ import './style.css';
 
 class ColumnContent extends React.Component {
   render() {
+    // console.log(this.props.link)
     return (
-      <div className={`column ${this.props.className || ''}`}>
-        <h3>{this.props.number}</h3>
-        <h3>{this.props.heading}</h3>
+      <div
+        data-aos='fade-up'
+        data-aos-duration={this.props.animationSpeed}
+        className={`column ${this.props.className || ''}`}
+      >
+        {this.props.link !== undefined ? (
+          <a href={this.props.link} target='_blank' rel='noopener noreferrer'>
+            {' '}
+            <h3>{this.props.heading}</h3>
+          </a>
+        ) : (
+          <h3>{this.props.heading}</h3>
+        )}
         <p>{this.props.children}</p>
       </div>
     );

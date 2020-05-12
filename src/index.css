@@ -1,11 +1,10 @@
-@font-face {
-  font-family: circularSpotify;
-  src: url('./Fonts/CircularSpotifyBook.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+* {
+  text-decoration: none;
 }
-
 body,
 html {
-  font-family: circularSpotify, sans-serif;
+  font-family: 'Varela Round', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;

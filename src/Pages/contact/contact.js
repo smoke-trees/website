@@ -6,34 +6,41 @@ import 'aos/dist/aos.css';
 
 class Contact extends React.Component {
   componentDidMount() {
+    window.scrollTo(0, 0);
     import('aos').then((AosModule) => {
-      AosModule.init();
+      AosModule.init({ once: true });
     });
   }
 
   render() {
     return (
       <ThemeContext.Consumer>
-        {({ theme }) => (
+        {({ theme, animationSpeed, dimensions, handleToggleNavbar }) => (
           <div
             className={theme === 'dark' ? 'contact-page dark' : 'contact-page'}
+            onClick={handleToggleNavbar}
           >
             <div className='container'>
               <div className='content-page'>
-                <div className='image'>
+                <div
+                  className='image'
+                  data-aos='fade-right'
+                  data-aos-duration={animationSpeed}
+                >
                   <img src={contact} alt='' />
                 </div>
-                <div className='text-content'>
+                <div
+                  className='text-content contact-content-container'
+                  data-aos={dimensions.width > 800 ? 'fade-left' : 'fade-in'}
+                  data-aos-duration={animationSpeed}
+                >
                   <div className='contact-content'>
-                    <hr />
-                    <p>For more information or queries please contact us at</p>
-                    <a
-                      href='mailto:smoketreesofficial@gmail.com'
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <h3>smoketreesofficial@gmail.com</h3>
-                    </a>
+                    <h3 className='office'>
+                      {/* <span className='branch' >Branch</span> */}
+                    </h3>
+                    {/* <hr /> */}
+                    <p>For more information or queries please contact us at:</p>
+                    <h3>smoketreesofficial@gmail.com</h3>
                   </div>
                 </div>
               </div>

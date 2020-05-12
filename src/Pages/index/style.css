@@ -4,13 +4,14 @@
   --dark-primary: #2ab67b;
   --dark-secondary: #2ab34b;
   --dark-accent-primary: #07a7bc;
+  --light-primary: #21409a;
 }
 
 .index-page {
   left: 0;
   position: absolute;
   width: 100%;
-  height: intrinsic;
+  height: 120%;
   height: -moz-max-content;
   height: -webkit-max-content;
 }
@@ -45,37 +46,43 @@
 
 #typed {
   font-size: 52px;
-  top: 30%;
   position: relative;
-  padding-top: 10%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+#typed > span {
+  height: fit-content;
+}
+
 .typed-cursor {
   display: none;
 }
 
 .digital {
-  color: #27b07c;
-  font-weight: 350px;
+  font-weight: 350;
+  color: var(--light-primary);
 }
 
 .technology {
   font-weight: normal;
-  color: #21409a;
+  color: var(--light-primary);
 }
 
 .btn {
   position: relative;
   color: white;
-  background: #21409a;
+  background: var(--light-primary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: intrinsic;
   width: -moz-max-content;
   width: -webkit-max-content;
-  padding: 2.2% 4.2%;
+  padding: 12px 23px;
   font-size: 20px;
   font-weight: bold;
-  cursor: pointer;
-  text-decoration: none;
+  border-radius: 4px;
 }
 
 .logo-svg {
@@ -104,8 +111,8 @@
   font-weight: 300;
 }
 
-.reinventing {
-  color: #21409a;
+.build {
+  color: var(--light-primary);
 }
 
 .container-basic {
@@ -122,12 +129,13 @@
 }
 
 .git {
-  margin-left: 10px;
+  margin-left: 0;
 }
 
 .index-github-logo {
   width: 20px;
   height: 20px;
+  margin-right: 12px;
 }
 
 .description {
@@ -137,15 +145,15 @@
 
 .description h1 {
   font-size: 40px;
-  color: #21409a;
+  color: var(--light-primary);
   margin: 0;
   margin-bottom: 40px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .description p {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   width: 80%;
   margin-bottom: 20px;
   font-weight: 300;
@@ -159,6 +167,7 @@
   float: right;
   width: 80%;
 }
+
 .landing {
   width: 100%;
   display: flex;
@@ -173,9 +182,10 @@
 }
 
 .landing-content h1 {
-  color: #21409a;
+  color: var(--light-primary);
   justify-content: center;
 }
+
 .alter .btn {
   float: right;
 }
@@ -185,33 +195,27 @@
   height: 5rem;
 }
 
+.client-name {
+  color: black;
+  text-decoration: none;
+}
+.client-name:visited {
+  color: black;
+}
+
 @media (max-width: 800px) {
   /*breakpoint*/
   .landing {
     flex-direction: column;
+    width: 95%;
     align-content: center;
-    justify-content: flex-start;
-    margin: 0 auto;
-    min-height: 100vh;
-  }
-  #typed {
-    text-align: center;
-    padding-top: 0rem;
-    font-size: 2rem;
-    margin: auto auto;
-  }
-  .tag {
-    margin-top: 6rem;
-    font-size: 2rem;
+    justify-content: center;
   }
   .smoketrees {
-    padding-top: 8rem;
     width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
-  }
-  .smoketrees img {
   }
   .head {
     width: 100%;
@@ -229,38 +233,32 @@
     align-items: center;
     justify-items: center;
   }
-  .description h1 {
-    margin-bottom: 1rem;
-    font-size: 2.5rem !important;
-  }
   .description p {
     width: 95%;
-    text-align: center;
-    font-size: 1.2rem;
+    text-align: justify;
   }
   .alter {
     text-align: center;
   }
-  .btn {
-    font-size: 1.2rem;
+  .alter p {
+    float: none;
   }
-  .git {
-    margin-top: 5px;
+  .alter-extra-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
-  .more {
-    margin-top: 5px;
+  #typed {
+    text-align: center;
+    box-sizing: border-box;
+    height: 205px;
+    top: 0;
   }
-}
-.client {
-  font-size: '1.1em';
-  font-weight: 'bold';
-  text-align: 'right';
-  padding-right: '20%';
-  box-sizing: 'border-box';
-  text-decoration: none;
-  color: black;
-  margin-left: auto;
-  font-weight: bold;
+
+  .client {
+    margin-bottom: 50px;
+  }
 }
 
 .dark.index-page {
@@ -269,21 +267,28 @@
 }
 
 .dark.index-page .digital {
-  color: var(--dark-accent-primary);
+  color: var(--dark-primary);
 }
 
 .dark.index-page .technology {
   color: var(--dark-primary);
 }
 
-.dark.index-page .reinventing {
+.dark.index-page .build {
   color: var(--dark-primary);
 }
 
 .dark.index-page .description h1 {
   color: var(--dark-primary);
 }
+.dark.index-page .ideate {
+  color: var(--dark-primary);
+}
 
 .dark.index-page .btn {
   background: var(--dark-secondary);
+}
+
+.dark.index-page .client-name {
+  color: var(--dark-primary);
 }

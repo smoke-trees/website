@@ -19,13 +19,14 @@
 }
 
 .content p {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
 }
 
 .about-content {
   width: 100%;
   display: flex;
+  margin-bottom: 100px;
 }
 
 .column p {
@@ -37,26 +38,19 @@
   /*breakpoint*/
   .container {
     flex-direction: column;
-    width: 85%;
-  }
-  .container h1 {
-    font-size: 2.5rem;
-  }
-  .content p {
-    font-size: 1.2rem;
+    width: 95%;
   }
   .about-content {
     width: 100%;
     flex-direction: column;
   }
+
   .what-we-do {
     text-align: center;
   }
-  .landing-banner {
-    margin-bottom: 0;
-  }
-  .spacer-sm {
-    height: 2rem;
+
+  .about-content {
+    margin-bottom: 35px;
   }
 }
 

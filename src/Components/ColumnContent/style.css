@@ -11,28 +11,10 @@
   color: #21409a;
 }
 
-.column2 {
-  margin-top: 200px;
-  margin-bottom: 100px;
-}
-
-.column3 {
-  margin-top: -150px;
-}
-
 @media (max-width: 800px) {
   /*breakpoint*/
-  .project-content {
-    padding: 0;
-  }
   .column {
     width: 100%;
-  }
-  .column h3 {
-    font-size: 1.2rem;
-  }
-  .column p {
-    font-size: 1.2rem;
   }
   .column2 {
     margin-top: 0;
@@ -42,7 +24,7 @@
     margin-top: 0;
   }
   .column p {
-    width: 95%;
+    width: 100%;
   }
 }
 

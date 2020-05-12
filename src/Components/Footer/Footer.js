@@ -6,15 +6,18 @@ class Footer extends React.Component {
   render() {
     return (
       <ThemeContext.Consumer>
-        {({ toggleTheme }) => (
+        {({ theme, toggleTheme }) => (
           <div className='footer'>
             <div className='first-card-container'>
               <div className='half-white' />
               <div className='half-gray' />
               <div className='first-card-wrapper'>
                 <div className='first-card'>
-                  <h1>Devs like dark theme</h1>
-                  <div className='circle-button-wrapper'>
+                  <h1>Devs like dark theme.</h1>
+                  <div
+                    className='circle-button-wrapper'
+                    title={theme === 'dark' ? 'LightTheme' : 'DarkTheme'}
+                  >
                     <div onClick={toggleTheme} className='circle-button' />
                   </div>
                 </div>

@@ -12,33 +12,21 @@ import 'aos/dist/aos.css';
 const TeamPage = function () {
   const [animated, updateStateAnimated] = useState(false);
   const [slideState, setSlideState] = useState(0);
-  const [dimensions, setDimensions] = useState({
-    height: window.innerHeight,
-    width: window.innerWidth,
-  });
+  const [didMount, setDidMount] = useState(false);
 
-  useEffect((e) => {
-    function handleResize(e) {
-      if (
-        (dimensions.width < 768 && e.target.innerWidth >= 768) ||
-        (dimensions.width >= 768 && e.target.innerWidth < 768)
-      ) {
-        setDimensions({
-          height: window.innerHeight,
-          width: window.innerWidth,
-        });
-      }
+  useEffect(() => {
+    if (!didMount) {
+      window.scroll(0, 0);
+      setDidMount(true);
     }
-    window.addEventListener('resize', handleResize);
-  });
+  }, [didMount]);
   useEffect(
     (e) => {
       if (!animated) {
         import('aos').then((AosModule) => {
-          AosModule.init();
+          AosModule.init({ once: true });
         });
         updateStateAnimated(true);
-        console.log(animated);
       }
     },
     [animated]
@@ -47,7 +35,7 @@ const TeamPage = function () {
   const createDevCards = () => {
     const renderedCards = [];
     for (let i = 0; i < members.length; ) {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth > 800) {
         const member1 = members[i];
         const member2 = members[i + 1];
         const member3 = members[i + 2];
@@ -65,18 +53,20 @@ const TeamPage = function () {
                   children={member1.description}
                   github={member1.github}
                   linkedin={member1.linkedin}
+                  drible={member1.drible}
                 />
               ) : (
                 <div />
               )}
               {member2 ? (
                 <Profile
-                  className='profile2'
+                  className='profile1'
                   name={member2.name}
                   devs={member2.devs}
                   children={member2.description}
                   github={member2.github}
                   linkedin={member2.linkedin}
+                  drible={member2.drible}
                 />
               ) : (
                 <div />
@@ -89,6 +79,7 @@ const TeamPage = function () {
                   children={member3.description}
                   github={member3.github}
                   linkedin={member3.linkedin}
+                  drible={member3.drible}
                 />
               ) : (
                 <div />
@@ -103,18 +94,20 @@ const TeamPage = function () {
                   children={member4.description}
                   github={member4.github}
                   linkedin={member4.linkedin}
+                  drible={member4.drible}
                 />
               ) : (
                 <div />
               )}
               {member5 ? (
                 <Profile
-                  className='profile2'
+                  className='profile1'
                   name={member5.name}
                   devs={member5.devs}
                   children={member5.description}
                   github={member5.github}
                   linkedin={member5.linkedin}
+                  drible={member5.drible}
                 />
               ) : (
                 <div />
@@ -127,6 +120,7 @@ const TeamPage = function () {
                   children={member6.description}
                   github={member6.github}
                   linkedin={member6.linkedin}
+                  drible={member6.drible}
                 />
               ) : (
                 <div />
@@ -149,6 +143,7 @@ const TeamPage = function () {
                   children={member1.description}
                   github={member1.github}
                   linkedin={member1.linkedin}
+                  drible={member1.drible}
                 />
               ) : (
                 <div />
@@ -161,6 +156,7 @@ const TeamPage = function () {
                   children={member2.description}
                   github={member2.github}
                   linkedin={member2.linkedin}
+                  drible={member2.drible}
                 />
               ) : (
                 <div />
@@ -201,9 +197,16 @@ const TeamPage = function () {
   };
   return (
     <ThemeContext.Consumer>
-      {({ theme, toggleTheme }) => (
-        <div className={theme === 'dark' ? 'team-page dark' : 'team-page'}>
-          <div className='container'>
+      {({ theme, toggleTheme, animationSpeed, handleToggleNavbar }) => (
+        <div
+          className={theme === 'dark' ? 'team-page dark' : 'team-page'}
+          onClick={handleToggleNavbar}
+        >
+          <div
+            className='container'
+            data-aos='fade-in'
+            data-aos-duration={animationSpeed}
+          >
             <LandingBanner image={team} heading='Team'>
               The driving force behind SmokeTrees is the hard work and talent of
               its founding members dedicated to bringing the developers'
@@ -211,10 +214,14 @@ const TeamPage = function () {
               fortes and ensure top notch results.
             </LandingBanner>
             <Carousel
+              dragging={false}
+              data-aos='fade-up'
+              data-aos-duration={animationSpeed}
+              enableKeyboardControls
               slideIndex={slideState}
               afterSlide={(slideIndex) => setSlideState(slideIndex)}
               className='team-carousel'
-              style={{ outline: 'none' }}
+              style={{ outline: 'none', cursor: 'normal' }}
               renderCenterLeftControls={leftArrow}
               renderCenterRightControls={rightArrow}
               defaultControlsConfig={{
