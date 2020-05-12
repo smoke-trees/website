@@ -114,6 +114,12 @@
   .gg-chevron-left {
     top: 0;
   }
+  .gg-chevron-left {
+    left: -15px;
+  }
+  .gg-chevron-right {
+    right: -15px;
+  }
   .team-carousel {
     margin-bottom: 35px;
   }

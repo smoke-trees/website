@@ -24,7 +24,6 @@
 .github-logo {
   height: 28px;
   padding: 5px;
-  margin-top: 10px;
 }
 
 .profile2 {
@@ -41,6 +40,21 @@
 .github-logo {
   width: 32px;
   height: 32px;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 7rem;
+}
+
+.github-logo {
+  margin-left: 0 !important;
+}
+
+.drible-logo {
+  margin-left: 0 !important;
 }
 
 @media (max-width: 800px) {

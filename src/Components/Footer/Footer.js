@@ -13,7 +13,7 @@ class Footer extends React.Component {
               <div className='half-gray' />
               <div className='first-card-wrapper'>
                 <div className='first-card'>
-                  <h1>Devs like dark theme.</h1>
+                  <h1>Devs like dark theme</h1>
                   <div
                     className='circle-button-wrapper'
                     title={theme === 'dark' ? 'LightTheme' : 'DarkTheme'}

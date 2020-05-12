@@ -15,51 +15,65 @@ class Profile extends React.Component {
         <h3>{this.props.name}</h3>
         <h4>{this.props.devs}</h4>
         <p>{this.props.children}</p>
-        {this.props.github ? (
-          <a href={this.props.github} target='blank'>
-            <ThemeContext.Consumer>
-              {({ theme }) => (
-                <img
-                  src={theme === 'dark' ? githubDark : github}
-                  alt='github logo'
-                  className='github-logo'
-                />
-              )}
-            </ThemeContext.Consumer>
-          </a>
-        ) : (
-          <div style={{ display: 'inline' }} />
-        )}
-        {this.props.drible ? (
-          <a href={this.props.drible} target='blank'>
-            <ThemeContext.Consumer>
-              {({ theme }) => (
-                <img
-                  src={theme === 'dark' ? dribleLight : drible}
-                  alt='drible logo'
-                  className='drible-logo'
-                />
-              )}
-            </ThemeContext.Consumer>
-          </a>
-        ) : (
-          <div style={{ display: 'inline' }} />
-        )}
-        {this.props.linkedin ? (
-          <a href={this.props.linkedin} target='blank'>
-            <ThemeContext.Consumer>
-              {({ theme }) => (
-                <img
-                  src={theme === 'dark' ? linkedinWhite : linkedinBlack}
-                  alt='linkedin logo'
-                  className='linkedin-logo'
-                />
-              )}
-            </ThemeContext.Consumer>
-          </a>
-        ) : (
-          <div />
-        )}
+        <div className='socials'>
+          {this.props.github ? (
+            <a
+              href={this.props.github}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <ThemeContext.Consumer>
+                {({ theme }) => (
+                  <img
+                    src={theme === 'dark' ? githubDark : github}
+                    alt='github logo'
+                    className='github-logo'
+                  />
+                )}
+              </ThemeContext.Consumer>
+            </a>
+          ) : (
+            <div style={{ display: 'inline' }} />
+          )}
+          {this.props.drible ? (
+            <a
+              href={this.props.drible}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <ThemeContext.Consumer>
+                {({ theme }) => (
+                  <img
+                    src={theme === 'dark' ? dribleLight : drible}
+                    alt='drible logo'
+                    className='drible-logo'
+                  />
+                )}
+              </ThemeContext.Consumer>
+            </a>
+          ) : (
+            <div style={{ display: 'inline' }} />
+          )}
+          {this.props.linkedin ? (
+            <a
+              href={this.props.linkedin}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <ThemeContext.Consumer>
+                {({ theme }) => (
+                  <img
+                    src={theme === 'dark' ? linkedinWhite : linkedinBlack}
+                    alt='linkedin logo'
+                    className='linkedin-logo'
+                  />
+                )}
+              </ThemeContext.Consumer>
+            </a>
+          ) : (
+            <div />
+          )}
+        </div>
       </div>
     );
   }

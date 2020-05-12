@@ -1,44 +1,48 @@
 .project-page {
-    left: 0;
-    position: absolute;
-    top: 64px;
-    width: 100%;
+  left: 0;
+  position: absolute;
+  top: 64px;
+  width: 100%;
 }
 
 .container {
-    width: 75%;
-    height: auto;
-    position: relative;
-    margin: auto;
+  width: 75%;
+  height: auto;
+  position: relative;
+  margin: auto;
 }
 
 .project-content {
-    width: 100%;
-    display: flex;
-    margin-bottom: 100px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 100px;
 }
 
 @media (max-width: 800px) {
-    /*breakpoint*/
-    .container {
-        flex-direction: column;
-        width: 95%;
-    }
-    .project-content {
-        width: 100%;
-        flex-direction: column;
-        margin-bottom: 35px;
-    }
+  /*breakpoint*/
+  .container {
+    flex-direction: column;
+    width: 95%;
+  }
+  .project-content {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 35px;
+    font-size: 1.2rem !important;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .dark.project-page {
-    background: var(--dark-bg-color);
+  background: var(--dark-bg-color);
 }
 
 .dark.project-page .content h1 {
-    color: var(--dark-secondary)
+  color: var(--dark-secondary);
 }
 
-.dark.project-page .content{
-    color:white;
+.dark.project-page .content {
+  color: white;
 }
