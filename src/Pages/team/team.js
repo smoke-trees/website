@@ -1,54 +1,59 @@
-import React, { useEffect, useState } from 'react'
-import Carousel from 'nuka-carousel'
-import './style.css'
-import Footer from '../../Components/Footer/Footer'
-import LandingBanner from '../../Components/LandingBanner/LandingBanner'
-import Profile from '../../Components/Profile/Profile'
-import team from '../../vectors/undraw_forming_ideas_0pav.svg'
-import ThemeContext from '../../theme'
-import members from './team-content'
-import 'aos/dist/aos.css'
+import React, { useEffect, useState } from 'react';
+import Carousel from 'nuka-carousel';
+import './style.css';
+import Footer from '../../Components/Footer/Footer';
+import LandingBanner from '../../Components/LandingBanner/LandingBanner';
+import Profile from '../../Components/Profile/Profile';
+import team from '../../vectors/undraw_forming_ideas_0pav.svg';
+import ThemeContext from '../../theme';
+import members from './team-content';
+import 'aos/dist/aos.css';
 
 const TeamPage = function () {
-  const [animated, updateStateAnimated] = useState(false)
-  const [slideState, setSlideState] = useState(0)
+  const [animated, updateStateAnimated] = useState(false);
+  const [slideState, setSlideState] = useState(0);
   const [dimensions, setDimensions] = useState({
     height: window.innerHeight,
-    width: window.innerWidth
-  })
+    width: window.innerWidth,
+  });
 
   useEffect((e) => {
-    function handleResize (e) {
-      if ((dimensions.width < 768 && e.target.innerWidth >= 768) ||
-      (dimensions.width >= 768 && e.target.innerWidth < 768)) {
+    function handleResize(e) {
+      if (
+        (dimensions.width < 768 && e.target.innerWidth >= 768) ||
+        (dimensions.width >= 768 && e.target.innerWidth < 768)
+      ) {
         setDimensions({
           height: window.innerHeight,
-          width: window.innerWidth
-        })
+          width: window.innerWidth,
+        });
       }
     }
-    window.addEventListener('resize', handleResize)
-  })
-  useEffect((e) => {
-    if (!animated) {
-      import('aos').then(AosModule => {
-        AosModule.init()
-      })
-      updateStateAnimated(true)
-      console.log(animated)
-    }
-  }, [animated])
+    window.addEventListener('resize', handleResize);
+  });
+  useEffect(
+    (e) => {
+      if (!animated) {
+        import('aos').then((AosModule) => {
+          AosModule.init();
+        });
+        updateStateAnimated(true);
+        console.log(animated);
+      }
+    },
+    [animated]
+  );
 
   const createDevCards = () => {
-    const renderedCards = []
-    for (let i = 0; i < members.length;) {
+    const renderedCards = [];
+    for (let i = 0; i < members.length; ) {
       if (window.innerWidth >= 768) {
-        const member1 = members[i]
-        const member2 = members[i + 1]
-        const member3 = members[i + 2]
-        const member4 = members[i + 3]
-        const member5 = members[i + 4]
-        const member6 = members[i + 5]
+        const member1 = members[i];
+        const member2 = members[i + 1];
+        const member3 = members[i + 2];
+        const member4 = members[i + 3];
+        const member5 = members[i + 4];
+        const member6 = members[i + 5];
         renderedCards.push(
           <div key={i}>
             <div className='team-content'>
@@ -61,7 +66,9 @@ const TeamPage = function () {
                   github={member1.github}
                   linkedin={member1.linkedin}
                 />
-              ) : (<div />)}
+              ) : (
+                <div />
+              )}
               {member2 ? (
                 <Profile
                   className='profile2'
@@ -71,7 +78,9 @@ const TeamPage = function () {
                   github={member2.github}
                   linkedin={member2.linkedin}
                 />
-              ) : (<div />)}
+              ) : (
+                <div />
+              )}
               {member3 ? (
                 <Profile
                   className='profile1'
@@ -81,7 +90,9 @@ const TeamPage = function () {
                   github={member3.github}
                   linkedin={member3.linkedin}
                 />
-              ) : (<div />)}
+              ) : (
+                <div />
+              )}
             </div>
             <div className='team-content'>
               {member4 ? (
@@ -93,7 +104,9 @@ const TeamPage = function () {
                   github={member4.github}
                   linkedin={member4.linkedin}
                 />
-              ) : (<div />)}
+              ) : (
+                <div />
+              )}
               {member5 ? (
                 <Profile
                   className='profile2'
@@ -103,7 +116,9 @@ const TeamPage = function () {
                   github={member5.github}
                   linkedin={member5.linkedin}
                 />
-              ) : (<div />)}
+              ) : (
+                <div />
+              )}
               {member6 ? (
                 <Profile
                   className='profile1'
@@ -113,14 +128,16 @@ const TeamPage = function () {
                   github={member6.github}
                   linkedin={member6.linkedin}
                 />
-              ) : (<div />)}
+              ) : (
+                <div />
+              )}
             </div>
           </div>
-        )
-        i = i + 6
+        );
+        i = i + 6;
       } else {
-        const member1 = members[i]
-        const member2 = members[i + 1]
+        const member1 = members[i];
+        const member2 = members[i + 1];
         renderedCards.push(
           <div key={i}>
             <div className='team-content'>
@@ -133,7 +150,9 @@ const TeamPage = function () {
                   github={member1.github}
                   linkedin={member1.linkedin}
                 />
-              ) : (<div />)}
+              ) : (
+                <div />
+              )}
               {member2 ? (
                 <Profile
                   className='profile-single'
@@ -143,76 +162,76 @@ const TeamPage = function () {
                   github={member2.github}
                   linkedin={member2.linkedin}
                 />
-              ) : (<div />)}
+              ) : (
+                <div />
+              )}
             </div>
           </div>
-        )
-        i = i + 2
+        );
+        i = i + 2;
       }
     }
-    return renderedCards
-  }
-  const teamMembers = createDevCards()
+    return renderedCards;
+  };
+  const teamMembers = createDevCards();
 
   const leftArrow = ({ previousSlide }) => {
-    const leftArrowClass = slideState === 0 ? 'carousel-left-arrow gg-chevron-left invalid' : 'carousel-left-arrow gg-chevron-left'
+    const leftArrowClass =
+      slideState === 0
+        ? 'carousel-left-arrow gg-chevron-left invalid'
+        : 'carousel-left-arrow gg-chevron-left';
     return (
       <ThemeContext.Consumer>
         {({ theme }) => (
-          <div
-            onClick={previousSlide}
-            className={leftArrowClass}
-          />
+          <div onClick={previousSlide} className={leftArrowClass} />
         )}
       </ThemeContext.Consumer>
-    )
-  }
+    );
+  };
   const rightArrow = ({ nextSlide, slideCount }) => {
-    const rightArrowClass = slideState === slideCount - 1 ? 'carousel-right-arrow gg-chevron-right invalid' : 'carousel-right-arrow gg-chevron-right'
+    const rightArrowClass =
+      slideState === slideCount - 1
+        ? 'carousel-right-arrow gg-chevron-right invalid'
+        : 'carousel-right-arrow gg-chevron-right';
     return (
       <ThemeContext.Consumer>
-        {({ theme }) => (
-          <div
-            onClick={nextSlide}
-            className={rightArrowClass}
-          />
-        )}
+        {({ theme }) => <div onClick={nextSlide} className={rightArrowClass} />}
       </ThemeContext.Consumer>
-    )
-  }
+    );
+  };
   return (
     <ThemeContext.Consumer>
       {({ theme, toggleTheme }) => (
         <div className={theme === 'dark' ? 'team-page dark' : 'team-page'}>
           <div className='container'>
-            <LandingBanner image={team} heading='Teams'>
-              {' '}
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-      cumque soluta commodi enim culpa cupiditate nemo sequi laboriosam,
-      consequuntur quae nisi porro. Mollitia, eius blanditiis delectus
-      possimus perspiciatis sit reiciendis!{' '}
+            <LandingBanner image={team} heading='Team'>
+              The driving force behind SmokeTrees is the hard work and talent of
+              its founding members dedicated to bringing the developers'
+              community together. Each of them is extremely skilled in their own
+              fortes and ensure top notch results.
             </LandingBanner>
             <Carousel
               slideIndex={slideState}
-              afterSlide={slideIndex => setSlideState(slideIndex)}
+              afterSlide={(slideIndex) => setSlideState(slideIndex)}
               className='team-carousel'
               style={{ outline: 'none' }}
               renderCenterLeftControls={leftArrow}
               renderCenterRightControls={rightArrow}
               defaultControlsConfig={{
                 pagingDotsStyle: {
-                  fill: theme === 'dark' ? '#2ab34b' : '#21409a'
-                }
+                  fill: theme === 'dark' ? '#2ab34b' : '#21409a',
+                },
               }}
             >
               {teamMembers}
             </Carousel>
           </div>
+          <div className='spacer'></div>
           <Footer />
         </div>
       )}
     </ThemeContext.Consumer>
-  )
-}
+  );
+};
 
-export default TeamPage
+export default TeamPage;
