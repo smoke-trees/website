@@ -26,6 +26,7 @@ class Profile extends React.Component {
         <a href={this.props.linkedin} target='blank'>
           <img src={linkedin} alt='linkedin logo' className='linkedin-logo' />
         </a>
+        <div className='spacer-sm'></div>
       </div>
     );
   }

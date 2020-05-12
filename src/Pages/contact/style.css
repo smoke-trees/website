@@ -55,6 +55,7 @@
   .container {
     flex-direction: column;
     width: 85%;
+    height: 100%;
   }
   .landing-content {
     width: 75%;
@@ -81,10 +82,17 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    width: 100%;
   }
   .contact-content p {
-    width: 45%;
     text-align: left;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .contact-content h3 {
+    margin: 0;
+    text-align: center;
   }
   .image {
     display: none;
@@ -92,6 +100,8 @@
 }
 
 .content-page {
+  height: 100%;
+  margin-bottom: 0;
 }
 
 .dark.contact-page {
