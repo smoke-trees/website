@@ -33,89 +33,10 @@ class Header extends React.Component {
       if (this.state.navbar) {
         this.setState({ navbar: !this.state.navbar })
       }
-      const about = document.getElementById('about');
-      const projects = document.getElementById('projects');
-      const team = document.getElementById('team');
-      const contact = document.getElementById('contact');
-
-      about.style.backgroundColor = "#FFFFFF";
-      about.style.color = "#000000";
-      projects.style.backgroundColor = "#FFFFFF"
-      projects.style.color = "#000000"
-      team.style.backgroundColor = "#FFFFFF"
-      team.style.color = "#000000"
-      contact.style.backgroundColor = "#FFFFFF"
-      contact.style.color = "#000000"
     }
 
-    this.handleAboutNavbarClick = (e) => {
+    this.handleNavbarToggleClick = (e) => {
       this.setState({ navbar: !this.state.navbar })
-      const about = document.getElementById('about');
-      const projects = document.getElementById('projects');
-      const team = document.getElementById('team');
-      const contact = document.getElementById('contact');
-
-      about.style.backgroundColor = "#21409a";
-      about.style.color = "#FFFFFF";
-      projects.style.backgroundColor = "#FFFFFF"
-      projects.style.color = "#000000"
-      team.style.backgroundColor = "#FFFFFF"
-      team.style.color = "#000000"
-      contact.style.backgroundColor = "#FFFFFF"
-      contact.style.color = "#000000"
-    }
-
-    this.handleProjectsNavbarClick = (e) => {
-      this.setState({ navbar: !this.state.navbar })
-      const about = document.getElementById('about');
-      const projects = document.getElementById('projects');
-      const team = document.getElementById('team');
-      const contact = document.getElementById('contact');
-
-      about.style.backgroundColor = "#FFFFFF";
-      about.style.color = "#000000";
-      projects.style.backgroundColor = "#21409a"
-      projects.style.color = "#FFFFFF"
-      team.style.backgroundColor = "#FFFFFF"
-      team.style.color = "#000000"
-      contact.style.backgroundColor = "#FFFFFF"
-      contact.style.color = "#000000"
-    }
-
-    this.handleTeamNavbarClick = (e) => {
-      this.setState({ navbar: !this.state.navbar })
-      this.setState({ navbar: !this.state.navbar })
-      const about = document.getElementById('about');
-      const projects = document.getElementById('projects');
-      const team = document.getElementById('team');
-      const contact = document.getElementById('contact');
-
-      about.style.backgroundColor = "#FFFFFF";
-      about.style.color = "#000000";
-      projects.style.backgroundColor = "#FFFFFF"
-      projects.style.color = "#000000"
-      team.style.backgroundColor = "#21409a"
-      team.style.color = "#FFFFFF"
-      contact.style.backgroundColor = "#FFFFFF"
-      contact.style.color = "#000000"
-    }
-
-    this.handleContactNavbarClick = (e) => {
-      this.setState({ navbar: !this.state.navbar })
-      this.setState({ navbar: !this.state.navbar })
-      const about = document.getElementById('about');
-      const projects = document.getElementById('projects');
-      const team = document.getElementById('team');
-      const contact = document.getElementById('contact');
-
-      about.style.backgroundColor = "#FFFFFF";
-      about.style.color = "#000000";
-      projects.style.backgroundColor = "#FFFFFF"
-      projects.style.color = "#000000"
-      team.style.backgroundColor = "#FFFFFF"
-      team.style.color = "#000000"
-      contact.style.backgroundColor = "#21409a"
-      contact.style.color = "#FFFFFF"
     }
 
     this.handleBlur = (e) => {
@@ -139,7 +60,20 @@ class Header extends React.Component {
       dimensions: dimensions,
       animationSpeed: animationSpeed,
       handleToggleNavbar: this.handleToggleNavbar,
-      navItem: 'home'
+      currentPage: window.location.pathname
+    }
+
+    this.handleTopicClick = (topic) => (e) => {
+      this.setState({ navbar: false })
+      if (this.state.dimensions.width > 800) {
+        this.setState({ currentPage: topic })
+      }
+    }
+    this.isCurrentPage = (topic) => {
+      if (this.state.dimensions.width > 800 && this.state.currentPage === topic) {
+        return 'current-page'
+      }
+      return ''
     }
   }
 
@@ -169,20 +103,36 @@ class Header extends React.Component {
     return (
       <div>
         <header className={navbarClassName}>
-          <Link onClick={this.handleToggleNavbar} to='/' className='logo'><p>SmokeTrees</p></Link>
+          <Link onClick={this.handleTopicClick('')} to='/' className='logo'><p>SmokeTrees</p></Link>
           <nav className={this.state.navbar && this.state.dimensions.width < 800 ? 'mobile-nav' : ''}>
             <ul>
               <li>
-                <Link id="about" onClick={this.handleAboutNavbarClick} to='/about'>About</Link>
+                <Link
+                  id='about' className={this.isCurrentPage('/about')}
+                  onClick={this.handleTopicClick('/about')} to='/about'
+                >About
+                </Link>
               </li>
               <li>
-                <Link id="projects" onClick={this.handleProjectsNavbarClick} to='/projects'>Projects</Link>
+                <Link
+                  id='projects' className={this.isCurrentPage('/projects')}
+                  onClick={this.handleTopicClick('/projects')} to='/projects'
+                >Projects
+                </Link>
               </li>
               <li>
-                <Link id="team" onClick={this.handleTeamNavbarClick} to='/team'>Team</Link>
+                <Link
+                  id='team' className={this.isCurrentPage('/team')}
+                  onClick={this.handleTopicClick('/team')} to='/team'
+                >Team
+                </Link>
               </li>
               <li>
-                <Link id="contact" onClick={this.handleContactNavbarClick} to='/contact'>Contact</Link>
+                <Link
+                  id='contact' className={this.isCurrentPage('/contact')}
+                  onClick={this.handleTopicClick('/contact')} to='/contact'
+                >Contact
+                </Link>
               </li>
             </ul>
           </nav>
