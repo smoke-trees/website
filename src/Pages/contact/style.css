@@ -50,8 +50,15 @@
 	color: #bebcbc;
 }
 
+.contact-content-container{
+	padding-left: 40px;
+}
+
 @media (max-width: 800px) {
 	/*breakpoint*/
+.contact-content-container{
+	padding-left: 0;
+}
 	.container {
 		flex-direction: column;
 		width: 95%;

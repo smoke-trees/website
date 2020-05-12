@@ -3,7 +3,7 @@ import './style.css'
 
 class ColumnContent extends React.Component {
   render () {
-    console.log(this.props.link)
+    // console.log(this.props.link)
     return (
       <div data-aos='fade-up' data-aos-duration={this.props.animationSpeed} className={`column ${this.props.className || ''}`}>
         {this.props.link !== undefined ? (

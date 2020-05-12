@@ -27,12 +27,6 @@ header {
 	font-size: 1.2rem;
 }
 
-.nav-toggle {
-	position: absolute !important;
-	top: -9999px !important;
-	left: -9999px !important;
-}
-
 .nav-toggle-label {
 	position: absolute;
 	top: 0;
@@ -98,13 +92,22 @@ nav a {
 	font-size: 1.2rem;
 }
 
-.nav-toggle:checked ~ nav {
+/* .nav-toggle:checked.nav-toggle:focus ~ nav {
 	transform: scale(1, 1);
 }
 
-.nav-toggle:checked {
+
+.nav-toggle:checked.nav-toggle:focus{
 	opacity: 1;
 	transition: opacity 250ms ease-in-out 250ms;
+} */
+
+nav.mobile-nav{
+	transform:scale(1,1);
+}
+
+.nav-toggle-label:focus{
+	display: none;
 }
 
 @media screen and (min-width: 800px) {

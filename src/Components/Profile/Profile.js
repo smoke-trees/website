@@ -4,7 +4,8 @@ import github from '../../vectors/GitHub_32.png'
 import githubDark from '../../vectors/g26.png'
 import drible from '../../vectors/drible-dark.svg'
 import dribleLight from '../../vectors/drible-light.svg'
-import linkedin from '../../vectors/linkedin_32.png'
+import linkedinWhite from '../../vectors/linkedin-white.svg'
+import linkedinBlack from '../../vectors/linkedin-black.svg'
 import ThemeContext from '../../theme'
 
 class Profile extends React.Component {
@@ -35,7 +36,11 @@ class Profile extends React.Component {
         {this.props.linkedin ? (
 
           <a href={this.props.linkedin} target='blank'>
-            <img src={linkedin} alt='linkedin logo' className='linkedin-logo' />
+            <ThemeContext.Consumer>
+              {({ theme }) => (
+                <img src={theme === 'dark' ? linkedinWhite : linkedinBlack} alt='linkedin logo' className='linkedin-logo' />
+              )}
+            </ThemeContext.Consumer>
           </a>
         ) : (<div />)}
       </div>

@@ -39,7 +39,7 @@ Having worked with website design for the better part of 3 years,
           Being the Vice Captain of SEDS Projects VIT only adds to an illustrious knowledge base..
                     `,
   github: 'https://github.com/aryamansriram',
-  linkedin: 'https://github.com/aryamansriram'
+  linkedin: 'https://www.linkedin.com/in/aryaman-sriram-9a542b155/'
 }, {
   name: 'Atharva Hudlikar',
   devs: 'ML/AI',

@@ -27,6 +27,7 @@
 .about-content {
 	width: 100%;
 	display: flex;
+		margin-bottom: 100px;
 }
 
 .column p{
@@ -47,6 +48,10 @@
 
 	.what-we-do{
 		text-align: center;
+	}
+	
+	.about-content{
+		margin-bottom: 35px;
 	}
 }
 

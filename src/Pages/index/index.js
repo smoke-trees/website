@@ -10,12 +10,16 @@ import 'aos/dist/aos.css'
 import { Link } from 'react-router-dom'
 
 const IndexPage = () => {
-  window.scrollTo(0, 0)
   const [dimensions] = useState({
     height: window.innerHeight,
     width: window.innerWidth
   })
+  const [didMount, setDidMount] = useState(false)
   useEffect(() => {
+    if (!didMount) {
+      window.scrollTo(0, 0)
+      setDidMount(true)
+    }
     if (window.innerWidth >= 799) {
       import('typed.js').then((TypedModule) => {
         const Typed = TypedModule.default
@@ -36,12 +40,12 @@ const IndexPage = () => {
       }
     }
     window.addEventListener('resize', handleResize)
-  }, [dimensions])
+  }, [dimensions, didMount])
 
   return (
     <ThemeContext.Consumer>
-      {({ theme, toggleTheme, animationSpeed, dimensions }) => (
-        <div className={theme === 'light' ? 'index-page' : 'index-page dark'}>
+      {({ theme, toggleTheme, animationSpeed, dimensions, handleToggleNavbar }) => (
+        <div onClick={handleToggleNavbar} className={theme === 'light' ? 'index-page' : 'index-page dark'}>
           <div className='container'>
             <div className='landing'>
               <div className='smoketrees' data-aos='fade-in' data-aos-duration={animationSpeed}>
@@ -146,24 +150,6 @@ Regular updates on GitHub for code development using Flutter platform made my wo
                 <img alt='' src={realTime} />
               </div>
             </div>
-            {/* <div className='container-basic'>
-                <div className='logo-svg' data-aos='fade-up' data-aos-duration='1500'>
-                  <img alt='' src={designFeedback} />
-                </div>
-                <div className='description alter' data-aos='fade-left' data-aos-duration='1500'>
-                  <div className='alter-extra-div'>
-                    <h1>Main Projects</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque vitae malesuada bibendum quam aliquam. At dolor, sit eget commodo neque, accumsan nec volutpat. Sit posuere non mi duis id. </p>
-                  </div>
-                  <div className='btn '>
-                    <div className='elements'>
-                      <div className='git'>
-                                        Know More
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
           </div>
         </div>
       )}

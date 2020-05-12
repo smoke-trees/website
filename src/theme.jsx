@@ -4,6 +4,8 @@ const ThemeContext = React.createContext({
   theme: 'light',
   animationSpeed: '1500',
   toggleTheme: () => {
+  },
+  handleToggleNavbar: () => {
   }
 })
 

@@ -15,15 +15,15 @@ class Contact extends React.Component {
   render () {
     return (
       <ThemeContext.Consumer>
-        {({ theme, animationSpeed, dimensions }) => (
-          <div className={theme === 'dark' ? 'contact-page dark' : 'contact-page'}>
+        {({ theme, animationSpeed, dimensions, handleToggleNavbar }) => (
+          <div className={theme === 'dark' ? 'contact-page dark' : 'contact-page'} onClick={handleToggleNavbar}>
             <div className='container'>
               <div className='content-page'>
-                <div className='image' data-aos='fade-up' data-aos-duration={animationSpeed}>
+                <div className='image' data-aos='fade-right' data-aos-duration={animationSpeed}>
                   <img src={contact} alt='' />
                 </div>
                 <div
-                  className='text-content'
+                  className='text-content contact-content-container'
                   data-aos={dimensions.width > 800 ? 'fade-left' : 'fade-in'}
                   data-aos-duration={animationSpeed}
                 >

@@ -8,6 +8,7 @@ class Header extends React.Component {
     super(props)
     const mobileSpeed = '800'
     const desktopSpeed = '1000'
+    this.navRef = React.createRef()
 
     let storeTheme = 'light'
     if (window.localStorage) {
@@ -28,17 +29,20 @@ class Header extends React.Component {
     }
     const dimensions = { height: window.innerHeight, width: window.innerWidth }
     const animationSpeed = dimensions.width > 800 ? desktopSpeed : mobileSpeed
-    this.state = {
-      theme: storeTheme,
-      toggleTheme: this.toggleTheme,
-      navbar: false,
-      dimensions: dimensions,
-      animationSpeed: animationSpeed
+    this.handleToggleNavbar = (e) => {
+      if (this.state.navbar) {
+        this.setState({ navbar: !this.state.navbar })
+      }
     }
-
-    this.handleNavClick = (e) => {
+    this.handleNavbarToggleClick = (e) => {
       this.setState({ navbar: !this.state.navbar })
     }
+
+    this.handleBlur = (e) => {
+      // console.log(e)
+      this.setState({ navbar: false })
+    }
+
     this.handleResize = (e) => {
       if (this.state.dimensions.width <= 800 && e.target.innerWidth > 800) {
         this.setState({ dimensions: { height: e.target.innerHeight, width: e.target.innerWidth } })
@@ -47,6 +51,14 @@ class Header extends React.Component {
         this.setState({ dimensions: { height: e.target.innerHeight, width: e.target.innerWidth } })
         this.setState({ animationSpeed: mobileSpeed })
       }
+    }
+    this.state = {
+      theme: storeTheme,
+      toggleTheme: this.toggleTheme,
+      navbar: false,
+      dimensions: dimensions,
+      animationSpeed: animationSpeed,
+      handleToggleNavbar: this.handleToggleNavbar
     }
   }
 
@@ -68,14 +80,6 @@ class Header extends React.Component {
     window.addEventListener('resize', this.handleResize)
   }
 
-  // handleOnClick () {
-  //   $(document).ready( function () {
-  //     $('.uncheck').click(function(){
-  //         $('#myCheck').prop('checked', false);
-  //     })
-  // });
-  // }
-
   render () {
     let navbarClassName = 'navbar-container'
     if (this.state.theme === 'dark') {
@@ -84,31 +88,32 @@ class Header extends React.Component {
     return (
       <div>
         <header className={navbarClassName}>
-          <Link to='/' className='logo'><p>SmokeTrees</p></Link>
-          <input
-            type='checkbox' id='nav-toggle'
-            onBlur={this.handleBlur} onChange={this.handleNavClick} checked={this.state.navbar}
-            className='nav-toggle'
-          />
-          <nav>
+          <Link onClick={this.handleToggleNavbar} to='/' className='logo'><p>SmokeTrees</p></Link>
+          <nav className={this.state.navbar && this.state.dimensions.width < 800 ? 'mobile-nav' : ''}>
             <ul>
               <li>
-                <Link to='/about' onClick={this.handleOnClick}>About</Link>
+                <Link onClick={this.handleNavbarToggleClick} to='/about'>About</Link>
               </li>
               <li>
-                <Link to='/projects'>Projects</Link>
+                <Link onClick={this.handleNavbarToggleClick} to='/projects'>Projects</Link>
               </li>
               <li>
-                <Link to='/team'>Team</Link>
+                <Link onClick={this.handleNavbarToggleClick} to='/team'>Team</Link>
               </li>
               <li>
-                <Link to='/contact'>Contact</Link>
+                <Link onClick={this.handleNavbarToggleClick} to='/contact'>Contact</Link>
               </li>
             </ul>
           </nav>
-          <label htmlFor='nav-toggle' className='nav-toggle-label'>
+          <div
+            ref={this.navRef}
+            role='grid'
+            // onBlur={(e) => { console.log(e) }}
+            onClick={this.handleNavbarToggleClick}
+            className='nav-toggle-label'
+          >
             <span />
-          </label>
+          </div>
         </header>
         <ThemeContext.Provider value={this.state}>
           <Route exact path='/' component={this.props.index} />

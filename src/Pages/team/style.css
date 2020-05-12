@@ -15,8 +15,9 @@
 .team-content {
 	width: 100%;
 	display: flex;
-	padding: 20px;
+	padding-left: 18px;
 	cursor: auto;
+	padding-bottom: 40px;
 }
 
 .profile p {
@@ -85,9 +86,12 @@
 	top: 4px
 }
 
-.gg-chevron-right.invalid,
-.gg-chevron-left.invalid{
+.gg-chevron-right.invalid, .gg-chevron-left.invalid {
 	display: none;
+}
+
+.team-carousel{
+	margin-bottom: 100px;
 }
 
 @media (max-width: 800px) {
@@ -102,6 +106,9 @@
 	}
 	.gg-chevron-right, .gg-chevron-left {
 		top: 0;
+	}
+	.team-carousel{
+		margin-bottom: 35px;
 	}
 }
 
@@ -124,6 +131,6 @@
 
 .team-page .profile img {
 	display: inline-block;
-	margin-right: 4px;
-	margin-left: 4px;
+	margin-right: 10px;
+	margin-left: 10px;
 }

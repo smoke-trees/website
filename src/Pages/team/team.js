@@ -69,7 +69,7 @@ const TeamPage = function () {
               ) : (<div />)}
               {member2 ? (
                 <Profile
-                  className='profile2'
+                  className='profile1'
                   name={member2.name}
                   devs={member2.devs}
                   children={member2.description}
@@ -104,7 +104,7 @@ const TeamPage = function () {
               ) : (<div />)}
               {member5 ? (
                 <Profile
-                  className='profile2'
+                  className='profile1'
                   name={member5.name}
                   devs={member5.devs}
                   children={member5.description}
@@ -194,8 +194,8 @@ const TeamPage = function () {
   }
   return (
     <ThemeContext.Consumer>
-      {({ theme, toggleTheme, animationSpeed }) => (
-        <div className={theme === 'dark' ? 'team-page dark' : 'team-page'}>
+      {({ theme, toggleTheme, animationSpeed, handleToggleNavbar }) => (
+        <div className={theme === 'dark' ? 'team-page dark' : 'team-page'} onClick={handleToggleNavbar}>
           <div className='container' data-aos='fade-in' data-aos-duration={animationSpeed}>
             <LandingBanner image={team} heading='Team'>
 The driving force behind SmokeTrees is the hard work and talent of its
