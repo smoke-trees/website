@@ -89,10 +89,17 @@
     width: 100%;
     text-align: center;
     margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
   }
   .contact-content h3 {
     margin: 0;
     text-align: center;
+    font-size: 1.2rem;
+  }
+  a {
+    text-decoration: none;
+    color: black;
   }
   .image {
     display: none;

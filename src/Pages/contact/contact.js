@@ -27,8 +27,13 @@ class Contact extends React.Component {
                   <div className='contact-content'>
                     <hr />
                     <p>For more information or queries please contact us at</p>
-                    <hr />
-                    <h3>smoketreesofficial@gmail.com</h3>
+                    <a
+                      href='mailto:nowhere@mozilla.org'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <h3>smoketreesofficial@gmail.com</h3>
+                    </a>
                   </div>
                 </div>
               </div>
