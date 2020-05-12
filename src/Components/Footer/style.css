@@ -46,6 +46,7 @@
 	text-align: left;
 	justify-self: center;
 	align-content: center;
+	border-radius: 4px;
 }
 
 .first-card h1 {

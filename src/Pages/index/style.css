@@ -4,6 +4,7 @@
     --dark-primary: #2ab67b;
     --dark-secondary: #2ab34b;
     --dark-accent-primary: #07a7bc;
+    --light-primary: #21409A
 }
 
 .index-page {
@@ -61,18 +62,19 @@
 }
 
 .digital {
-    font-weight: 350px;
+    font-weight: 350;
+    color: var(--light-primary);
 }
 
 .technology {
     font-weight: normal;
-    color: #21409A;
+    color: var(--light-primary);
 }
 
 .btn {
     position: relative;
     color: white;
-    background: #21409A;
+    background: var(--light-primary);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: intrinsic;
     width: -moz-max-content;
@@ -80,6 +82,7 @@
     padding: 12px 23px;
     font-size: 20px;
     font-weight: bold;
+    border-radius: 4px;
 }
 
 .logo-svg {
@@ -110,7 +113,7 @@
 }
 
 .build {
-    color: #21409A;
+    color: var(--light-primary);
 }
 
 .container-basic {
@@ -141,7 +144,7 @@
 
 .description h1 {
     font-size: 40px;
-    color: #21409A;
+    color: var(--light-primary);
     margin: 0;
     margin-bottom: 40px;
     font-weight: normal;
@@ -178,7 +181,7 @@
 }
 
 .landing-content h1 {
-    color: #21409a;
+    color: var(--light-primary);
     justify-content: center;
 }
 
@@ -258,7 +261,7 @@
 }
 
 .dark.index-page .digital {
-    color: var(--dark-accent-primary)
+    color: var(--dark-primary)
 }
 
 .dark.index-page .technology {
