@@ -89,7 +89,6 @@ nav a {
 	font-size: 1.2rem;
 	text-align: center;
 	padding: 16px 14px;
-	border-radius: 4px;
 }
 
 nav.mobile-nav {
@@ -101,9 +100,40 @@ nav.mobile-nav {
 }
 
 .current-page {
-	background-color: #21409a;
-	color: #fff;
+	color: var(--light-primary);
+	border-bottom: 3px solid var(--light-primary);
 }
+
+.navbar-container.dark ul a {
+	color: white;
+}
+
+
+.navbar-container.dark .nav-toggle-label span, .navbar-container.dark .nav-toggle-label span::before, .navbar-container.dark .nav-toggle-label span::after {
+	background: white;
+}
+.navbar-container.dark {
+	color: white;
+	background-color: var(--dark-bg-color);
+}
+
+.navbar-container.dark .logo {
+	color: white;
+}
+
+.navbar-container.dark nav {
+	background: var(--dark-bg-color);
+}
+
+.navbar-container.dark ul {
+	background: var(--dark-bg-color);
+	color: white;
+}
+
+.navbar-container.dark .current-page{
+	color: var(--dark-secondary);
+}
+
 
 @media (min-width: 800px) {
 	.nav-toggle-label {
@@ -157,48 +187,13 @@ nav.mobile-nav {
 		right: 0;
 	}
 	nav a:hover:not(.current-page):not(.logo) {
-		background-color: #21409a;
-		color: white;
+		border-bottom:3px solid #21409a;
 	}
 	.navbar-container.dark .current-page {
-		background: var(--dark-secondary);
+		border-bottom:3px solid var(--dark-secondary);
 	}
 	.navbar-container.dark a:hover:not(.current-page):not(.logo) {
-		background-color: var(--dark-secondary);
-		color: white;
+		border-bottom:3px solid var(--dark-secondary);
 	}
 }
 
-.navbar-container.dark {
-	color: white;
-	background-color: var(--dark-bg-color);
-}
-
-.navbar-container.dark .logo {
-	color: white;
-}
-
-.navbar-container.dark nav {
-	background: var(--dark-bg-color);
-}
-
-.navbar-container.dark ul {
-	background: var(--dark-bg-color);
-	color: white;
-}
-
-.navbar-container.dark ul a {
-	color: white;
-}
-
-.navbar-container.dark ul a:hover {
-	color: white;
-}
-
-.navbar-container.dark ul a:visited {
-	color: white;
-}
-
-.navbar-container.dark .nav-toggle-label span, .navbar-container.dark .nav-toggle-label span::before, .navbar-container.dark .nav-toggle-label span::after {
-	background: white;
-}
