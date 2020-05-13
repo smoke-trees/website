@@ -21,11 +21,11 @@ class Header extends React.Component {
     }
     this.toggleTheme = () => {
       this.setState(state => {
-        if (window.localStorage) {
-          try {
+        try {
+          if (window.localStorage) {
             window.localStorage.setItem('smoke-color', state.theme === 'light' ? 'dark' : 'light')
-          } catch (e) {
           }
+        } catch (e) {
         }
         return {
           theme: state.theme === 'dark' ? 'light' : 'dark'
