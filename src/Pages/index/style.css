@@ -4,7 +4,9 @@
     --dark-primary: #2ab67b;
     --dark-secondary: #2ab34b;
     --dark-accent-primary: #07a7bc;
-    --light-primary: #21409A
+    --light-primary: #20149a;
+    --scrollbar-color: #20149a;
+    --scrollbar-background:#fff;
 }
 
 .index-page {

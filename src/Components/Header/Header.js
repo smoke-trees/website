@@ -1,6 +1,6 @@
 import React from 'react'
 import './style.css'
-import { Route, Link } from 'react-router-dom'
+import { Route } from 'react-router-dom'
 import ThemeContext from '../../theme'
 
 class Header extends React.Component {
@@ -84,6 +84,13 @@ class Header extends React.Component {
       document.body.style.background = '#ffffff'
     }
     window.addEventListener('resize', this.handleResize)
+    if (this.state.theme === 'dark') {
+      document.documentElement.style.setProperty('--scrollbar-color', '#2ab34b')
+      document.documentElement.style.setProperty('--scrollbar-background', '#121212')
+    } else {
+      document.documentElement.style.setProperty('--scrollbar-color', '#20149a')
+      document.documentElement.style.setProperty('--scrollbar-background', '#fff')
+    }
   }
 
   componentDidUpdate () {
@@ -93,6 +100,13 @@ class Header extends React.Component {
       document.body.style.background = '#ffffff'
     }
     window.addEventListener('resize', this.handleResize)
+    if (this.state.theme === 'dark') {
+      document.documentElement.style.setProperty('--scrollbar-color', '#2ab34b')
+      document.documentElement.style.setProperty('--scrollbar-background', '#121212')
+    } else {
+      document.documentElement.style.setProperty('--scrollbar-color', '#20149a')
+      document.documentElement.style.setProperty('--scrollbar-background', '#fff')
+    }
   }
 
   render () {
