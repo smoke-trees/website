@@ -11,16 +11,21 @@ class Header extends React.Component {
     this.navRef = React.createRef()
 
     let storeTheme = 'light'
-    if (window.localStorage) {
-      storeTheme = window.localStorage.getItem('smoke-color') || 'light'
-    } else {
-      storeTheme = 'light'
+    try {
+      if (window.localStorage) {
+        storeTheme = window.localStorage.getItem('smoke-color') || 'light'
+      } else {
+        storeTheme = 'light'
+      }
+    } catch (e) {
     }
-
     this.toggleTheme = () => {
       this.setState(state => {
         if (window.localStorage) {
-          window.localStorage.setItem('smoke-color', state.theme === 'light' ? 'dark' : 'light')
+          try {
+            window.localStorage.setItem('smoke-color', state.theme === 'light' ? 'dark' : 'light')
+          } catch (e) {
+          }
         }
         return {
           theme: state.theme === 'dark' ? 'light' : 'dark'
