@@ -7,7 +7,6 @@ import designFeedback from '../../vectors/design_feedback.svg'
 import realTime from '../../vectors/real-time.svg'
 import ThemeContext from '../../theme'
 import 'aos/dist/aos.css'
-import { Link } from 'react-router-dom'
 
 const IndexPage = () => {
   const [dimensions] = useState({
@@ -108,7 +107,7 @@ const IndexPage = () => {
                   <h1>Our Projects</h1>
                   <p>CESS: Comprehensive Electoral Solutions Suite - an elections suite software which merges RFID and fingerprint recognition with extra layers of security which checks emotion when you vote while securing your transaction via a smart ethereum contract.</p>
                 </div>
-                <Link to='/projects'>
+                <a href='/projects'>
                   <div className='btn'>
                     <div className='elements'>
                       <div className='git'>
@@ -116,7 +115,7 @@ const IndexPage = () => {
                       </div>
                     </div>
                   </div>
-                </Link>
+                </a>
               </div>
             </div>
             <div className='container-basic client'>

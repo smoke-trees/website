@@ -103,36 +103,36 @@ class Header extends React.Component {
     return (
       <div>
         <header className={navbarClassName}>
-          <Link onClick={this.handleTopicClick('')} to='/' className='logo'><p>SmokeTrees</p></Link>
+          <a onClick={this.handleTopicClick('')} href='/' className='logo'><p>SmokeTrees</p></a>
           <nav className={this.state.navbar && this.state.dimensions.width < 800 ? 'mobile-nav' : ''}>
             <ul>
               <li>
-                <Link
+                <a
                   id='about' className={this.isCurrentPage('/about')}
-                  onClick={this.handleTopicClick('/about')} to='/about'
+                  onClick={this.handleTopicClick('/about')} href='/about'
                 >About
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   id='projects' className={this.isCurrentPage('/projects')}
-                  onClick={this.handleTopicClick('/projects')} to='/projects'
+                  onClick={this.handleTopicClick('/projects')} href='/projects'
                 >Projects
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   id='team' className={this.isCurrentPage('/team')}
-                  onClick={this.handleTopicClick('/team')} to='/team'
+                  onClick={this.handleTopicClick('/team')} href='/team'
                 >Team
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   id='contact' className={this.isCurrentPage('/contact')}
-                  onClick={this.handleTopicClick('/contact')} to='/contact'
+                  onClick={this.handleTopicClick('/contact')} href='/contact'
                 >Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
