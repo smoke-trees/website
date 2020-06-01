@@ -158,4 +158,10 @@ Having worked with website design for the better part of 3 years,
   description: 'Hemanth is an experienced Android ROM and App Developer. Having developed many Android Apps using Java and Kotlin with the latest features and a clean codebase, his apps aim to solve day-to-day problems to make one’s life easier.',
   linkedin: 'https://www.linkedin.com/in/darthbenro008/',
   github: ' https://github.com/DarthBenro008'
+},{
+  name: 'Md Hishaam Akhtar',
+  devs: 'WEB',
+  description: 'Having proficiency in multiple programming languages including JavaScript, TypeScript, Python and C++, Hishaam is an open source enthusiast, a skilled Node.js developer and an aspiring Cloud Architect. With an appetite for new technology, he is here to learn and create.',
+  linkedin: 'https://www.linkedin.com/in/md-hishaam-akhtar-812a3019a/',
+  github: 'https://github.com/mdhishaamakhtar'
 }]
