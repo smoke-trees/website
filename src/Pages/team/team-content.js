@@ -163,5 +163,5 @@ Having worked with website design for the better part of 3 years,
   devs: 'APP DEV',
   description: 'A mobile fullstack android developer with proficiency in Kotlin and Flutter, Rithik is passionate about Android. He has made several apps which have multiple downloads on the play store. Not to mention he is also adept at backend server development with GoLang. With a skill for perfection, Rithik is known for his code quality and his tenacity',
   linkedin: 'https://www.linkedin.com/in/rithik-jain-710b3a199/',
-  github: 'https://github.com/adarshsingh87/rithikjain'
+  github: 'https://github.com/rithikjain'
 }]
