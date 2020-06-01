@@ -158,4 +158,10 @@ Having worked with website design for the better part of 3 years,
   description: 'Hemanth is an experienced Android ROM and App Developer. Having developed many Android Apps using Java and Kotlin with the latest features and a clean codebase, his apps aim to solve day-to-day problems to make one’s life easier.',
   linkedin: 'https://www.linkedin.com/in/darthbenro008/',
   github: ' https://github.com/DarthBenro008'
+}, {
+  name: 'Rithik Jain',
+  devs: 'APP DEV',
+  description: 'A mobile fullstack android developer with proficiency in Kotlin and Flutter, Rithik is passionate about Android. He has made several apps which have multiple downloads on the play store. Not to mention he is also adept at backend server development with GoLang. With a skill for perfection, Rithik is known for his code quality and his tenacity',
+  linkedin: 'https://www.linkedin.com/in/rithik-jain-710b3a199/',
+  github: 'https://github.com/adarshsingh87/rithikjain'
 }]
