@@ -158,4 +158,10 @@ Having worked with website design for the better part of 3 years,
   description: 'Hemanth is an experienced Android ROM and App Developer. Having developed many Android Apps using Java and Kotlin with the latest features and a clean codebase, his apps aim to solve day-to-day problems to make one’s life easier.',
   linkedin: 'https://www.linkedin.com/in/darthbenro008/',
   github: ' https://github.com/DarthBenro008'
+}, {
+  name: 'Ishan Khandelwal',
+  devs: 'APP DEV',
+  description: 'Ishan is an Android Developer and a keen learner. He is passionate about mobile application development and believes in learning through projects. He is a blockchain enthusiast with interest in web development and competitive programming.',
+  linkedin: 'https://www.linkedin.com/in/ishan-khandelwal-246b2a19a/',
+  github: ' https://github.com/Ishan-001'
 }]
