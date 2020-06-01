@@ -158,4 +158,10 @@ Having worked with website design for the better part of 3 years,
   description: 'Hemanth is an experienced Android ROM and App Developer. Having developed many Android Apps using Java and Kotlin with the latest features and a clean codebase, his apps aim to solve day-to-day problems to make one’s life easier.',
   linkedin: 'https://www.linkedin.com/in/darthbenro008/',
   github: ' https://github.com/DarthBenro008'
+}, {
+  name: 'Manas Vardhan',
+  devs: 'ML/AI',
+  description: 'Manas is all about data. He is working in the field of Machine Learning and aspires to pursue Data Science for a career. He has a strong hold of statistics. He aims to build future ready cutting edge AI apps in the near future.',
+  github: 'https://github.com/ManasVardhan',
+  linkedin: 'https://www.linkedin.com/in/manas-vardhan-4689a411a/'
 }]
