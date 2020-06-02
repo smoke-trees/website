@@ -159,6 +159,12 @@ Having worked with website design for the better part of 3 years,
   linkedin: 'https://www.linkedin.com/in/darthbenro008/',
   github: ' https://github.com/DarthBenro008'
 }, {
+  name: 'Rithik Jain',
+  devs: 'APP DEV',
+  description: 'A mobile fullstack android developer with proficiency in Kotlin and Flutter, Rithik is passionate about Android. He has made several apps which have multiple downloads on the play store. Not to mention he is also adept at backend server development with GoLang. With a skill for perfection, Rithik is known for his code quality and his tenacity',
+  linkedin: 'https://www.linkedin.com/in/rithik-jain-710b3a199/',
+  github: 'https://github.com/rithikjain'
+}, {
   name: 'Manas Vardhan',
   devs: 'ML/AI',
   description: 'Manas is all about data. He is working in the field of Machine Learning and aspires to pursue Data Science for a career. He has a strong hold of statistics. He aims to build future ready cutting edge AI apps in the near future.',
