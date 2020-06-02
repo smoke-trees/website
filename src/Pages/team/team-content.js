@@ -182,4 +182,11 @@ Having worked with website design for the better part of 3 years,
   description: 'Ishan is an Android Developer and a keen learner. He is passionate about mobile application development and believes in learning through projects. He is a blockchain enthusiast with interest in web development and competitive programming.',
   linkedin: 'https://www.linkedin.com/in/ishan-khandelwal-246b2a19a/',
   github: ' https://github.com/Ishan-001'
-}]
+},{
+  name: 'Chanakya Vivek Kapoor',
+  devs: 'ML/AI',
+  description: 'Always ready to learn, Chanakya is a dedicated and committed developer. Also a part of DSC-VIT.  He believes working on real-life projects is the way to learn. Apart from ML and DL, he is also interested in Blockchain and would love to explore IoT in the future. To remain fit, he likes to play Basketball and Cricket.',
+  linkedin: 'https://www.linkedin.com/in/chanakya-vivek-kapoor-a04496167/',
+  github: 'https://github.com/chanakya1310'
+}
+  ]
