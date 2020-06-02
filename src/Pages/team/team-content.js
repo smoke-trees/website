@@ -164,4 +164,22 @@ Having worked with website design for the better part of 3 years,
   description: 'Having proficiency in multiple programming languages including JavaScript, TypeScript, Python and C++, Hishaam is an open source enthusiast, a skilled Node.js developer and an aspiring Cloud Architect. With an appetite for new technology, he is here to learn and create.',
   linkedin: 'https://www.linkedin.com/in/md-hishaam-akhtar-812a3019a/',
   github: 'https://github.com/mdhishaamakhtar'
+}, {
+  name: 'Rithik Jain',
+  devs: 'APP DEV',
+  description: 'A mobile fullstack android developer with proficiency in Kotlin and Flutter, Rithik is passionate about Android. He has made several apps which have multiple downloads on the play store. Not to mention he is also adept at backend server development with GoLang. With a skill for perfection, Rithik is known for his code quality and his tenacity',
+  linkedin: 'https://www.linkedin.com/in/rithik-jain-710b3a199/',
+  github: 'https://github.com/rithikjain'
+}, {
+  name: 'Manas Vardhan',
+  devs: 'ML/AI',
+  description: 'Manas is all about data. He is working in the field of Machine Learning and aspires to pursue Data Science for a career. He has a strong hold of statistics. He aims to build future ready cutting edge AI apps in the near future.',
+  github: 'https://github.com/ManasVardhan',
+  linkedin: 'https://www.linkedin.com/in/manas-vardhan-4689a411a/'
+}, {
+  name: 'Ishan Khandelwal',
+  devs: 'APP DEV',
+  description: 'Ishan is an Android Developer and a keen learner. He is passionate about mobile application development and believes in learning through projects. He is a blockchain enthusiast with interest in web development and competitive programming.',
+  linkedin: 'https://www.linkedin.com/in/ishan-khandelwal-246b2a19a/',
+  github: ' https://github.com/Ishan-001'
 }]
