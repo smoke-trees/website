@@ -159,6 +159,12 @@ Having worked with website design for the better part of 3 years,
   linkedin: 'https://www.linkedin.com/in/darthbenro008/',
   github: ' https://github.com/DarthBenro008'
 }, {
+  name: 'Manas Vardhan',
+  devs: 'ML/AI',
+  description: 'Manas is all about data. He is working in the field of Machine Learning and aspires to pursue Data Science for a career. He has a strong hold of statistics. He aims to build future ready cutting edge AI apps in the near future.',
+  github: 'https://github.com/ManasVardhan',
+  linkedin: 'https://www.linkedin.com/in/manas-vardhan-4689a411a/'
+}, {
   name: 'Ishan Khandelwal',
   devs: 'APP DEV',
   description: 'Ishan is an Android Developer and a keen learner. He is passionate about mobile application development and believes in learning through projects. He is a blockchain enthusiast with interest in web development and competitive programming.',
