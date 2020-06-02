@@ -182,4 +182,10 @@ Having worked with website design for the better part of 3 years,
   description: 'Ishan is an Android Developer and a keen learner. He is passionate about mobile application development and believes in learning through projects. He is a blockchain enthusiast with interest in web development and competitive programming.',
   linkedin: 'https://www.linkedin.com/in/ishan-khandelwal-246b2a19a/',
   github: ' https://github.com/Ishan-001'
+},
+name: 'Kavii Suri',
+  devs: 'WEB',
+  description: 'From Web Development to Machine Learning, Kavii is a guy who is genuinely interested in the craft of engineering and passionate about making ideas come to reality. He is a constant learner, enthusiastic about learning, and using new skills every day. Having experience and interest in multiple fields makes him a perfect candidate for innovation. ',
+  linkedin: 'https://www.linkedin.com/in/kavii-suri-a23286194',
+  github: ' https://github.com/KaviiSuri'
 }]
