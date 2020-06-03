@@ -182,11 +182,16 @@ Having worked with website design for the better part of 3 years,
   description: 'Ishan is an Android Developer and a keen learner. He is passionate about mobile application development and believes in learning through projects. He is a blockchain enthusiast with interest in web development and competitive programming.',
   linkedin: 'https://www.linkedin.com/in/ishan-khandelwal-246b2a19a/',
   github: ' https://github.com/Ishan-001'
-},{
+}, {
+name: 'Kavii Suri',
+  devs: 'WEB',
+  description: 'From Web Development to Machine Learning, Kavii is a guy who is genuinely interested in the craft of engineering and passionate about making ideas come to reality. He is a constant learner, enthusiastic about learning, and using new skills every day. Having experience and interest in multiple fields makes him a perfect candidate for innovation. ',
+  linkedin: 'https://www.linkedin.com/in/kavii-suri-a23286194',
+  github: ' https://github.com/KaviiSuri'
+}, {
   name: 'Chanakya Vivek Kapoor',
   devs: 'ML/AI',
   description: 'Always ready to learn, Chanakya is a dedicated and committed developer. Also a part of DSC-VIT.  He believes working on real-life projects is the way to learn. Apart from ML and DL, he is also interested in Blockchain and would love to explore IoT in the future. To remain fit, he likes to play Basketball and Cricket.',
   linkedin: 'https://www.linkedin.com/in/chanakya-vivek-kapoor-a04496167/',
   github: 'https://github.com/chanakya1310'
-}
-  ]
+}]
