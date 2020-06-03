@@ -33,7 +33,7 @@ class Contact extends React.Component {
                     </h3>
                     {/* <hr /> */}
                     <p>For more information or queries please contact us at:</p>
-                    <h3>smoketreesofficial@gmail.com</h3>
+                    <h3>info@smoketrees.dev</h3>
                   </div>
                 </div>
               </div>
