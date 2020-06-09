@@ -194,4 +194,10 @@ name: 'Kavii Suri',
   description: 'Always ready to learn, Chanakya is a dedicated and committed developer. Also a part of DSC-VIT.  He believes working on real-life projects is the way to learn. Apart from ML and DL, he is also interested in Blockchain and would love to explore IoT in the future. To remain fit, he likes to play Basketball and Cricket.',
   linkedin: 'https://www.linkedin.com/in/chanakya-vivek-kapoor-a04496167/',
   github: 'https://github.com/chanakya1310'
+}, {
+  name: 'Kabir Wadhwa',
+  devs: 'WEB',
+  description: 'Kabir is a dedicated  front end web developer and is now trying his luck in backend dev as well. He is passionate about his work. Learning new things everyday makes him wanna explore new domains apart from web dev.',
+  linkedin: 'https://www.linkedin.com/in/kabir-wadhwa-9644051a3/',
+  github: 'https://github.com/kabir071'
 }]
