@@ -76,11 +76,12 @@ Having worked with website design for the better part of 3 years,
   name: 'Tanmay Thakur',
   devs: 'ML/AI',
   description: `
-        President of SmokeTrees,
+        Kaicho of SmokeTrees,
         Tanmay excels in the art of Deep Learning.
-        He has great experience in developing and deploying models.
+        You'll often find him dissecting new Neural Networks.
         Having worked with companies like TCS, E&Y, YantraVision and 
-        Cybint he understands the needs and demands of the industry.
+        Cybint he understands production level orchestration when deploying.
+        Always willing to teach and eager to learn.
                     `,
   github: 'https://github.com/lordtt13',
   linkedin: 'https://www.linkedin.com/in/tanmay-thakur-6bb5a9154'
@@ -200,4 +201,19 @@ name: 'Kavii Suri',
   description: 'Kabir is a dedicated  front end web developer and is now trying his luck in backend dev as well. He is passionate about his work. Learning new things everyday makes him wanna explore new domains apart from web dev.',
   linkedin: 'https://www.linkedin.com/in/kabir-wadhwa-9644051a3/',
   github: 'https://github.com/kabir071'
+}, {
+  name: 'Tvisha Pandey',
+  devs: 'DESIGN',
+  description: 'Tvisha or better known as Twitch, makes designs, often they are very good, the logo of our company is the spawn of her creative intellect',
+  linkedin: 'https://www.linkedin.com/in/tvisha-pandey-1530471ab',
+  github: ''
+}, {
+  name: 'Ananthika Anand',
+  devs: 'MANAGEMENT',
+  description: `
+  Ever the cheerful presence, Ananthika never shies away from work and is the cause of the wheels running smoothly around the organisation,
+  You can offload any work onto her and watch it turn into dust in a jiffy.
+  `,
+  linkedin: 'https://www.linkedin.com/in/ananthika-anand-b12910183',
+  github: ''
 }]
