@@ -132,7 +132,7 @@ Regular milestone updates on GitHub and development using the Flutter framework 
                     fontSize: '1.1em',
                     fontWeight: 'bold',
                     textAlign: 'right',
-                    boxSizing: 'border-box'
+                    boxSizing: 'border-box',
                   }}
                 >
                   <a
@@ -142,6 +142,26 @@ Regular milestone updates on GitHub and development using the Flutter framework 
                     rel='noopener noreferrer'
                   >
                   -Vishal Dhagat, KiVi Infotech
+                  </a>
+                </p>
+                <p style={{marginTop: '50px'}}>"I had dreamt of having my own news portal for years. During the coronavirus pandemic and ensuing lockdown, my desire intensified. I started looking for an affordable software company that could create a dynamic news website I had envisioned. SmokeTrees more than delivered. 
+They understood my concept, vision and preferences and came up with an amazing user-friendly product. The feedback I receive for the website design and gradual rise in its viewership both reflect their talent, hard work and commitment. I wholeheartedly recommend SmokeTrees to everyone I know."
+                </p>
+                <p
+                  style={{
+                    fontSize: '1.1em',
+                    fontWeight: 'bold',
+                    textAlign: 'right',
+                    boxSizing: 'border-box'
+                  }}
+                >
+                  <a
+                    className='client-name'
+                    href='https://thedialogue.co.in/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
+                  - Kanchan Srivastava, Founder Editor, The Dialogue
                   </a>
                 </p>
               </div>
