@@ -289,3 +289,7 @@
 .dark.index-page .client-name{
     color: var(--dark-primary);
 }
+
+.dark .description p {
+  color: white
+}
