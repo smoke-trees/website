@@ -216,4 +216,13 @@ name: 'Kavii Suri',
   `,
   linkedin: 'https://www.linkedin.com/in/ananthika-anand-b12910183',
   github: ''
+  }, {
+  name: 'Priyanshu Gaikwad',
+  devs: 'DESIGN',
+  description: `
+  Priyanshu is a passionate UI/UX Designer, always wanting to give his best through design. He is here to build well rounded interfaces, aiming
+  to make interactions with technology feel effortless.
+  `,
+  linkedin: 'https://www.linkedin.com/in/priyanshu-gaikwad-183bb81b0/',
+  github: ''
 }]
