@@ -109,6 +109,15 @@ Having worked with website design for the better part of 3 years,
   github: 'https://github.com/7enTropy7/',
   linkedin: 'https://www.linkedin.com/in/unnikrishnan-menon-aa013415a/'
 }, {
+  name: 'Parthsarthi Gupta',
+  devs: 'ELECTRONICS',
+  description: `
+  Parthsarthi is a electro-mechanic. He loves to model abstract thoughts into real life robots. His primary skill is robotics (ROS & sim) and circuit design. 
+  He also works on Computer vision, CAD and graphics modeling.
+  `,
+  github: 'www.github.com/Severus11',
+  linkedin: 'https://www.linkedin.com/in/parthsarthi-gupta-265b9816a'
+}, {
   name: 'Atri Chaturvedi',
   devs: 'WEB',
   description: `
