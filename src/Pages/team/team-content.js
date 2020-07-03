@@ -225,7 +225,7 @@ name: 'Kavii Suri',
   `,
   linkedin: 'https://www.linkedin.com/in/ananthika-anand-b12910183',
   github: ''
-  }, {
+}, {
   name: 'Priyanshu Gaikwad',
   devs: 'DESIGN',
   description: `
@@ -234,4 +234,13 @@ name: 'Kavii Suri',
   `,
   linkedin: 'https://www.linkedin.com/in/priyanshu-gaikwad-183bb81b0/',
   github: ''
+}, {
+  name: 'Rishabh Keshan',
+  devs: 'WEB',
+  description: `
+  Rishabh is a passionate web developer with proficiency in ReactJS and NodeJS. He 
+  believes in learning things on the fly and never shies away from absorbing something new.
+  `,
+  linkedin: 'https://www.linkedin.com/in/rishabh-keshan-87680361/',
+  github: 'https://github.com/rishabhkeshan'
 }]
