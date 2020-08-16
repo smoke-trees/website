@@ -31,7 +31,7 @@ class About extends React.Component {
                 <ColumnContent
                   animationSpeed={animationSpeed}
                   className='column2'
-                  heading='App Devlopment'
+                  heading='App Development'
                 >
                   With mobile apps becoming vital to business success, we help you realise your ideas and bring it to the palm of your hand.
                   Our team consists of top mobile app developers who are well known to craft the most innovative & eye catchy pocket sized softwares. Our products are engineered to bring growth to your business.
