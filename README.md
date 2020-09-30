@@ -1,4 +1,4 @@
-# Website for smoketrees.dev
+# Website for smokeyflora.dev
 
 ### Guidelines
 
