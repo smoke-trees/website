@@ -1,6 +1,6 @@
-# Website for smoketrees.dev
+# Website for smoketrees.dev --> An Amazing Project
 
-### Guidelines
+### Guidelines to be followed :
 
   * Each an every component and files for it should be in its folder
     inside the component folder.
@@ -8,11 +8,11 @@
   * Make sure no one commits to the master branch
   * Don't merge locally. Always create PRs.
   
-### Fonts
+### Fonts :
   * Roboto
   * Roboto Mono
 
-### Colors
+### Colors used :
 
   * Background Color: #1C1A30
   * Text-color :  #00FF22
