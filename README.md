@@ -19,3 +19,5 @@
                   #FFFFFF 50%
                   #6B4FBB
   * Accent color : #FFFFFF 10%
+  
+  ####Thank you
