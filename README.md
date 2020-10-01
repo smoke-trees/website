@@ -1,4 +1,5 @@
 # Website for smoketrees.dev
+Please follow the instructions 
 
 ### Guidelines
 
@@ -19,3 +20,4 @@
                   #FFFFFF 50%
                   #6B4FBB
   * Accent color : #FFFFFF 10%
+  I hope you like my project
