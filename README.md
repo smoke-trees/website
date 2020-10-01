@@ -1,6 +1,6 @@
 # Website for smoketrees.dev
 
-### Guidelines
+### Guidelines For User
 
   * Each an every component and files for it should be in its folder
     inside the component folder.
