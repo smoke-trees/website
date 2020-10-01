@@ -1,12 +1,12 @@
 # Website for smoketrees.dev
 
-### Guidelines
+### Guidelines that need to be followed
 
-  * Each an every component and files for it should be in its folder
+  * Each and every component (files) for it should be in its folder
     inside the component folder.
-  * Each page should be in their own directory in the pages directory.
-  * Make sure no one commits to the master branch
-  * Don't merge locally. Always create PRs.
+  * Each page should be in its own directory in the pages directory.
+  * Make sure no one commits changes to the master branch.
+  * Don't merge locally. Always create PRs- "Always"
   
 ### Fonts
   * Roboto
