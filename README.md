@@ -1,4 +1,5 @@
-# Website for smoketrees.dev
+# SmokeTrees - An Astonishing Website
+Website for smoketrees.dev
 
 ### Guidelines
 
