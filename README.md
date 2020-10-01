@@ -7,6 +7,7 @@
   * Each page should be in their own directory in the pages directory.
   * Make sure no one commits to the master branch
   * Don't merge locally. Always create PRs.
+  * Handle With Care.
   
 ### Fonts
   * Roboto
