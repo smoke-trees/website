@@ -7,6 +7,9 @@
   * Each page should be in their own directory in the pages directory.
   * Make sure no one commits to the master branch
   * Don't merge locally. Always create PRs.
+### Design
+  * Simple white elegent design
+  * Dynamic Pages
   
 ### Fonts
   * Roboto
@@ -19,3 +22,5 @@
                   #FFFFFF 50%
                   #6B4FBB
   * Accent color : #FFFFFF 10%
+  ### Contacts
+  * info@smoketrees.dev
