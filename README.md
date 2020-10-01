@@ -7,6 +7,11 @@
   * Each page should be in their own directory in the pages directory.
   * Make sure no one commits to the master branch
   * Don't merge locally. Always create PRs.
+  * If there is something wrong with the content on that web site,
+    feel free to
+    [file an issue with this repository](https://github.com/smoke-trees/website/issues),
+    or formulate a pull request.
+    Note that most pages will come with an edit link in the bottom right corner.
   
 ### Fonts
   * Roboto
