@@ -1,4 +1,4 @@
-# Website for smoketrees.dev
+# Dynamic Website for SmokeTrees.dev
 
 ### Guidelines
 
